@@ -20,9 +20,9 @@
 <div class="col-md-6 col-lg-4">
 <div class="login-wrap p-0">
 <h3 class="mb-4 text-center"> <i class="fas fa-fw fa-cog"></i>BIENVENIDO</h3>
-<form action="POST" action="<?php echo base_url(); ?>/" class="signin-form">
+<form action="POST" action="<?php echo base_url(); ?>usuarios/valida" class="signin-form">
 <div class="form-group">
-<input id="nombreUsuario" name="nombreUsuario" type="text" class="form-control" placeholder="usuario" required>
+<input id="usuario" name="usuario" type="text" class="form-control" placeholder="usuario" required>
 </div>
 <div class="form-group">
 <input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
@@ -31,6 +31,16 @@
 <div class="form-group">
 <button type="submit" class="form-control btn btn-primary submit px-3">INICIAR</button>
 </div>
+<?php if (isset($validation)) { ?>
+     <div class="alert alert-danger">
+     <?php echo $validation->listErrors();?>
+     </div>
+ <?php }?>
+ <?php if (isset($error)) { ?>
+     <div class="alert alert-danger">
+     <?php echo $error;?>
+     </div>
+ <?php }?>
 
 </form>
 

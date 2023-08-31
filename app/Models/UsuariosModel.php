@@ -15,7 +15,7 @@ use CodeIgniter\Model;
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
     
-        protected $allowedFields = ['nombreUsuario','password','nombre','id_Empleado','estado'];
+        protected $allowedFields = ['nombres','primerApellido','segundoApellido','email','celular','usuario','password','id_Empleado','estado'];
     
         // Dates
         protected $useTimestamps = true;

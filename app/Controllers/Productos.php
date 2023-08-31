@@ -7,12 +7,25 @@ class Productos extends BaseController
 {
     protected $productos;
     protected $categorias;
+    protected $reglas;
 
     public function __construct()
     {
         $this->productos = new ProductosModel();
         $this->categorias= new CategoriaModel();
+        helper(['form']);
+        $this->reglas =[
+            'codigo'=>[
+                'rules'=>'required|is_unique[productos.codigo]',
+                 'errors'=>[
+                    'required'=>'el campo{field} es obligatorio.',
+                    'is_unique'=>'el codigo{field} debe ser unico.'
+                           ]
+                      ] 
+                      ];
     }
+
+    
 
      public function index($estado = 1)
     {
@@ -28,17 +41,19 @@ class Productos extends BaseController
      public function nuevo()
     {
         
+     
       $categorias = $this->categorias->where('estado',1)->findAll();
-      $datos = ['titulo' => 'Agregar Producto','categorias',$categorias];
+
+      $data = ['titulo' => 'Agregar Producto','productos','categorias'>$categorias];
 
        echo view('encabezado');
-       echo view('productos/nuevo',$datos);
+       echo view('productos/nuevo',$data);
        echo view('pie');
 
     }
     public function insertar()
     {
-        if($this->request->getMethod() =="post")
+        if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
           
             $this->productos->save(['codigo' => $this->request->getPost('codigo'),
@@ -53,10 +68,13 @@ class Productos extends BaseController
             return redirect()->to(base_url().'productos');
         }else{
 
-            $datos = ['titulo' => 'Agregar Producto','validation' =>$this->validator];
+    
+            $categorias = $this->categorias->where('estado',1)->findAll();
+
+            $data = ['titulo' => 'Agregar Producto','productos','categorias'=>$categorias,'validation' =>$this->validator];
 
             echo view('encabezado');
-            echo view('productos/nuevo',$datos);
+            echo view('productos/nuevo',$data);
             echo view('pie');
         }
       
@@ -66,9 +84,9 @@ class Productos extends BaseController
 
     public function editar($id)
     {
-        $categoria = $this->productos->where('id_Producto',$id)->first();
+        $productos = $this->productos->where('id_Producto',$id)->first();
    
-      $dato = ['titulo' => 'Editar Producto','datos'=> $categoria];
+      $dato = ['titulo' => 'Editar Producto','datos'=> $productos];
 
        echo view('encabezado');
        echo view('productos/editar',$dato);

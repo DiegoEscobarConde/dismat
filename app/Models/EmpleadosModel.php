@@ -3,17 +3,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EmpleadoModel extends Model
+class EmpleadosModel extends Model
 {
     protected $table      = 'empleados';
-    protected $primaryKey = 'id_Empleados';
+    protected $primaryKey = 'id_Empleado';
 
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nombres', 'apellidoP', 'apellidoM', 'estado'];
+    protected $allowedFields = ['rol', 'estado'];
 
     // Dates
     protected $useTimestamps = true;

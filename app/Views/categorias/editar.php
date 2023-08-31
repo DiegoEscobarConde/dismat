@@ -2,7 +2,11 @@
 <div class="container-fluid">
 
  <h1 class="h3 mb-2 text-gray-800"><?php echo $titulo; ?></h1>
-      
+ <?php if (isset($validation)) { ?>
+     <div class="alert alert-danger">
+     <?php echo $validation->listErrors();?>
+     </div>
+ <?php }?> 
 <form method="POST" action="<?php echo base_url(); ?>/categorias/actualizar" autocomplete="off">
 <input type="hidden" value="<?php echo $datos['id_categoria'];?>" name="id_categoria"/>
 <div class=" form-group">
@@ -10,7 +14,7 @@
               <div class=" col-12 col-sm-6">
                    <label for="">NOMBRE CATEGORIA</label>
                    <input class ="form-control" id="nombre" name="nombre" value="<?php echo $datos['nombre'];?>"
-                   autofocus require/>
+                   autofocus required/>
               </div>
 
           
