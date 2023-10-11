@@ -105,11 +105,13 @@ protected $reglas,$reglasLogin;
         
         if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
+        
           // $hash = password_hash($this->request->getVar('password'),PASSWORD_DEFAULT);
-          $nombre = $this->request->getPost('nombres');
+          $nombres = $this->request->getPost('nombres');
           $apellido = $this->request->getPost('primerApellido');
           $password = substr(bin2hex(random_bytes(4)), 0, 8);
-          $nombreUsuario = strtolower(substr($nombre, 0, 3) . $apellido);;
+          $nombreUsuario = strtolower(substr($nombres, 0, 3) . $apellido);;
+          
           
     $this->usuarios->save(['nombres' => $this->request->getPost('nombres'),
          'primerApellido' => $this->request->getPost('primerApellido'),
@@ -117,7 +119,7 @@ protected $reglas,$reglasLogin;
          'email' => $this->request->getPost('email'),
          'celular' => $this->request->getPost('celular'),
          'usuario' => $nombreUsuario,
-         'password' =>  $password,PASSWORD_DEFAULT,
+         'password' =>  password_hash($password,PASSWORD_DEFAULT),
          'id_Empleado' => $this->request->getPost('id_Empleado'),
          'estado'=> 1
         ]);
@@ -131,11 +133,14 @@ protected $reglas,$reglasLogin;
             echo view('usuarios/nuevo',$datos);
             echo view('pie');
         }
+    }
+
+    
        
     
       
         
-    }
+    
   
 
     public function editar($id)
@@ -194,40 +199,57 @@ protected $reglas,$reglasLogin;
     public function valida()
     {
       
-
-            $usuario =$this->request->getPost('usuario');
-            $password =$this->request->getPost('password');
-            $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
-                 if($datosUsuario != null)
-                {
-                     if(password_verify($password,$datosUsuario['password']))
-                        {
-                            $datosSession= [
-                           'id'=> $datosUsuario ['id'],
-                           'nombres'=> $datosUsuario ['nombres'],
-                           'primerApellido'=> $datosUsuario ['primerApellido'],
-                           'segundoApellido'=> $datosUsuario ['segundoApellido'],
-                           'email'=> $datosUsuario ['email'],
-                           'celular'=> $datosUsuario ['celular'],
-                           'usuario'=> $datosUsuario ['usuario'],
-                           'id_Empleado'=> $datosUsuario ['id_Empleado']];
-                            $sesion =session();
-                            $sesion->set($datosSession);
-                            return redirect()->to(base_url(). '/');
-                        } else
-                           {
-                             $data['error']="las contraseñas no coinciden";
-                             echo view('login'.$data);
-                            }
-                 } else
-                           {
-                             $data['error']="el  ususario no existe";
-                             echo view('login',$data);
-                           }
-         
+        if($this->request->getMethod() =="post" && $this->validate($this->reglasLogin))
+        {   
+             $usuario = $this->request->getPost('usuario');
+             $password = $this->request->getPost('password');
+             $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
+           if (is_string($password)){     
+             if ($datosUsuario != null) 
+             {
+                var_dump($password);
+                if (password_verify($password, $datosUsuario['password']))
+                 {
+                     $datosSession = [
+                    'id' => $datosUsuario['id'],
+                    'nombres' => $datosUsuario['nombres'],
+                    'primerApellido' => $datosUsuario['primerApellido'],
+                    'segundoApellido' => $datosUsuario['segundoApellido'],
+                    'email' => $datosUsuario['email'],
+                    'celular' => $datosUsuario['celular'],
+                    'id_Empleado' => $datosUsuario['id_Empleado'] ];
+        
+                    $sesion = session();
+                    $sesion->set($datosSession);
+                    return redirect()->to(base_url() . '/productos');
+                 }  else {
+                $data['error'] = "Las contraseñas no coinciden";
+                echo view('login', $data);
+                }
+                 } else {
+                   $data['error'] = "El usuario no existe";
+                   echo view('login', $data);
+                  } 
+                }  else {
+                 $data=['validation'=>$this->validator];
+                 echo view ('login',$data);
+                  }                     
+         }
+        
+       
+              
      }
-               
-}
+        
+     
+     public function logout()
+     {
+        $session = session();
+        $session->destroy();
+    return redirect()->to(base_url());   
+     }
+    }
+          
+
 
 
             
@@ -238,4 +260,3 @@ protected $reglas,$reglasLogin;
 
             
 
- 
