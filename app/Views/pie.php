@@ -37,6 +37,10 @@
     <script src="<?php echo base_url() ;?>/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url() ;?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url() ;?>/js/demo/datatables-demo.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/jquery-ui.min.js"></script>
+    
     <script>
         $('#modal-confirma').on('show.bs.modal',function(e){
             $($this).find('.btn-ok').after('href',$(e.relatedTarget).data('href'));

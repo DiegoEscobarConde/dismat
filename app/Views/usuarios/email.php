@@ -8,7 +8,7 @@
      </div>
  <?php }?>
       
-<form method="POST" action="<?php echo base_url(); ?>/usuarios/enviar" autocomplete="off" id="form_enviar_email">
+<form method="POST" action="<?php echo base_url(); ?>/usuarios/enviarCredenciales" autocomplete="off" id="enviarCredenciales">
 <?php csrf_field();?>
 <div class=" form-group">
      <div class="row">
@@ -26,19 +26,14 @@
      <div class=" col-12 col-sm-6">
               <label for="">asunto</label>
               <input class ="form-control" id="asunto" name="asunto" type="text"
-              value="<?php echo set_value('')?>"
+              value="<?php echo set_value('asunto')?>"
               autofocus require/>
           </div> 
-          <div class=" col-12 col-sm-6">
-              <label for="">mensaje</label>
-              <input class ="form-control" id="mensaje" name="mensaje" type="text"
-              value="<?php echo set_value('')?>"
-              autofocus require/>
-          </div>  
+        
          
 </div>
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <a href="<?php echo base_url(); ?>/usuarios" class="btn btn-primary">Regresar</a>
+        <button type="submit" class="btn btn-success">enviar</button>
+       
         
  
 

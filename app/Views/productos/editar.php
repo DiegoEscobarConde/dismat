@@ -23,12 +23,12 @@
          <div class="row">
               <div class=" col-12 col-sm-6">
                    <label for="">precio venta</label>
-                   <input class ="form-control" id="precio_venta" name="precio_venta" value="<?php echo $datos['precio_venta'];?>"
+                   <input class ="form-control" id="precio_ventaU" name="precio_ventaU" value="<?php echo $datos['precio_venta'];?>"
                    autofocus require/>
               </div>
               <div class=" col-12 col-sm-6">
                    <label for="">precio_venta</label>
-                   <input class ="form-control" id="precio_compra" name="precio_compra" value="<?php echo $datos['precio_compra'];?>"
+                   <input class ="form-control" id="precio_compraU" name="precio_compraU" value="<?php echo $datos['precio_compra'];?>"
                    autofocus require/>
               </div>
         </div>

@@ -58,9 +58,8 @@ class Productos extends BaseController
           
             $this->productos->save(['codigo' => $this->request->getPost('codigo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'precio_venta' => $this->request->getPost('precio_venta'),
-            'precio_compra' => $this->request->getPost('precio_compra'),
-            'cantidad' => $this->request->getPost('cantidad'),
+            'precio_ventaU' => $this->request->getPost('precio_ventaU'),
+            'precio_compraU' => $this->request->getPost('precio_compraU'),
             'stock' => $this->request->getPost('stock'),
             'id_categoria' => $this->request->getPost('id_categoria'),
         ]);
@@ -99,9 +98,8 @@ class Productos extends BaseController
         $this->productos->update($this->request->getPost('id_Producto'),
         ['codigo' => $this->request->getPost('codigo'),
         'descripcion' => $this->request->getPost('descripcion'),
-        'precio_venta' => $this->request->getPost('precio_venta'),
-        'precio_compra' => $this->request->getPost('precio_compra'),
-        'cantidad' => $this->request->getPost('cantidad'),
+        'precio_ventaU' => $this->request->getPost('precio_ventaU'),
+        'precio_compraU' => $this->request->getPost('precio_compraU'),
         'stock' => $this->request->getPost('stock'),
         'id_categoria' => $this->request->getPost('id_categoria'),
     ]);
@@ -148,6 +146,46 @@ class Productos extends BaseController
             }
         }
         echo json_encode($returnData);
+    }
+    public function buscarPorCodigo($codigo){
+        $this ->productos->select('*');
+        $this ->productos->where('codigo',$codigo);
+        $this ->productos->where('estado',1);
+       $datos=$this->productos->get()->getRow();
+     
+       $res['existe']=false;
+       $res['datos']='';
+       $res['error']='';
+      
+       if($datos){
+        $res['datos']=$datos;
+        $res['existe']=true;
+
+       }else{
+        $res['error']='no existe producto';
+        $res['existe']=false;
+       }
+       echo json_encode($res);
+    }
+    public function buscarPorCodigo1($codigo){
+        $this ->productos->select('*');
+        $this ->productos->where('codigo',$codigo);
+        $this ->productos->where('estado',1);
+       $data=$this->productos->get()->getRow();
+     
+       $res['existe']=false;
+       $res['datos']='';
+       $res['error']='';
+      
+       if($data){
+        $res['datos']=$data;
+        $res['existe']=true;
+
+       }else{
+        $res['error']='no existe producto';
+        $res['existe']=false;
+       }
+       echo json_encode($res);
     }
 
 }

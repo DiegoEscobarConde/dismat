@@ -61,6 +61,7 @@ class Clientes extends BaseController
             'direccion' => $this->request->getPost('direccion'),
              ]);
             return redirect()->to(base_url().'clientes');
+            
         }else{
 
 
@@ -70,7 +71,8 @@ class Clientes extends BaseController
             echo view('clientes/nuevo',$data);
             echo view('pie');
         }
-      
+        $clientes= $this->clientes->obtenerClienteRecienRegistrado();
+        echo json_encode($clientes);
         
     }
   

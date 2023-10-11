@@ -4,15 +4,15 @@ use App\Controllers\BaseController;
 use App\Models\EmpleadosModel;
 class Empleados extends BaseController
 {
-    protected $categorias;
+    protected $empleados;
     protected $reglas;
 
     public function __construct()
     {
-        $this->categorias = new EmpleadosModel();
+        $this->empleados = new EmpleadosModel();
         helper(['form']);
         $this->reglas =[
-            'nombre'=>[
+            'rol'=>[
                 'rules'=>'required',
                  'errors'=>[
                     'required'=>'el campo{field} es obligatorio.'
@@ -23,11 +23,11 @@ class Empleados extends BaseController
 
      public function index($estado = 1)
     {
-        $categorias = $this->categorias->where('estado',$estado)->findAll();
-        $data = ['titulo' => 'Categorias', 'datos' => $categorias];
+        $empleados = $this->empleados->where('estado',$estado)->findAll();
+        $data = ['titulo' => 'Roles', 'datos' => $empleados];
     
      echo view('encabezado');
-     echo view('categorias/categorias',$data);
+     echo view('empleados/empleados',$data);
      echo view('pie');
 
     }
@@ -35,10 +35,10 @@ class Empleados extends BaseController
      public function nuevo()
     {
    
-      $datos = ['titulo' => 'Agregar Categoria'];
+      $datos = ['titulo' => 'Agregar Rol'];
 
        echo view('encabezado');
-       echo view('categorias/nuevo',$datos);
+       echo view('empleados/nuevo',$datos);
        echo view('pie');
 
     }
@@ -47,14 +47,14 @@ class Empleados extends BaseController
         if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
           
-            $this->categorias->save(['nombre' => $this->request->getPost('nombre')]);
-            return redirect()->to(base_url().'categorias');
+            $this->empleados->save(['rol' => $this->request->getPost('rol')]);
+            return redirect()->to(base_url().'empleados');
         }else{
 
-            $datos = ['titulo' => 'Agregar Categoria','validation' =>$this->validator];
+            $datos = ['titulo' => 'Agregar Empleado','validation' =>$this->validator];
 
             echo view('encabezado');
-            echo view('categorias/nuevo',$datos);
+            echo view('empleados/nuevo',$datos);
             echo view('pie');
         }
       
@@ -64,51 +64,51 @@ class Empleados extends BaseController
 
     public function editar($id,$valid=null)
     {
-        $categoria = $this->categorias->where('id_categoria',$id)->first();
+        $empleados = $this->empleados->where('id_Empleado',$id)->first();
         if($valid !=null){
-            $dato = ['titulo' => 'Editar Categoria','datos'=> $categoria,'validation'=>$valid];
+            $dato = ['titulo' => 'Editar Empleado','datos'=>   $empleados,'validation'=>$valid];
         } else{
-            $dato = ['titulo' => 'Editar Categoria','datos'=> $categoria];
+            $dato = ['titulo' => 'Editar Empleado','datos'=>   $empleados];
         }
    
       
 
        echo view('encabezado');
-       echo view('categorias/editar',$dato);
+       echo view('empleados/editar',$dato);
        echo view('pie');
 
     }
     public function actualizar()
     {
         if($this->request->getMethod() =="post" && $this->validate($this->reglas)){
-        $this->categorias->update($this->request->getPost('id_categoria'),
-        ['nombre' => $this->request->getPost('nombre')]);
-        return redirect()->to(base_url().'/categorias');
+        $this->empleados->update($this->request->getPost('id_Empleado'),
+        ['nombre' => $this->request->getPost('rol')]);
+        return redirect()->to(base_url().'/empleados');
        }else{
-        return $this-> editar($this->request->getPost('id_categoria'),$this->validator);
+        return $this-> editar($this->request->getPost('id_Empleado'),$this->validator);
        }
     }
     public function eliminar($id)
     {
    
-        $this->categorias->update($id,['estado' => 0]);
-        return redirect()->to(base_url().'/categorias');
+        $this->empleados->update($id,['estado' => 0]);
+        return redirect()->to(base_url().'/empleados');
     }
     public function eliminados($activo = 0)
     {
-        $categorias = $this->categorias->where('estado',$activo)->findAll();
-        $data = ['titulo' => 'Categorias Eliminadas', 'datos' => $categorias];
+        $empleados = $this->empleados->where('estado',$activo)->findAll();
+        $data = ['titulo' => 'Roles Eliminados', 'datos' => $empleados];
     
      echo view('encabezado');
-     echo view('categorias/eliminados',$data);
+     echo view('empleados/eliminados',$data);
      echo view('pie');
 
     }
     public function reingresar($id)
     {
    
-        $this->categorias->update($id,['estado' => 1]);
-        return redirect()->to(base_url().'/categorias');
+        $this->empleados->update($id,['estado' => 1]);
+        return redirect()->to(base_url().'/empleados');
     }
 }
 

@@ -40,6 +40,12 @@ use CodeIgniter\Model;
           protected $afterFind      = [];
           protected $beforeDelete   = [];
           protected $afterDelete    = [];
+          public function getUsersWithRoles()
+          {
+              return $this->select('usuarios.*, rol AS rol_nombre')
+                  ->join('empleados', 'empleados.id_Empleado = usuarios.id_Empleado')
+                  ->findAll();
+          }
       }
 
     

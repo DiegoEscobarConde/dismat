@@ -1,0 +1,240 @@
+INFO - 2023-10-24 00:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 00:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 01:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 01:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 01:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 01:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 03:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 03:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 03:46:26 --> Unsupported operand types: string * string
+in APPPATH\Controllers\Temporal.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '[object HTMLInputElement]', '1', '65373e02cd5f1', '[object HTMLInputElement]')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 03:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 03:48:22 --> Unsupported operand types: string * string
+in APPPATH\Controllers\Temporal.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('14', '[object HTMLInputElement]', '1', '65373e7e7a166', '[object HTMLInputElement]')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 03:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 04:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 09:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 10:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 19:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 21:39:07 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653828d4b6fbb', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-24 21:39:07 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653828d4b6fbb\', \'2023-10-24 21:39:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653828d4b6fbb\', \'2023-10-24 21:39:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653828d4b6fbb\', \'2023-10-24 21:39:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653828d4b6fbb', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 21:40:00 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('6538399d8dfb1', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-24 21:40:00 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('6538399d8dfb1', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 21:40:33 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('6538399d8dfb1', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-24 21:40:33 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'6538399d8dfb1\', \'2023-10-24 21:40:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('6538399d8dfb1', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 21:40:51 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653839d6eb963', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-24 21:40:51 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:40:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:40:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:40:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653839d6eb963', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 21:43:41 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653839d6eb963', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-24 21:43:41 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:43:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:43:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'0.00\', \'653839d6eb963\', \'2023-10-24 21:43:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(79): App\Models\ComprasModel->insertaCompra('653839d6eb963', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 23:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

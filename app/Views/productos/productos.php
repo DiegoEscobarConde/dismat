@@ -12,15 +12,15 @@
 
    <!-- DataTales Example -->
 
-   <div class="table">
-            <table class="table table-sm" id="dataTable" width="100%" cellspacing="0" text="center"> 
+   <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"> 
                 <thead>
                     <tr>
                         <th>id</th>
                         <th>codigo</th>
                         <th>descripcion</th>
-                        <th>cantidad</th>
-                        <th>precio</th>
+                        <th>precio compra</th>
+                        <th>precio venta</th>
                         <th>stock</th>
                         <th>categoria</th>
                         <th></th>
@@ -34,9 +34,8 @@
                           <td><?php echo $dato['id_Producto']?></td>
                           <td><?php echo $dato['codigo']?></td>
                           <td><?php echo $dato['descripcion']?></td>
-                          <td><?php echo $dato['cantidad']?></td>
-                          <td><?php echo $dato['precio_venta']?></td>
-                          <td><?php echo $dato['precio_compra']?></td>
+                          <td><?php echo $dato['precio_compraU']?></td>
+                          <td><?php echo $dato['precio_ventaU']?></td>
                           <td><?php echo $dato['stock']?></td>
                         
 

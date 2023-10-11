@@ -1,0 +1,1007 @@
+INFO - 2023-10-18 01:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:15:46 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(301): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales('escobar.diego.1...')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:15:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:15:46 --> 
+INFO - 2023-10-18 01:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:16:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(301): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales('escobar.diego.1...')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:16:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:16:01 --> 
+INFO - 2023-10-18 01:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:25:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(304): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:25:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:25:23 --> 
+CRITICAL - 2023-10-18 01:36:14 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Usuarios.php(297): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-18 01:38:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:38:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:38:30 --> 
+INFO - 2023-10-18 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:39:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:39:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:39:12 --> 
+ERROR - 2023-10-18 01:40:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:40:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:40:36 --> 
+ERROR - 2023-10-18 01:42:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:42:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:42:20 --> 
+INFO - 2023-10-18 01:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:42:55 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:42:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:42:55 --> 
+ERROR - 2023-10-18 01:44:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:44:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:44:30 --> 
+INFO - 2023-10-18 01:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 01:44:42 --> Undefined variable $asunto
+in APPPATH\Views\usuarios\email.php on line 29.
+ 1 APPPATH\Views\usuarios\email.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asunto', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\usuarios\\email.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\usuarios\\email.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('usuarios/email', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(321): view('usuarios/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->email('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 01:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 01:44:43 --> Undefined variable $asunto
+in APPPATH\Views\usuarios\email.php on line 29.
+ 1 APPPATH\Views\usuarios\email.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asunto', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\usuarios\\email.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\usuarios\\email.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('usuarios/email', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(321): view('usuarios/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->email('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 01:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:45:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:45:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:45:21 --> 
+ERROR - 2023-10-18 01:46:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:46:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:46:20 --> 
+INFO - 2023-10-18 01:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:46:46 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:46:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:46:46 --> 
+INFO - 2023-10-18 01:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:50:02 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:50:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:50:02 --> 
+ERROR - 2023-10-18 01:50:03 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(306): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:50:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:50:03 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:57:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:57:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:57:38 --> 
+ERROR - 2023-10-18 01:57:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(306): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:57:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:57:38 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+INFO - 2023-10-18 01:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 01:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 01:58:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(305): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:58:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:58:00 --> 
+ERROR - 2023-10-18 01:58:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp2\htdocs\dismat\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp2\\htdoc...', 1863)
+#1 C:\xampp2\htdocs\dismat\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp2\htdocs\dismat\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp2\htdocs\dismat\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp2\htdocs\dismat\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Usuarios.php(306): CodeIgniter\Email\Email->send()
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Usuarios->enviarCredenciales()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-10-18 01:58:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-18 01:58:00 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+INFO - 2023-10-18 02:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-18 02:35:43 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Usuarios.php on line 92.
+ 1 APPPATH\Controllers\Usuarios.php(92): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 02:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 02:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 03:51:27 --> Call to a member function where() on null
+in APPPATH\Controllers\Ventas.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->ventas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 03:52:08 --> Call to a member function where() on null
+in APPPATH\Controllers\Ventas.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->ventas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 03:52:10 --> Call to a member function where() on null
+in APPPATH\Controllers\Ventas.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->ventas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 03:52:34 --> Call to a member function where() on null
+in APPPATH\Controllers\Ventas.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->ventas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 03:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 03:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:37:14 --> Call to undefined method App\Models\ProductosModel::seelct
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Productos.php(153): CodeIgniter\Model->__call('seelct', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo('222801')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:37:47 --> Call to undefined method App\Models\ProductosModel::seelct
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Productos.php(153): CodeIgniter\Model->__call('seelct', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo('222801')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:44:39 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:44:53 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:45:59 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:49:26 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 04:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:52:58 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 04:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 04:55:25 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 05:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 05:00:29 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 05:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 05:11:01 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 05:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 05:14:02 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 05:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 05:18:20 --> Too few arguments to function App\Controllers\Productos::buscarPorCodigo(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Productos.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->buscarPorCodigo()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 05:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 05:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 06:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 06:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 06:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 06:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 06:09:26 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Compras.php(48): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 06:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 07:18:16 --> Undefined variable $datos
+in APPPATH\Views\compras\editar.php on line 11.
+ 1 APPPATH\Views\compras\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('compras/editar', [], true)
+ 5 APPPATH\Controllers\Compras.php(61): view('compras/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 07:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 07:18:43 --> Undefined variable $titulo
+in APPPATH\Views\compras\editar.php on line 4.
+ 1 APPPATH\Views\compras\editar.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('compras/editar', [], true)
+ 5 APPPATH\Controllers\Compras.php(61): view('compras/editar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 07:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 07:19:07 --> Undefined variable $titulo
+in APPPATH\Views\compras\editar.php on line 4.
+ 1 APPPATH\Views\compras\editar.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('compras/editar', [], true)
+ 5 APPPATH\Controllers\Compras.php(61): view('compras/editar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 07:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 07:19:48 --> Undefined variable $datos
+in APPPATH\Views\compras\editar.php on line 11.
+ 1 APPPATH\Views\compras\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('compras/editar', [], true)
+ 5 APPPATH\Controllers\Compras.php(61): view('compras/editar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 07:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 07:20:37 --> Undefined variable $datos
+in APPPATH\Views\compras\editar.php on line 11.
+ 1 APPPATH\Views\compras\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\compras\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('compras/editar', [], true)
+ 5 APPPATH\Controllers\Compras.php(61): view('compras/editar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 07:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 08:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 08:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 08:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 08:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 08:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 17:41:19 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Compras.php on line 56.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('compras/guarda', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('compras/guarda')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('compras/guarda')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 17:57:16 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Compras.php on line 56.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('compras/guarda', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('compras/guarda')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('compras/guarda')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 17:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 17:57:49 --> Undefined variable $id
+in APPPATH\Controllers\Compras.php on line 53.
+ 1 APPPATH\Controllers\Compras.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 17:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 17:59:05 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Models\ComprasModel.php(43): CodeIgniter\BaseModel->save([...])
+11 APPPATH\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra('', '0.00', Object(CodeIgniter\Session\Session))
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 17:59:28 --> Undefined variable $session
+in APPPATH\Controllers\Compras.php on line 53.
+ 1 APPPATH\Controllers\Compras.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-18 18:01:47 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios1` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\dismat\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra('', '0.00', '')
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#12 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-10-18 18:01:47 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios1` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', \'2023-10-18 18:01:47\', \'2023-10-18 18:01:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', \'2023-10-18 18:01:47\', \'2023-10-18 18:01:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', \'2023-10-18 18:01:47\', \'2023-10-18 18:01:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\ComprasModel.php(43): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra('', '0.00', '')
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 18:04:24 --> Too few arguments to function App\Models\ComprasModel::insertaCompra(), 2 passed in C:\xampp2\htdocs\dismat\app\Controllers\Compras.php on line 53 and exactly 3 expected
+in APPPATH\Models\ComprasModel.php on line 42.
+ 1 APPPATH\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra(null, '0.00')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-18 18:39:02 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\dismat\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra(NULL, '0.00', NULL)
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#12 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-10-18 18:39:02 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 18:39:02\', \'2023-10-18 18:39:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 18:39:02\', \'2023-10-18 18:39:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 18:39:02\', \'2023-10-18 18:39:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\ComprasModel.php(43): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\Compras.php(53): App\Models\ComprasModel->insertaCompra(null, '0.00', null)
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 20:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 20:40:47 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(NULL, '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 20:40:47 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:47\', \'2023-10-18 20:40:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:47\', \'2023-10-18 20:40:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:47\', \'2023-10-18 20:40:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(null, '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 20:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 20:40:52 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(NULL, '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 20:40:52 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:52\', \'2023-10-18 20:40:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:52\', \'2023-10-18 20:40:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:40:52\', \'2023-10-18 20:40:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(null, '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 20:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 20:46:30 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(NULL, '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 20:46:30 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:30\', \'2023-10-18 20:46:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:30\', \'2023-10-18 20:46:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:30\', \'2023-10-18 20:46:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra(null, '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 20:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 20:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 20:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 20:46:55 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 20:46:55 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:55\', \'2023-10-18 20:46:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:55\', \'2023-10-18 20:46:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:46:55\', \'2023-10-18 20:46:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 20:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 20:58:10 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 20:58:10 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:58:10\', \'2023-10-18 20:58:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:58:10\', \'2023-10-18 20:58:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 20:58:10\', \'2023-10-18 20:58:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 21:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-18 21:01:21 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-18 21:01:21 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 21:01:21\', \'2023-10-18 21:01:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 21:01:21\', \'2023-10-18 21:01:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'2023-10-18 21:01:21\', \'2023-10-18 21:01:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('6530443639937', '0.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 21:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 21:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 21:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 21:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 21:52:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Usuarios.php on line 293.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('usuarios/logout', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('usuarios/logout')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('usuarios/logout')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-18 21:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

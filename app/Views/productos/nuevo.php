@@ -25,26 +25,19 @@
               autofocus require/>
           </div>  
      </div>
-     <div class="row">
-          <div class=" col-12 col-sm-6">
-              <label for="">CANTIDAD</label>
-              <input class ="form-control" id="cantidad" name="cantidad" type="number"
-              autofocus require/>
-          </div>  
-     </div>
 </div>
 <div class=" form-group">
      <div class="row">
           <div class=" col-12 col-sm-6">
               <label for="">PRECIO VENTA</label>
-              <input class ="form-control" id="precio_venta" name="precio_venta" type="text"
+              <input class ="form-control" id="precio_ventaU" name="precio_ventaU" type="text"
               autofocus require/>
           </div>  
      </div>
      <div class="row">
           <div class=" col-12 col-sm-6">
               <label for="">PRECIO COMPRA</label>
-              <input class ="form-control" id="precio_compra" name="precio_compra" type="text"
+              <input class ="form-control" id="precio_compraU" name="precio_compraU" type="text"
               autofocus require/>
           </div>  
      </div>

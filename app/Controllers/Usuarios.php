@@ -52,36 +52,7 @@ protected $reglas,$reglasLogin;
                     ]
                     ]
                     ];
-                   
-                    helper(['form']);
-                    $this->reglasLogin =[
-                        'usuario'=> [
-                            'rules'=> 'required',
-                            'errors' =>[
-                                'required'=> 'el campo{field} es obligatorio.'
-                            ]
-                            ],
-                            
-                            'password' => [
-                                'rules'=> 'required',
-                                'errors' =>[
-                                    'required'=> 'el campo{field} es obligatorio.'
-                                ]
-                                ]
-                                ];
-         helper(['form']);                      //VALIDACION PARA LOS CAMPOS CONTRASEÑA*/
-        $this->reglasCambia = [
-            'password' =>
-            ['rules' => 'required', 'errors' =>
-            ['required' => 'El CAMPO ES OBLIGATORIO!!']],
-
-            're_password' =>
-            ['rules' => 'required|matches[password]', 'errors' =>
-            [
-                'required' => 'El CAMPO  re pasword ES OBLIGATORIO!!',
-                'matches' => 'LAS CONTRASEÑAS NO COINCIDEN!!'
-            ]]
-        ];
+         
                     
                 
                 
@@ -89,9 +60,11 @@ protected $reglas,$reglasLogin;
 
      public function index($estado = 1)
     {
+        $userModel = new UsuariosModel();
+        $usuarios = $userModel->getUsersWithRoles();
         $empleados = $this->empleados->where('rol')->findAll();
         $usuarios = $this->usuarios->where('estado',$estado)->findAll();
-        $data = ['titulo' => 'Usuarios', 'datos' => $usuarios,'empleados'=>$empleados];
+        $data = ['titulo' => 'Usuarios', 'datos' => $usuarios,'rol'=>$empleados,'usuarios' => $usuarios];
     
      echo view('encabezado');
      echo view('usuarios/usuarios',$data);
@@ -116,10 +89,10 @@ protected $reglas,$reglasLogin;
         if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
         
-          // $hash = password_hash($this->request->getVar('password'),PASSWORD_DEFAULT);
+         $hash = password_hash($this->request->getVar('password'),PASSWORD_DEFAULT);
           $nombres = $this->request->getPost('nombres');
           $apellido = $this->request->getPost('primerApellido');
-        //  if (is_string($nombres)){  
+         if (is_string($nombres)){  
           $password = substr(bin2hex(random_bytes(4)), 0, 8);
           $nombreUsuario = strtolower(substr($nombres, 0, 3) . $apellido);;
           
@@ -130,9 +103,8 @@ protected $reglas,$reglasLogin;
          'email' => $this->request->getPost('email'),
          'celular' => $this->request->getPost('celular'),
          'usuario' => $nombreUsuario,
-         'password' => password_hash($password,PASSWORD_DEFAULT),
+         'password' => $hash,$password,
          'id_Empleado' => $this->request->getPost('id_Empleado'),
-         
          'estado'=> 1
         ]);
             return redirect()->to(base_url().'/usuarios');
@@ -145,8 +117,12 @@ protected $reglas,$reglasLogin;
             echo view('usuarios/nuevo',$datos);
             echo view('pie');
         }
-  //  }
-}
+       
+    
+    }
+        
+    }
+  
 
     public function editar($id)
     {
@@ -205,154 +181,165 @@ protected $reglas,$reglasLogin;
     }
     public function valida()
     {
-      
-       if($this->request->getMethod() =="post" && $this->validate($this->reglasLogin))
-        {   
-             $usuario = $this->request->getPost('usuario');
-             $password = $this->request->getPost('password');
-             $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
-             
-             if ($datosUsuario != null) 
-             {
-               
-                if (password_verify($password, $datosUsuario['password']))
-                 {
-                     $datosSession = [
-                    'id' => $datosUsuario['id'],
-                    'nombres' => $datosUsuario['nombres'],
-                    'primerApellido' => $datosUsuario['primerApellido'],
-                    'segundoApellido' => $datosUsuario['segundoApellido'],
-                    'email' => $datosUsuario['email'],
-                    'celular' => $datosUsuario['celular'],
-                    'usuario' => $datosUsuario['usuario'],
-                    'password' => $datosUsuario['password'],
-                    'id_Empleado' => $datosUsuario['id_Empleado'] ];
-        
-                    $sesion = session();
-                    $sesion->set($datosSession);
-                    return redirect()->to(base_url() . '/usuarios');
-                 }  else {
-                $data['error'] = "Las contraseñas no coinciden";
-                echo view('login', $data);
-                }
-                 } else {
-                   $data['error'] = "El usuario no existe";
-                   echo view('login', $data);
-                  } 
-                }  else {
-                 $data=['validation'=>$this->validator];
-                 echo view ('login',$data);
-                 }    
-                 
-                 
+        if($this->request->getMethod() =="post"){  
+            $usuario =$this->request->getPost('usuario');
+            $password =$this->request->getPost('password');
+            
+            $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
+                 if($datosUsuario != null)
+                {
+                    var_dump($usuario);
+                    var_dump($datosUsuario['password']);
+                     if(password_verify($password,$datosUsuario['password']))
+                        {
+                            $datosSession= [
+                           'id'=> $datosUsuario ['id'],
+                           'usuario'=> $datosUsuario ['usuario'],
+                           'id_Empleado'=> $datosUsuario ['id_Empleado']];
+                            $sesion =session();
+                            $sesion->set($datosSession);
+                            return redirect()->to(base_url(). '/');
+                        } else
+                           {
+                             $data['error']="las contraseñas no coinciden";
+                             echo view('login',$data);
+                            }
+                 } else
+                           {
+                             $data['error']="el  ususario no existe";
+                             echo view('login',$data);
+                           }
          
-        
-       
-              
      }
-        
+
+    }
+    public function logout() {
+        $session = session(); // Obtener la instancia de la sesión
+        $session->destroy(); // Eliminar toda la información de la sesión
+        return redirect()->to('login');
+    }
+    
+  
+   /* public function valida()
+        {
+          
+    
+                $usuario =$this->request->getPost('usuario');
+                $password =$this->request->getPost('password');
+                $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
+                     if($datosUsuario != null)
+                    {
+                         if(password_verify($password,$datosUsuario['password']))
+                            {
+                                $datosSession= [
+                               'id'=> $datosUsuario ['id'],
+                               'nombres'=> $datosUsuario ['nombres'],
+                               'primerApellido'=> $datosUsuario ['primerApellido'],
+                               'segundoApellido'=> $datosUsuario ['segundoApellido'],
+                               'email'=> $datosUsuario ['email'],
+                               'celular'=> $datosUsuario ['celular'],
+                               'usuario'=> $datosUsuario ['usuario'],
+                               'id_Empleado'=> $datosUsuario ['id_Empleado']];
+                                $sesion =session();
+                                $sesion->set($datosSession);
+                                return redirect()->to(base_url(). '/');
+                            } else
+                               {
+                                 $data['error']="las contraseñas no coinciden";
+                                 echo view('login'.$data);
+                                }
+                     } else
+                               {
+                                 $data['error']="el  ususario no existe";
+                                 echo view('login',$data);
+                               }
+             
+         } 
+        }*/
+    
      
-     public function logout()
-     {
-        $session = session();
-        $session->destroy();
-    return redirect()->to(base_url());   
-     }
-     public function enviar()
-     {
-
-      
-      /*$asunto=$this->request->getPost('asunto');
-      $mensaje=$this->request->getPost('mensaje');
-      $correo=$this->request->getPost('correo');
-      $email = \Config\Services::email();
-
-            $email->setFrom('escobar.diego.9494@gmail.com', 'diegoescobar');
-                $email->setTo($correo);
-
-
-                 $email->setSubject($asunto);
-                  $email->setMessage($mensaje);
-
-               if(! $email->send()) {
-                echo "no se envio nada";
-                echo $email->printDebugger([encabezado]);
-               }else{
-                echo 'enviado';
-               }*/
-                // Recoge los datos del formulario
-                
-        $usuario = $this->request->getPost('usuario');
-        $contrasena = $this->request->getPost('password');
-        $correo = $this->request->getPost('email');
-        // Configura la biblioteca de correo
-        $email = \Config\Services::email();
-        $email->setTo($correo);
-       $email->setFrom('escobar.diego.1091@gmail.com', 'diegoescobar');
-        $email->setSubject('credenciales de acceso');
-        $email->setMessage("usuario: $usuario\npassword: $contrasena");
-       
-      
-        // Intenta enviar el correo
-        if ($email->send()) {
-            // Correo enviado exitosamente
-            return redirect()->to('/productos'); // Redirige a una página de éxito
-        } else {
-            // Error al enviar el correo
-           // return redirect()->to('/categorias'); // Redirige a una página de fallo
-           echo $email ->printDebugger(['headers']);
-        }
-    }
-    public function cambia_pasword()
-    {
-        //$session = session();
-
-        $usuario = $this->usuarios->where('activo', 1)->first();
-        //$usuario = $this->usuarios->where('usuario', $session->id_usuario)->first();
-        $data = ['titulo' => 'Cambiar Cntraseña', 'usuario' => $usuario];
-
-        echo view('encabezado');
-        echo view('usuarios/cambia_pasword', $data);
-        echo view('pie');
-    }
-
-
-    public function actualiza_pasword()
-    {
-
-        $contrasena = 'password';
-        $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
-
-        if ($this->request->getPost() && $this->validate($this->reglasCambia)) {
-            $session = session();
-            $idUsuario = $session->id_usuario;
-
-            $this->usuarios->update($idUsuario, ['password' => $contrasenaEncriptada]);
-            //$encrypter = password_hash($this->request->getPost('password'),PASSWORD_DEFAULT);
-            $usuario = $this->usuarios->where('activo', 1)->first();
-            $data = ['titulo' => 'Cambiar Cntraseña', 'usuario' => $usuario,'validation'=>$this->validator];
-
-            echo view('encabezado');
-            echo view('usuarios/cambia_pasword', $data);
-            echo view('pie');
-
-            return redirect()->to(base_url() . '/usuarios');
-        } else {
-
-            $usuario = $this->usuarios->where('activo', 1)->first();
-            //$usuario = $this->usuarios->where('usuario', $session->id_usuario)->first();
-            $data = ['titulo' => 'Cambiar Contraseña', 'usuario' => $usuario, 'validation'=>$this->validator];
-
-            echo view('encabezado');
-            echo view('usuarios/cambia_pasword', $data);
-            echo view('pie');
-        }
-    }
-     
-    }
 
     
-          
+  /*  public function enviar()
+    {
+        if($this->request->getMethod() =="post"){  
+            $usuario =$this->request->getPost('usuario');
+            $password =$this->request->getPost('password');
+        // Cargar la librería de correo electrónico
+        $email = \Config\Services::email();
+    
+        // Configurar el asunto y el contenido del correo
+        $email->setSubject('Tus credenciales de acceso');
+        $mensaje = "Tu nombre de usuario es: $usuario<br>Tu contraseña es: $password";
+        $email->setMessage($mensaje);
+    
+        // Opcional: Configurar el remitente (from)
+        $email->setFrom('escobar.diego@gmail.com', 'diego');
+    
+        // Configurar los destinatarios (usuarios) como un arreglo de correos
+        $destinatarios = array();
+        foreach ($usuario as $usuarios) {
+            $destinatarios[] = $usuarios['email']; // Supongamos que el campo es 'correo'
+        }
+        $email->setTo($destinatarios);
+    
+        // Enviar el correo
+        if ($email->send()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+      }*/
+      public function enviarCredenciales()
+      {
+        if($this->request->getMethod() =="post"){ 
+          // Cargar la librería de correo electrónico
+          $nombreUsuario =$this->request->getPost('usuario');
+          $password =$this->request->getPost('password');
+          $correo=$this->request->getPost('email');
+          $asunto=$this->request->getPost('asunto');
+         
+       $email=\Config\Services::email();
+      
+
+       $email->setFrom('escobar.diego.1091@gmai.com', 'diego');
+       $email->setTo($correo);
+
+      /* $email->setCC('another@another-example.com');
+       $email->setBCC('them@their-example.com');*/
+       
+       $email->setSubject( $asunto );
+       $email->setMessage ("Tu nombre de usuario es: $nombreUsuario<br>Tu contraseña es: $password");
+       
+       $email->send();
+  
+       return redirect()->to(base_url().'usuarios'); 
+      }
+    }
+    
+       
+       public function email()
+       {
+           if($this->request->getMethod() =="post" )
+           {
+             
+               $this->usuarios->save(['usuarios' => $this->request->getPost('id')]);
+               return redirect()->to(base_url().'usuarios');
+           }else{
+   
+               $datos = ['titulo' => 'enviar correo','validation' =>$this->validator];
+   
+               echo view('encabezado');
+               echo view('usuarios/email',$datos);
+               echo view('pie');
+           }
+         
+           
+       }
+}
+    
+               
 
 
 
