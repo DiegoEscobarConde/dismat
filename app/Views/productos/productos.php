@@ -12,8 +12,8 @@
 
    <!-- DataTales Example -->
 
-   <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"> 
+   <div class="table">
+            <table class="table table-sm" id="dataTable" width="100%" cellspacing="0" text="center"> 
                 <thead>
                     <tr>
                         <th>id</th>
@@ -21,7 +21,8 @@
                         <th>descripcion</th>
                         <th>cantidad</th>
                         <th>precio</th>
-                        <th>cantidad</th>
+                        <th>stock</th>
+                        <th>categoria</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -37,9 +38,11 @@
                           <td><?php echo $dato['precio_venta']?></td>
                           <td><?php echo $dato['precio_compra']?></td>
                           <td><?php echo $dato['stock']?></td>
+                        
+
                           <td>   <a href="<?php echo base_url(). '/productos/editar/'.$dato['id_Producto'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                        
-                          <td><a href="#" data-href="<?php echo base_url(). '/productos/eliminar/'.$dato['id_Producto'];?>"  class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><a href="<?php echo base_url(). '/productos/eliminar/'.$dato['id_Producto'];?>"  class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                        
                        
                         </tr>

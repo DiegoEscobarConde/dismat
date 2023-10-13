@@ -57,25 +57,19 @@
               autofocus require/>
           </div>  
      </div>
-     <div class="row">
-          <div class=" col-12 col-sm-6">
-              <label for="">INVENTARIO</label>
-              <select class ="form-control" id="inventario" name="inventario">
-               <option >1</option>
-              </select>
-          </div>  
-     </div>
-</div>
+   
 <div class=" form-group">
      <div class="row">
           <div class=" col-12 col-sm-6">
-              <label for="">CATEGORIA</label>
-              <select class="form-control" id="categoria" name="categoria" required >
-               <option value=""> Seleccionar categoria
-                    <option >a</option>
-               </option>
-               
-              </select>
+          <label for="exampleInputEmail1">categorias</label>
+                    <select class="form-control" id="id_categoria" name="id_categoria">
+                        <option value="" ></option>
+                        <?php foreach($categorias as $categoria){ ?>
+                            <option value="<?php echo $categoria['id_categoria']; ?>">
+                            <?php echo $categoria['nombre']; ?></option>
+                        <?php }?>
+
+                    </select>
           </div>  
      </div>
 </div>

@@ -40,28 +40,30 @@
                    <input class ="form-control" id="tock" name="stock" value="<?php echo $datos['stock'];?>"
                    autofocus require/>
               </div>
-              <div class=" col-12 col-sm-6">
-                   <label for="">inventario</label>
-                   <input class ="form-control" id="inventario" name="inventario" value="<?php echo $datos['inventario'];?>"
-                   autofocus require/>
-              </div>
+        
         </div>
      </div>
      <div class=" form-group">
-         <div class="row">
-              <div class=" col-12 col-sm-6">
-                   <label for="">categoria</label>
-                   <input class ="form-control" id="categoria" name="categoria" value="categoria"
-                   autofocus require/>
-              </div>
-            
-        </div>
+     <div class=" col-12 col-sm-6">
+     <div class="row">
+              <label for="exampleInputEmail1">categorias</label>
+                    <select class="form-control" id="id_categoria" name="id_categoria">
+                        <option value="" ></option>
+                        <?php foreach($categorias as $categoria){ ?>
+                            <option value="<?php echo $categoria['id_categoria'];?>">
+                            <?php echo $categoria['nombre'];?></option>
+                        <?php }?>
+                     </select>
      </div>
-
+     </div>
+     </div>
+     
 
         <a href="<?php echo base_url(); ?>/productos" class="btn btn-primary">Regresar</a>
         <button type="submit" class="btn btn-success">Guardar</button>
  
 </div>
+
 </form>
+
 

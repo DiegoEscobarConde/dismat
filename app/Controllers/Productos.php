@@ -44,7 +44,7 @@ class Productos extends BaseController
      
       $categorias = $this->categorias->where('estado',1)->findAll();
 
-      $data = ['titulo' => 'Agregar Producto','productos','categorias'>$categorias];
+      $data = ['titulo' => 'Agregar Producto','productos','categorias'=>$categorias];
 
        echo view('encabezado');
        echo view('productos/nuevo',$data);
@@ -62,8 +62,7 @@ class Productos extends BaseController
             'precio_compra' => $this->request->getPost('precio_compra'),
             'cantidad' => $this->request->getPost('cantidad'),
             'stock' => $this->request->getPost('stock'),
-            'inventario' => $this->request->getPost('inventario'),
-            //'id_categoria' => $this->request->getPost('id_categoria'),
+            'id_categoria' => $this->request->getPost('id_categoria'),
         ]);
             return redirect()->to(base_url().'productos');
         }else{
@@ -85,8 +84,9 @@ class Productos extends BaseController
     public function editar($id)
     {
         $productos = $this->productos->where('id_Producto',$id)->first();
+        $categorias = $this->categorias->where('estado',1)->findAll();
    
-      $dato = ['titulo' => 'Editar Producto','datos'=> $productos];
+      $dato = ['titulo' => 'Editar Producto','datos'=> $productos,'categorias'=>$categorias,'validation' =>$this->validator];
 
        echo view('encabezado');
        echo view('productos/editar',$dato);
@@ -97,7 +97,18 @@ class Productos extends BaseController
     {
    
         $this->productos->update($this->request->getPost('id_Producto'),
-        ['nombre' => $this->request->getPost('nombre')]);
+        ['codigo' => $this->request->getPost('codigo'),
+        'descripcion' => $this->request->getPost('descripcion'),
+        'precio_venta' => $this->request->getPost('precio_venta'),
+        'precio_compra' => $this->request->getPost('precio_compra'),
+        'cantidad' => $this->request->getPost('cantidad'),
+        'stock' => $this->request->getPost('stock'),
+        'id_categoria' => $this->request->getPost('id_categoria'),
+    ]);
+
+    
+    
+   
         return redirect()->to(base_url().'/productos');
     }
     public function eliminar($id)
@@ -122,5 +133,22 @@ class Productos extends BaseController
         $this->productos->update($id,['estado' => 1]);
         return redirect()->to(base_url().'/productos');
     }
+    public function autocompleteData1(){
+        $returnData = array();
+        $valor =$this->request->getGet('term');
+        $productos =$this->productos->like('codigo',$valor)->where('estado',1)->findAll();
+       
+        if(!empty($productos)){
+            foreach($productos as $row){
+                $data['id_Producto']=$row['id_Producto'];
+                $data['value']=$row['codigo'];
+                $data['label']=$row['descripcion'];
+               
+                array_push($returnData,$data);
+            }
+        }
+        echo json_encode($returnData);
+    }
+
 }
 

@@ -7,7 +7,7 @@
      <?php echo $validation->listErrors();?>
      </div>
  <?php }?>  
-<form method="POST" action="<?php echo base_url(); ?>/usuarios/actualizar" autocomplete="on">
+<form method="POST" action="<?php echo base_url(); ?>/usuarios/actualizar" autocomplete="off">
 <input type="hidden" value="<?php echo $datos['id'];?>" name="id"/>
 <div class=" form-group">
      <div class="row">
@@ -52,10 +52,10 @@
     
     
 </div> 
-<div class="row">
+
 <div class=" form-group">
      <div class=" col-12 col-sm-6">
-             
+     <div class="row">
               <label for="exampleInputEmail1">Roles</label>
                     <select class="form-control" id="id_Empleado" name="id_Empleado">
                         <option value="" >Seleccionar rol</option>
@@ -69,7 +69,7 @@
     
  </div>
  
-
+ </div>
         <button type="submit" class="btn btn-success">Guardar</button>
         <a href="<?php echo base_url(); ?>/usuarios" class="btn btn-primary">Regresar</a>
      

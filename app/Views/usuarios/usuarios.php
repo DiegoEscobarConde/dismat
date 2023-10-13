@@ -12,18 +12,20 @@
 
    <!-- DataTales Example -->
 
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <div class="table">
+            <table class="table table-sm" id="dataTable" width="100%" cellspacing="0">
                
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>Nombre Completo</th>
+                    
+                        <th  style="width:10px">id</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
                         <th>email</th>
                         <th>celular</th>
                         <th>usuario</th>
-                         <th>contraseña</th>
-                       
+                        <th>rol</th>
+                         <th>enviar</th>
                         <th>editar</th>
                         <th>eliminar</th>
                     </tr>
@@ -35,15 +37,17 @@
                     <?php foreach($datos as $dato){?>
                        <tr>
                           <td><?php echo $dato['id']?></td>
-                          <td><?php echo $dato['nombres']." ".$dato['primerApellido']." ".$dato['segundoApellido']?>
-                          </td>
+                          <td><?php echo $dato['nombres']?></td>
+                          <td><?php echo $dato['primerApellido']." ".$dato['segundoApellido']?> </td>
                          
                           <td><?php echo $dato['email']?></td>
                           <td><?php echo $dato['celular']?></td>
                           <td><?php echo $dato['usuario']?></td>
-                          <td><?php echo $dato['password']?></td>
                           
                          
+                          
+                          <td>   <a href="<?php echo base_url(). '/usuarios/enviar/';?>"  class="btn btn-success"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                       
                           <td>   <a href="<?php echo base_url(). '/usuarios/editar/'.$dato['id'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                        
                           <td><a href="<?php echo base_url(). '/usuarios/eliminar/'.$dato['id'];?>" title="Eliminar Registro" class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>

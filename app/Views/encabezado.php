@@ -1,5 +1,6 @@
 
-<?php $user_session =session()?>
+<?php 
+$user_session =session()?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,28 +18,43 @@
     <link
         href="<?php echo base_url() ;?>/css/fonts.googleapis.css"
         rel="stylesheet">
+        <link href="<?php echo base_url() ;?>/js/jquery-ui-1.13.2.custom/jquery-ui.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="<?php echo base_url() ;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
     <link href="<?php echo base_url() ;?>/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ;?>/js/jquery-ui-1.13.2.custom/jquery-ui.min.css" rel="stylesheet">
+   
 
     <!-- Custom styles for this page -->
     <link href="<?php echo base_url() ;?>/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <script src="<?php echo base_url() ;?>js/all.min.js"></script>
+    
+    <!-- <script src="<?php echo base_url() ;?>/js/jquery-3.7.1.min.js"></script>-->
+    <script src="<?php echo base_url() ;?>/js/jquery.min.js"></script>
+    <script src="<?php echo base_url() ;?>/js/all.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    
+    
+   
+   
 
 </head>
 
 
-<body id="page-top">
+<body id="page-top"  >
 
     <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper"   >
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #0000FF; " >
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ;?>/">
-                <div class="sidebar-brand-icon rotate-n-15">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ;?>">
+                <div class="sidebar-brand-icon rotate-n-15"  style="background-color: #0000FF;">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
               
@@ -46,7 +62,7 @@
             </a>
 
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <hr class="sidebar-divider my-0" style="background-color: #0000FF;" >
 
        
             <li class="nav-item">
@@ -61,6 +77,22 @@
                         <a class="collapse-item" href="<?php echo base_url() ;?>productos">Productos</a>
                     </div>
                 </div>
+            </li>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url() ;?>clientes" data-toggle="#" data-target="#"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span  >CLIENTES</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url() ;?>ventas/ventas" data-toggle="#" data-target="#"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span  >VENTAS</span>
+                </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
@@ -104,10 +136,11 @@
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
-            <div id="content">
+            <div id="content-wrapper">
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <form class="form-inline">
@@ -115,15 +148,17 @@
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
+  
                    
 
                        
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <?php echo $user_session->nombre;?>>
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">ADMINISTRACION</span>
+                        
+                        <ul class="navbar-nav ml-auo ml-md-0 mr-md-3 my-2 my-md-0  ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown" href="<?php echo $user_session->nombre;?>" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -132,26 +167,22 @@
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    perfil
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                   configuracion
                                 </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                <a 
+                                 class="dropdown-item" href="<?php echo base_url(); ?>/usuarios/logout" > <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar Session
                                 </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    cerrar sesion
-                                </a>
-                            </div>
-                        </li>
-
+                      
+                        
+</li>
                     </ul>
+                    </div>
+                    
 
-                </nav>
+            
            
     

@@ -23,7 +23,7 @@
 </div>
 <div class=" form-group">
      <div class="row">
-     <div class=" col-12 col-sm-6">
+          <div class=" col-12 col-sm-6">
               <label for="">Apellido Paterno</label>
               <input class ="form-control" id="primerApellido" name="primerApellido" type="text"
               value="<?php echo set_value('primerApellido')?>"
@@ -33,7 +33,7 @@
               <label for="">Apellido Materno</label>
               <input class ="form-control" id="segundoApellido" name="segundoApellido" type="text"
               value="<?php echo set_value('segundoApellido')?>"
-              autofocus require/>
+              autofocus/>
           </div>  
           <div class=" col-12 col-sm-6">
               <label for="">Email</label>
@@ -47,6 +47,7 @@
               value="<?php echo set_value('celular')?>"
               autofocus require/>
           </div>  
+     </div>
 </div>
 <div class=" form-group">
     
