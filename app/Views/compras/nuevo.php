@@ -68,11 +68,15 @@
                <tbody></tbody>
           </table>
       </div>
-      <div class="row">
+       <div class="row">
           <div class="col-12 col-sm-6 offset-md-6">
-               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
+              <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
                <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;"/>
+              
+              
                <button type="button" id="completar_compra" class="btn btn-success">comprar</button>
+             
+						
           </div>
       </div>
 </form>
@@ -108,7 +112,7 @@ function buscarProducto(e, tagCodigo, codigo) {
                                    $("#descripcion").val(resultado.datos.descripcion);
                                    $("#cantidad").val(1);
                                    $("#precio_compraU").val(resultado.datos.precio_compraU);
-                                   $("#total").val(resultado.datos.precio_compraU);
+                                   $("#total").val(resultado.datos.total);
                                    $("#cantidad").focus();
                               } else {
                                    $("#id_Producto").val('');

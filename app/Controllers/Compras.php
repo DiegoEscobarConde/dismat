@@ -4,6 +4,7 @@ use App\Controllers\BaseController;
 use App\Models\ComprasModel;
 use App\Models\TemporalModel;
 use App\Models\ProductosModel;
+use app\Models\DetalleCompraModel;
 
 class Compras extends BaseController
 {
@@ -13,6 +14,7 @@ class Compras extends BaseController
     public function __construct()
     {
         $this->compras = new ComprasModel();
+        
     
         helper(['form']);
        

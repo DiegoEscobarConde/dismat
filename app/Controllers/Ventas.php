@@ -18,8 +18,6 @@ class Ventas extends BaseController
     public function __construct()
     {
         $this->ventas = new VentasModel();
-  
-        
         $this->productos = new ProductosModel();
         $this->detalle_Venta = new DetalleVentaModel();
         $this->temporal= new TemporalModel();
@@ -31,7 +29,7 @@ class Ventas extends BaseController
 
     
 
-     public function index($estado = 1)
+   /*  public function index($estado = 1)
     {
         $ventas = $this->ventas->where('estado',$estado)->findAll();
         $data = ['titulo' => 'Nueva Venta', 'datos' => $ventas];
@@ -40,7 +38,7 @@ class Ventas extends BaseController
      echo view('ventas/ventas',$data);
      echo view('pie');
 
-    }
+    }*/
   
      public function ventas()
     {
@@ -52,40 +50,6 @@ class Ventas extends BaseController
        echo view('ventas/ventas',$data);
        echo view('pie');
 
-    }
-  
-  
-
-    public function editar($id)
-    {
-        $ventas = $this->ventas->where('id_cliente',$id)->first();
-   
-      $dato = ['titulo' => 'Editar Cliente','datos'=> $ventas];
-
-       echo view('encabezado');
-       echo view('ventas/editar',$dato);
-       echo view('pie');
-
-    }
-    public function actualizar()
-    {
-   
-        $this->ventas->update($this->request->getPost('id_cliente'),
-        ['nombre' => $this->request->getPost('nombre')]);
-        return redirect()->to(base_url().'/ventas');
-    }
-    public function eliminar($id)
-    {
-   
-        $this->ventas->update($id,['estado' => 0]);
-        return redirect()->to(base_url().'/ventas');
-    }
-   
-    public function reingresar($id)
-    {
-   
-        $this->ventas->update($id,['estado' => 1]);
-        return redirect()->to(base_url().'/ventas');
     }
    public function guarda()
     {

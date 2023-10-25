@@ -4,7 +4,7 @@
     
 <?php $idVentaTmp = uniqid();?>
 
-<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php base_url(); ?>/ventas/ventas" autocomplete="off">
+<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php base_url(); ?>/ventas/guarda" autocomplete="off">
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
       <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
@@ -157,10 +157,9 @@
    <div class="form-group">
                         <div class="row">
                             <div class="col-12 col-sm-4">
-                                
+                                <input type="hidden" id="id_Producto" name="id_Producto">
                                 <label>codigo</label>
-                                <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_Producto" name="id_Producto" >
-                                                    <input display= "flex" align-items=" center" type="text" class="form-control ui-autocomplete-input  " id="codigo" name="codigo" placeholder=""  onkeyup= "<?php echo $idVentaTmp;?>" autocomplete="off" onkeyup=""/>
+                              <input  type="text" class="form-control" id="codigo" name="codigo" placeholder=""  onkeyup= "agregarProducto(event,this.value,1, <?php echo $idVentaTmp;?>);" autofocus />
                             
                             <div class="col-sm-2">
                                <label for="codigo" id="resultado_error" style="color: red;" ></label>
@@ -169,7 +168,7 @@
                                                                                            
                             <div class=" col-12 col-sm-4">
               <label for=""><br>&nbsp;</label>
-             <button id="agregar_producto" name="agregar_producto" type="button"
+              <button id="agregar_producto" name="agregar_producto" type="button"
              class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
           </div>                            
                         </div>
@@ -181,27 +180,22 @@
   <div class="card-body">
   <div class="row">
           <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
-               <thead class="thead-dark">
+          <thead class="thead-dark">
+                  <!--  <th>#</th>
+                    <th>codigo</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th>cantidad</th>
+                    <th>total</th>
+                    <th width="1%"></th>-->
                     <tr>
-                        <th>codigo</th>
-                        <th>descripcion</th>
-                        <th>cantidad</th>
-                        
-                        <th>precio unitario</th>
-                        <th>total</th>
-                        <th width="1%"></th>
-                    </tr>
-                    <tr>
-                                            <td id="codigo"></td>
-                                            <td  id="descripcion"></td>
-                                            <td><input type="text" name="cantidad" id="cantidad"value="0" min="1" disabled></td>
-                                          
-                                            <td id="precio_ventaU" class="textright">0.00</td>
-                                            <td id="total" class="txtright">0.00</td>
-                                            
-                                           
-                                        </tr>
-                </thead>         
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Total</th>
+        </tr>
+               </thead>       
                 <tbody></tbody>
             </table>
        </div>
@@ -250,31 +244,63 @@
         $("#clientes").val(ui.item.value);
     }
 });
-$("#modal").ajax({
-    type: 'POST',
-    url: 'clientes/insertar', // Reemplaza 'URL_DEL_CONTROLADOR' con la URL real
-    data: datos, // Tus datos para insertar el cliente
-    dataType: 'json',
-    success: function (data) {
-        // Actualiza los campos "Cliente" y "NIT" con la información del cliente recién registrado
-        $('#resultadoLabel').val(data.nombre + ' ' + data.primerApellido);
-        $('#resultadoLabel2, #nit').val('NIT: ' + data.nit);
+
+// Evento que se dispara cuando se presiona Enter en el campo de código
+$("#codigo").on("keypress", function (e) {
+    if (e.which === 13) { // Verifica si se presionó Enter
+        var codigo = $(this).val(); // Obtén el código del producto
+
+        // Realiza una solicitud AJAX para obtener los detalles del producto
+        $.ajax({
+            url: "<?php echo base_url(); ?>/productos/autocompleteData1", // Reemplaza con la URL correcta
+            method: 'POST',
+            data: { codigo: codigo }, // Envía el código como dato
+            success: function (response) {
+                // Parsea la respuesta JSON
+                var producto = JSON.parse(response);
+
+                // Agrega una nueva fila a la tabla con los detalles del producto
+                var newRow = "<tr>" +
+                    "<td>" + producto.codigo + "</td>" +
+                    "<td>" + producto.descripcion + "</td>" +
+                    "<td><input type='text' name='cantidad' value='1' min='1'></td>" +
+                    "<td>" + producto.precio_unitario + "</td>" +
+                    "<td>" + producto.precio_unitario + "</td>" +
+                    "</tr>";
+
+                // Agrega la nueva fila a la tabla
+                $("#tablaProductos tbody").append(newRow);
+            }
+        });
     }
 });
 
-    $("#codigo").autocomplete({
+
+   /* $("#codigo").autocomplete({
         source: "<?php echo base_url(); ?>/productos/autocompleteData1",
         minLength : 2,
-        select:function (event,ui){
+        select: function (event,ui){
             event.preventDefault();
             var codigo = ui.item.value;
             $("#id_Producto").val(ui.item.id);
             $("#codigo").val(ui.item.value);
+            setTimeout(
+                function(){
+                    e=jQuery.Event("keydown");
+                    e.which=13;
+                    agregarProducto(e,ui.item.id,1,' <?php echo $idVentaTmp; ?>');
+                }
+            )
            
             }
   
-           });//ojo
-           function buscarProducto(e, tagCodigo, codigo) {
+           });*/
+           
+
+
+           
+           //ojo
+          function buscarProducto(e, tagCodigo, codigo) {
      var enterkey = 13;
      if (codigo != '') {
           if (e.which == enterkey) {
@@ -309,10 +335,13 @@ $("#modal").ajax({
 }
 
 
-function agregarProducto(id_Producto, cantidad, id_venta) {
+function agregarProducto(e,id_Producto, cantidad, id_venta) {
+    let enterKey = 13;
+    if(codigo!=''){
+        if(e.which == enterkey){
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_venta ,
+               url: '<?php echo base_url(); ?>/temporal/insertar/ '+ id_Producto + "/"+ cantidad + "/" + id_venta ,
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto
@@ -343,203 +372,26 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
           });
      }
 }
+}
+}
 
    //////////////////////////////////////////////////
    //nueva forma//////
-   $('#forax').submit(function(e) {
-                e.preventDefault();
-                var form = $(this);
-                var message = $('#message');
 
-                $.ajax({
-                    url: '<?php echo base_url(); ?>/clientes/insertar', // Ruta para la función de registro
-                    type: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(response) {
-                        if (response.message === 'Registro exitoso') {
-                            message.html('<p class="success">Registro exitoso</p>');
-                            // Limpia el formulario o realiza otras acciones necesarias
-                            form[0].reset();
-                            // Recarga la lista de contactos
-                            //loadContacts();
-                        } else {
-                            message.html('<p class="error">Error al registrar</p>');
-                        }
-                    }
-                });
-            });
+   $(document).ready(function() {
+		$(window).keydown(function(event) {
+			if (event.keyCode == 13) {
+				event.preventDefault();
+				return false;
+			}
+		});
+	});
 
-            //CÓDIGO DE BÚSQUEDA DE PRODUCTO MEDIANTE LA ETIQUETE INPUT
-            $('#inputBuscarProducto').on('input', function() {
-
-                var inputBuscarProducto = $(this).val();
-
-                // Realizar la búsqueda mediante AJAX
-
-                if ($('#inputBuscarProducto').val() === "") {
-                    // Limpia la tabla
-                    $('#tablaProductos tbody').empty();
-                } else {
-                    $.ajax({
-                        url: '<?php echo base_url(); ?>/productos/buscar',
-                        type: 'POST',
-                        dataType: 'json',
-                        data: {
-                            nombre_producto: inputBuscarProducto
-                        },
-                        success: function(result) {
-                            // Limpiar la tabla de resultados
-                            $('#tablaProductos tbody').empty();
-
-                            // Mostrar los resultados en la tabla
-                            $.each(result, function(index, producto) {
-                                var row = '<tr>' +
-                                    '<td>' + producto.id + '</td>' +
-                                    '<td>' + producto.nombre + '</td>' +
-                                    '<td>' + producto.precioBase + '</td>' +
-                                    '<td><button class="agregar-producto btn btn-primary" data-id="' + producto.id + '">Agregar</button></td>' +
-                                    '</tr>';
-                                $('#tablaProductos tbody').append(row);
-                            });
-                        }
-
-                    });
-                }
-
-            });
-
-            $('#tablaProductos').on('click', '.agregar-producto', function() {
-                var productId = $(this).data('id');
-                var productName = $(this).closest('tr').find('td:nth-child(2)').text();
-                var productPrice = parseFloat($(this).closest('tr').find('td:nth-child(3)').text());
-
-                // Agregar a la tabla de detalle de venta
-                var row = '<tr data-id="' + productId + '">' +
-                    '<td id="tProducto">' + productId + '</td>' +
-                    '<td>' + productName + '</td>' +
-                    '<td>' + productPrice + '</td>' +
-                    '<td contenteditable="true"  id="tCantidad">1</td>' +
-                    '<td id="tPrecio">' + productPrice + '</td>' +
-                    '<td><button class="eliminar-producto btn btn-primary">Eliminar</button></td>' +
-                    '</tr>';
-
-                $('#tablaDetalleVenta tbody').append(row);
-                calcularTotal();
-
-
-            });
-
-            function calcularTotal() {
-                var total = 0;
-                $('#tablaDetalleVenta tbody tr').each(function() {
-                    var importe = parseFloat($(this).find('#tPrecio').text());
-                    total += importe;
-                });
-
-                $('#totalVenta').text(total.toFixed(2));
-
-            };
-
-            function calcularImporte() {
-                var totalImporte = 0;
-                $('#tablaDetalleVenta tbody tr').each(function() {
-                    var cantidad = parseFloat($(this).find('#tCantidad').text());
-                    var precioUnitario = parseFloat($(this).find('#tPrecio').text());
-                    totalImporte += cantidad * precioUnitario;
-                });
-
-                // Actualizar el elemento HTML con el total calculado
-                $('#tPrecio').text(totalImporte.toFixed(2));
-
-            }
-
-            // Al cambiar la cantidad en la tabla de detalle de venta
-            $('#tablaDetalleVenta').on('blur', '#tCantidad', function() {
-                var cantidad = parseInt($(this).text());
-                var importe = cantidad * parseFloat($(this).closest('tr').find('#tPrecio').text());
-
-                $(this).closest('tr').find('#tPrecio').text(importe.toFixed(2));
-                calcularTotal();
-
-            });
-
-
-            // Al hacer clic en el botón "Eliminar" en la tabla de detalle de venta
-            $('#tablaDetalleVenta').on('click', '.eliminar-producto', function() {
-                $(this).closest('tr').remove();
-                //calcularTotal()
-                calcularTotal();
-
-            });
-
-            ///////////////////////////////////////////////////
-            // FORMULARIO ////////////////////////////////////////////////////
-
-            $('#formularioVenta').on('submit', function(e) {
-                valorCliente();
-                e.preventDefault();
-                var datosArray = [];
-
-                function valorCliente() {
-                    // Iterar sobre las filas de la tabla
-                    $('#tablaClientes tbody tr').each(function() {
-                        valorCliente.cliente = $(this).find('td:eq(0)').text();
-                    });
-                }
-
-                function valorTotal() {
-                    // Iterar sobre las filas de la tabla
-                    $('#tablaClientes tbody tr').each(function() {
-                        valorCliente.cliente = $(this).find('td:eq(0)').text();
-                    });
-                }
-
-                $('#tablaDetalleVenta tbody tr').each(function() {
-                    var filaDatos = {
-                        'idProductoVenta': $(this).find('td:eq(0)').text(),
-                        'precio': $(this).find('td:eq(2)').text(),
-                        'cantidad': $(this).find('td:eq(3)').text(),
-                        'importe': $(this).find('td:eq(4)').text()
-                        // Agregar más columnas según sea necesario
-                    };
-
-                    datosArray.push(filaDatos);
-                });
-
-                console.log(datosArray);
-                console.log(valorCliente.cliente);
-
-                // Realiza la solicitud Ajax para agregar los productos al controlador
-                $.ajax({
-                    url: '<?php echo base_url(); ?>/ventas/transaccion',
-                    type: 'POST',
-                    dataType: 'json',
-                    data: {
-                        idProducto: datosArray,
-                        idCliente: valorCliente.cliente,
-                        total: $('#totalVenta').text()
-                    },
-                    success: function(response) {
-                        console.log("Respuesta del servidor:", response);
-
-                        if (response.message) {
-                            alert('TRANSACCIÓN COMPLETADA');
-                        } else {
-                            alert('NO HAY PRODUCTOS');
-                        }
-                    },
-
-                });
-            });
-
-        
-
-
- 
-  
-
-
+	$(document).ready(function() {
+		$('#modalito').on('hidden.bs.modal', function(e) {
+			$('#codigo').focus();
+		})
+	});
 
 	
             

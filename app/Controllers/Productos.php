@@ -147,6 +147,7 @@ class Productos extends BaseController
         }
         echo json_encode($returnData);
     }
+  
     public function buscarPorCodigo($codigo){
         $this ->productos->select('*');
         $this ->productos->where('codigo',$codigo);

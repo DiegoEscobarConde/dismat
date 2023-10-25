@@ -44,7 +44,7 @@ class Temporal extends BaseController
             }
             
          $res['datos']=$this->cargarProductos($id_compra);
-         $res['total']=number_format($this->totalProductos($id_compra),2,'-',',');
+         $res['total']=$this->totalProductos($id_compra);
           $res['error']=$error;
           echo json_encode($res);
        
