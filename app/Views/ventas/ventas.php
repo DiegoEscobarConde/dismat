@@ -344,7 +344,196 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
      }
 }
 
-   
+   //////////////////////////////////////////////////
+   //nueva forma//////
+   $('#forax').submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var message = $('#message');
+
+                $.ajax({
+                    url: '<?php echo base_url(); ?>/clientes/insertar', // Ruta para la función de registro
+                    type: 'POST',
+                    data: form.serialize(),
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.message === 'Registro exitoso') {
+                            message.html('<p class="success">Registro exitoso</p>');
+                            // Limpia el formulario o realiza otras acciones necesarias
+                            form[0].reset();
+                            // Recarga la lista de contactos
+                            //loadContacts();
+                        } else {
+                            message.html('<p class="error">Error al registrar</p>');
+                        }
+                    }
+                });
+            });
+
+            //CÓDIGO DE BÚSQUEDA DE PRODUCTO MEDIANTE LA ETIQUETE INPUT
+            $('#inputBuscarProducto').on('input', function() {
+
+                var inputBuscarProducto = $(this).val();
+
+                // Realizar la búsqueda mediante AJAX
+
+                if ($('#inputBuscarProducto').val() === "") {
+                    // Limpia la tabla
+                    $('#tablaProductos tbody').empty();
+                } else {
+                    $.ajax({
+                        url: '<?php echo base_url(); ?>/productos/buscar',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            nombre_producto: inputBuscarProducto
+                        },
+                        success: function(result) {
+                            // Limpiar la tabla de resultados
+                            $('#tablaProductos tbody').empty();
+
+                            // Mostrar los resultados en la tabla
+                            $.each(result, function(index, producto) {
+                                var row = '<tr>' +
+                                    '<td>' + producto.id + '</td>' +
+                                    '<td>' + producto.nombre + '</td>' +
+                                    '<td>' + producto.precioBase + '</td>' +
+                                    '<td><button class="agregar-producto btn btn-primary" data-id="' + producto.id + '">Agregar</button></td>' +
+                                    '</tr>';
+                                $('#tablaProductos tbody').append(row);
+                            });
+                        }
+
+                    });
+                }
+
+            });
+
+            $('#tablaProductos').on('click', '.agregar-producto', function() {
+                var productId = $(this).data('id');
+                var productName = $(this).closest('tr').find('td:nth-child(2)').text();
+                var productPrice = parseFloat($(this).closest('tr').find('td:nth-child(3)').text());
+
+                // Agregar a la tabla de detalle de venta
+                var row = '<tr data-id="' + productId + '">' +
+                    '<td id="tProducto">' + productId + '</td>' +
+                    '<td>' + productName + '</td>' +
+                    '<td>' + productPrice + '</td>' +
+                    '<td contenteditable="true"  id="tCantidad">1</td>' +
+                    '<td id="tPrecio">' + productPrice + '</td>' +
+                    '<td><button class="eliminar-producto btn btn-primary">Eliminar</button></td>' +
+                    '</tr>';
+
+                $('#tablaDetalleVenta tbody').append(row);
+                calcularTotal();
+
+
+            });
+
+            function calcularTotal() {
+                var total = 0;
+                $('#tablaDetalleVenta tbody tr').each(function() {
+                    var importe = parseFloat($(this).find('#tPrecio').text());
+                    total += importe;
+                });
+
+                $('#totalVenta').text(total.toFixed(2));
+
+            };
+
+            function calcularImporte() {
+                var totalImporte = 0;
+                $('#tablaDetalleVenta tbody tr').each(function() {
+                    var cantidad = parseFloat($(this).find('#tCantidad').text());
+                    var precioUnitario = parseFloat($(this).find('#tPrecio').text());
+                    totalImporte += cantidad * precioUnitario;
+                });
+
+                // Actualizar el elemento HTML con el total calculado
+                $('#tPrecio').text(totalImporte.toFixed(2));
+
+            }
+
+            // Al cambiar la cantidad en la tabla de detalle de venta
+            $('#tablaDetalleVenta').on('blur', '#tCantidad', function() {
+                var cantidad = parseInt($(this).text());
+                var importe = cantidad * parseFloat($(this).closest('tr').find('#tPrecio').text());
+
+                $(this).closest('tr').find('#tPrecio').text(importe.toFixed(2));
+                calcularTotal();
+
+            });
+
+
+            // Al hacer clic en el botón "Eliminar" en la tabla de detalle de venta
+            $('#tablaDetalleVenta').on('click', '.eliminar-producto', function() {
+                $(this).closest('tr').remove();
+                //calcularTotal()
+                calcularTotal();
+
+            });
+
+            ///////////////////////////////////////////////////
+            // FORMULARIO ////////////////////////////////////////////////////
+
+            $('#formularioVenta').on('submit', function(e) {
+                valorCliente();
+                e.preventDefault();
+                var datosArray = [];
+
+                function valorCliente() {
+                    // Iterar sobre las filas de la tabla
+                    $('#tablaClientes tbody tr').each(function() {
+                        valorCliente.cliente = $(this).find('td:eq(0)').text();
+                    });
+                }
+
+                function valorTotal() {
+                    // Iterar sobre las filas de la tabla
+                    $('#tablaClientes tbody tr').each(function() {
+                        valorCliente.cliente = $(this).find('td:eq(0)').text();
+                    });
+                }
+
+                $('#tablaDetalleVenta tbody tr').each(function() {
+                    var filaDatos = {
+                        'idProductoVenta': $(this).find('td:eq(0)').text(),
+                        'precio': $(this).find('td:eq(2)').text(),
+                        'cantidad': $(this).find('td:eq(3)').text(),
+                        'importe': $(this).find('td:eq(4)').text()
+                        // Agregar más columnas según sea necesario
+                    };
+
+                    datosArray.push(filaDatos);
+                });
+
+                console.log(datosArray);
+                console.log(valorCliente.cliente);
+
+                // Realiza la solicitud Ajax para agregar los productos al controlador
+                $.ajax({
+                    url: '<?php echo base_url(); ?>/ventas/transaccion',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        idProducto: datosArray,
+                        idCliente: valorCliente.cliente,
+                        total: $('#totalVenta').text()
+                    },
+                    success: function(response) {
+                        console.log("Respuesta del servidor:", response);
+
+                        if (response.message) {
+                            alert('TRANSACCIÓN COMPLETADA');
+                        } else {
+                            alert('NO HAY PRODUCTOS');
+                        }
+                    },
+
+                });
+            });
+
+        
 
 
  

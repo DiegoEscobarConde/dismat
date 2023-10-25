@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class DetalleVentaModel extends Model
 {
     protected $table      = 'detalleventa';
-    protected $primaryKey = 'id_Venta';
+    protected $primaryKey = 'id_detalleVenta';
 
     protected $useAutoIncrement = true;
 
@@ -19,7 +19,7 @@ class DetalleVentaModel extends Model
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
-    protected $updatedField  = 'fechaActualizacion';
+    protected $updatedField  = '';
     protected $deletedField  = 'deleted_at';
 
     // Validation

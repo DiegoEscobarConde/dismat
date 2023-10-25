@@ -13,7 +13,7 @@ class DetalleCompraModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['cantidad','precioUnitario', 'id_Producto','id_Compra','id_Proveedor'];
+    protected $allowedFields = ['cantidad','precioUnitario', 'id_Producto','id_Compra','id_Proveedor','id'];
 
     // Dates
     protected $useTimestamps = true;

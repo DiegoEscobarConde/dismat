@@ -187,6 +187,19 @@ class Productos extends BaseController
        }
        echo json_encode($res);
     }
+    public function buscar()
+    {
+        $this->productos = new ProductosModel();
+        $db = \Config\Database::connect();
+        $buscare = $this->request->getPost('descripcion');
+        $cadena = strval($buscare);
+        $builder = $db->table('productos');
+        $builder->like('productos.descripcion', $cadena);
+        $builder->where('productos.estado', 1);
+        $query = $builder->get();
+        $ventas = $query->getResult();
+        return $this->response->setJSON($ventas);
+    }
 
 }
 
