@@ -104,11 +104,16 @@ $user_session =session()?>
             </li>
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url() ;?>ventas/ventas" data-toggle="#" data-target="#"
+                <a class="nav-link " href="#" data-toggle="collapse" data-target="#collapseVentas"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-truck"></i>
                     <span  >VENTAS</span>
                 </a>
+                <div id="collapseVentas" class="collapse" aria-labelledby="headingVentas" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?php echo base_url() ;?>ventas/ventas">nueva venta </a>
+                        <a class="collapse-item" href="<?php echo base_url() ;?>ventas/lista">lista ventas</a>
+                    </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->

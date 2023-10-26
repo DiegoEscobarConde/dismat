@@ -4,7 +4,7 @@
     
 <?php $idVentaTmp = uniqid();?>
 
-<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php base_url(); ?>/ventas/guarda" autocomplete="off">
+<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>ventas/guarda" autocomplete="off">
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
       <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
@@ -29,14 +29,13 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label>Cliente</label>
-                                                   
                                                     <input type="text" name="resultadoLabel" class="form-control" id="resultadoLabel" disabled required>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label>nit</label>
-                                                   
+                                                  
                                                     <input type="text" name="resultadoLabel2" id="resultadoLabel2" id="nit" class="form-control" disabled required>
                                                 </div>
                                             </div>
@@ -154,7 +153,7 @@
 </div>
 
    <h4 class="h5 mb-2 text-gray-800">Datos venta</h4>
-   <div class="form-group">
+   <!--<div class="form-group">
                         <div class="row">
                             <div class="col-12 col-sm-4">
                                 <input type="hidden" id="id_Producto" name="id_Producto">
@@ -172,15 +171,15 @@
              class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
           </div>                            
                         </div>
-      </div>
+      </div>-->
 
                           
    <!-- DataTales Example -->
-<div class ="card">
+<!--<div class ="card">
   <div class="card-body">
   <div class="row">
           <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
-          <thead class="thead-dark">
+          <thead class="thead-dark">-->
                   <!--  <th>#</th>
                     <th>codigo</th>
                     <th>nombre</th>
@@ -188,7 +187,7 @@
                     <th>cantidad</th>
                     <th>total</th>
                     <th width="1%"></th>-->
-                    <tr>
+                    <!--<tr>
             <th>Código</th>
             <th>Descripción</th>
             <th>Cantidad</th>
@@ -208,14 +207,85 @@
              </div>   
 </div>
 </div>
-</div>
-
-
-
-
-
+</div>-->
                 <!-- /.container-fluid -->
-
+                <div class="card">
+                  <div class="card-body">
+                
+ <div class=" form-group">
+  <div class="row">
+          <div class=" col-12 col-sm-4">
+               <input type="hidden" id="id_Producto" name="id_Producto"/>
+               <input type="hidden" id="id_Compra" name="id_Compra" value="<?php echo $idVentaTmp;?>"/>
+              <label for="">codigo</label>
+              <input class ="form-control" id="codigo" name="codigo" type="text" placeholder="codigo" onkeyup="buscarProducto(event,this,this.value)"
+              autofocus/>
+              <label for="codigo" id="resultado_error" style="color:red"></label>
+          </div>  
+   
+    
+          <div class=" col-12 col-sm-4">
+              <label for="">descripcion</label>
+              <input class ="form-control" id="descripcion" name="descripcion" type="text" 
+             disabled/>
+          </div>  
+          
+          <div class=" col-12 col-sm-4">
+              <label for="">cantidad</label>
+              <input class ="form-control" id="cantidad" name="cantidad" type="text" 
+             />
+          </div>   
+     </div>
+</div>
+<div class=" form-group">
+     <div class="row">
+          <div class=" col-12 col-sm-4">
+              <label for="">precio_ventaU</label>
+              <input class ="form-control" id="precio_ventaU" name="precio_ventaU" type="text" 
+              disabled />
+          </div>  
+     
+    
+          <div class=" col-12 col-sm-4">
+              <label for="">totalPago</label>
+              <input class ="form-control" id="subtotal" name="subtotal" type="text" 
+             disabled/>
+          </div>  
+          
+          <div class=" col-12 col-sm-4">
+              <label for=""><br>&nbsp;</label>
+             <button id="agregar_producto" name="agregar_producto" type="button"
+             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
+          </div>   
+     </div>
+</div>
+      <div class="row">
+          <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
+               <thead class="thead-dark">
+                    <th>#</th>
+                    <th>codigo</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th>cantidad</th>
+                    <th>total</th>
+                    <th width="1%"></th>
+               </thead>
+               <tbody></tbody>
+          </table>
+      </div>
+       <div class="row">
+          <div class="col-12 col-sm-6 offset-md-6">
+              <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
+               <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
+              
+              
+               <button type="button" id="completar_venta" class="btn btn-success">venta</button>
+             
+						
+          </div>
+      </div>
+      </div>
+      </div>
 </form>
 </div>
 </main>
@@ -246,37 +316,10 @@
 });
 
 // Evento que se dispara cuando se presiona Enter en el campo de código
-$("#codigo").on("keypress", function (e) {
-    if (e.which === 13) { // Verifica si se presionó Enter
-        var codigo = $(this).val(); // Obtén el código del producto
-
-        // Realiza una solicitud AJAX para obtener los detalles del producto
-        $.ajax({
-            url: "<?php echo base_url(); ?>/productos/autocompleteData1", // Reemplaza con la URL correcta
-            method: 'POST',
-            data: { codigo: codigo }, // Envía el código como dato
-            success: function (response) {
-                // Parsea la respuesta JSON
-                var producto = JSON.parse(response);
-
-                // Agrega una nueva fila a la tabla con los detalles del producto
-                var newRow = "<tr>" +
-                    "<td>" + producto.codigo + "</td>" +
-                    "<td>" + producto.descripcion + "</td>" +
-                    "<td><input type='text' name='cantidad' value='1' min='1'></td>" +
-                    "<td>" + producto.precio_unitario + "</td>" +
-                    "<td>" + producto.precio_unitario + "</td>" +
-                    "</tr>";
-
-                // Agrega la nueva fila a la tabla
-                $("#tablaProductos tbody").append(newRow);
-            }
-        });
-    }
-});
 
 
-   /* $("#codigo").autocomplete({
+
+    $("#codigo").autocomplete({
         source: "<?php echo base_url(); ?>/productos/autocompleteData1",
         minLength : 2,
         select: function (event,ui){
@@ -294,13 +337,13 @@ $("#codigo").on("keypress", function (e) {
            
             }
   
-           });*/
+           });
            
 
 
            
            //ojo
-          function buscarProducto(e, tagCodigo, codigo) {
+       /*   function buscarProducto(e, tagCodigo, codigo) {
      var enterkey = 13;
      if (codigo != '') {
           if (e.which == enterkey) {
@@ -332,10 +375,43 @@ $("#codigo").on("keypress", function (e) {
                });
           }
      }
+}*/
+function buscarProducto(e, tagCodigo, codigo) {
+     var enterkey = 13;
+     if (codigo != '') {
+          if (e.which == enterkey) {
+               $.ajax({
+                    url: '<?php echo base_url(); ?>/productos/buscarPorCodigo/' + codigo,
+                    dataType: 'json',
+                    success: function (resultado) {
+                         if (resultado == 0) {
+                              $(tagCodigo).val('');
+                         } else {
+                              $(tagCodigo).removeClass('has-error');
+                              $("#resultado_error").html(resultado.error);
+                              if (resultado.existe) {
+                                   $("#id_Producto").val(resultado.datos.id_Producto);
+                                   $("#descripcion").val(resultado.datos.descripcion);
+                                   $("#cantidad").val(1);
+                                   $("#precio_ventaU").val(resultado.datos.precio_ventaU);
+                                   $("#subtotal").val(resultado.datos.precio_ventaU);
+                                   $("#cantidad").focus();
+                              } else {
+                                   $("#id_Producto").val('');
+                                   $("#descripcion").val('');
+                                   $("#cantidad").val('');
+                                   $("#precio_compraU").val('');
+                                   $("#subtotal").val('');
+                              }
+                         }
+                    }
+               });
+          }
+     }
 }
 
 
-function agregarProducto(e,id_Producto, cantidad, id_venta) {
+/*function agregarProducto(e,id_Producto, cantidad, id_venta) {
     let enterKey = 13;
     if(codigo!=''){
         if(e.which == enterkey){
@@ -373,27 +449,62 @@ function agregarProducto(e,id_Producto, cantidad, id_venta) {
      }
 }
 }
-}
+}*/
 
    //////////////////////////////////////////////////
    //nueva forma//////
 
-   $(document).ready(function() {
-		$(window).keydown(function(event) {
-			if (event.keyCode == 13) {
-				event.preventDefault();
-				return false;
-			}
-		});
-	});
-
-	$(document).ready(function() {
-		$('#modalito').on('hidden.bs.modal', function(e) {
-			$('#codigo').focus();
-		})
-	});
+  
 
 	
+function agregarProducto(id_Producto, cantidad, id_venta) {
+     if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
+          $.ajax({
+               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_venta ,
+               success: function (resultado) {
+                    if (resultado == 0) {
+                         // Maneja la situación si no se pudo agregar el producto
+                         alert("No se pudo agregar el producto.");
+                    } else {
+                         var resultado = JSON.parse(resultado);
+                         if (resultado.error == '') {
+                              // Limpia la tabla de productos
+                              $("#tablaProductos tbody").empty();
+                              // Agrega los datos del producto al DataTable
+                              $("#tablaProductos tbody").append(resultado.datos);
+                              // Actualiza el total
+                              $("#total").val(resultado.total);
+                              // Limpia los campos
+                              $("#id_Producto").val('');
+                              $("#codigo").val('');
+                              $("#descripcion").val('');
+                              $("#cantidad").val('');
+                              $("#precio_ventaU").val('');
+                              $("#subtotal").val('');
+                             
+                         } else {
+                              // Maneja la situación si hubo un error al agregar el producto
+                              alert("Error al agregar el producto: " + resultado.error);
+                         }
+                    }
+               }
+          });
+     }
+}
+$(function(){
+
+
+$("#completar_venta").click(function () {
+     let nfila = $("#tablaproductos tr").length;
+     if (nfila < 2) {
+          // No hay productos en la compra, puedes manejar esta situación aquí
+          alert("debe agregar productos.");
+     } else {
+          // Envía el formulario para completar la compra
+          $("#form_venta").submit();
+     }
+});
+});
             
 
 </script>

@@ -40,9 +40,9 @@ class ProductosModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-     public function actualizaSock ($id_Producto,$cantidad='+'){
-      $this->set ('stock','stock', $cantidad,false);
-      $this-> where('id',$id_Producto);
+     public function actualizaSock ($id_Producto,$cantidad,$operador='+'){
+      $this->set ('stock',"stock' $operador $cantidad",FALSE);
+      $this-> where('id_Producto',$id_Producto);
     $this ->update();       
         
 

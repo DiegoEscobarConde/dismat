@@ -46,7 +46,7 @@ class DetalleVenta extends BaseController
        echo view('pie');
 
     }*/
-    public function insertar($id_Producto,$cantidad,$id_Venta)
+    /*public function insertar($id_Producto,$cantidad,$id_Venta)
     { 
         $error ='';
         $productos=$this->productos->where('id_Producto',$id_Producto)->first();
@@ -63,7 +63,7 @@ class DetalleVenta extends BaseController
                 'id_Producto'=>$id_Producto,
                 'codigo'=>$productos ['codigo'],
                 'descripcion'=>$productos ['descripcion'],
-                'precio_venta'=>$productos['precio_venta'],
+                'precio_ventaU'=>$productos['precio_ventaU'],
                 'cantidad'=>$cantidad,
                 'total'=>$total,
                 
@@ -79,7 +79,7 @@ class DetalleVenta extends BaseController
         
       
         
-    }
+    }*/
     public function autocompleteData1(){
         $returnData = array();
         $valor =$this->request->getGet('term');

@@ -52,7 +52,7 @@ class DetalleVentaModel extends Model
       public function porIdProducto($id_Producto){
         $this->select('*');
         $this->where('id_Producto',$id_Producto);
-        $datos=$this->get()->getRow();
+        $datos=$this->findAll();
         return $datos;
 
       }
