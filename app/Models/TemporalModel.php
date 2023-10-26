@@ -61,9 +61,13 @@ class TemporalModel extends Model
         $this->where('id_Producto',$id_Producto);
         $this->where('nota',$nota);
         $this->update();
-        
-
       } 
+      public function eliminarProductoCompra($id_Producto,$nota)
+      {
+          $this->where('id_Producto', $id_Producto);
+          $this->where('nota', $nota);
+          $this->delete();
+      }
 
         
 

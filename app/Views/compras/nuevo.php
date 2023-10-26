@@ -1,3 +1,5 @@
+
+
 <?php $id_compra=uniqid();
 ?>
 <div class="container-fluid">
@@ -72,9 +74,7 @@
           <div class="col-12 col-sm-6 offset-md-6">
               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
                <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
-              
-              
-               <button type="button" id="completar_compra" class="btn btn-success">comprar</button>
+               <button type="button" id="completar_compra" name="completar_compra" class="btn btn-success">comprar</button>
              
 						
           </div>
@@ -83,6 +83,9 @@
 </div>
 </main>
 <script>
+
+
+    $(document).ready(function(){ 
      $("#completar_compra").click(function () {
      let nfila = $("#tablaproductos tr").length;
      if (nfila < 2) {
@@ -92,6 +95,7 @@
           // Envía el formulario para completar la compra
           $("#form_compra").submit();
      }
+});
 });
 
 function buscarProducto(e, tagCodigo, codigo) {
@@ -163,6 +167,30 @@ function agregarProducto(id_Producto, cantidad, id_compra) {
           });
      }
 }
+function eliminarProducto(id_Producto, id_compra) {
+      
+          $.ajax({
+               url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra ,
+               success: function (resultado) {
+                    if (resultado == 0) {
+                         // Maneja la situación si no se pudo agregar el producto
+                         $(tagCodigo).val('');
+                         alert("No se pudo agregar el producto.");
+                    } else {
+                         var resultado = JSON.parse(resultado);
+                        
+                              // Limpia la tabla de productos
+                              $("#tablaProductos tbody").empty();
+                              // Agrega los datos del producto al DataTable
+                              $("#tablaProductos tbody").append(resultado.datos);
+                              // Actualiza el total
+                              $("#total").val(resultado.total);
+                              // Limpia los campos                       
+                    }
+               }
+          });
+     }
+
 
   
 

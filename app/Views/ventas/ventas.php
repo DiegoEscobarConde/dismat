@@ -6,11 +6,12 @@
 
 <form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>ventas/guarda" autocomplete="off">
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
-      <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
+      
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
-   
+   <input type="hidden" id="id_Venta" name="id_Venta" value="<?php echo $idVentaTmp; ?>"/>
                 <div class="card">
-                                <div class="card-body">                          
+                                <div class="card-body">  
+
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-group">
@@ -491,20 +492,20 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
           });
      }
 }
-$(function(){
 
 
-$("#completar_venta").click(function () {
-     let nfila = $("#tablaproductos tr").length;
-     if (nfila < 2) {
-          // No hay productos en la compra, puedes manejar esta situación aquí
-          alert("debe agregar productos.");
-     } else {
-          // Envía el formulario para completar la compra
-          $("#form_venta").submit();
-     }
-});
-});
+$(function() {
+		$("#completar_venta").click(function() {
+			var nFilas = $("#tablaProductos tr").length;
+
+			if (nFilas < 2) {
+				$('#modalito').modal('show');
+			} else {
+				$("#form_venta").submit();
+			}
+		});
+	});
+
             
 
 </script>

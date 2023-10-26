@@ -42,7 +42,7 @@ class ProductosModel extends Model
      
      public function actualizaSock ($id_Producto,$cantidad,$operador='+'){
       $this->set ('stock',"stock' $operador $cantidad",FALSE);
-      $this-> where('id_Producto',$id_Producto);
+      $this-> where('id',$id_Producto);
     $this ->update();       
         
 

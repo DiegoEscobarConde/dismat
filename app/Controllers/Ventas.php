@@ -7,13 +7,14 @@ use App\Models\ProductosModel;
 use App\Models\DetalleVentaModel;
 use App\Models\TemporalModel;
 use App\Models\ClientesModel;
+use App\Models\UsuariosModel;
 
 
 
 
 class Ventas extends BaseController
 {
-    protected $ventas,$clientes,$productos,$detalle_Venta,$temporal,$compras,$db;
+    protected $ventas,$clientes,$productos,$detalle_Venta,$temporal,$compras,$db,$id;
    
     public function __construct()
     {
@@ -66,7 +67,10 @@ class Ventas extends BaseController
         $id_venta=$this->request->getPost('id_Venta');
         $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
         $id_Cliente=$this->request->getPost('id_Cliente');
+       
         $session=session();
+        var_dump($id_venta);
+        var_dump($total);
         $resultadoId=$this->ventas->insertarVenta($id_venta,$total,$session->id,$id_Cliente);
        
         $this->temporal=new TemporalModel();

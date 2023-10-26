@@ -4,16 +4,17 @@ use App\Controllers\BaseController;
 use App\Models\ComprasModel;
 use App\Models\TemporalModel;
 use App\Models\ProductosModel;
-use app\Models\DetalleCompraModel;
+use App\Models\DetalleCompraModel;
 
 class Compras extends BaseController
 {
-    protected $compras,$temporal,$detalle_compra,$id,$productos;
-    protected $reglas;
+    protected $compras,$temporal,$id,$productos;
+    protected $detalle_compra;
 
     public function __construct()
     {
         $this->compras = new ComprasModel();
+        $this->detalle_compra = new DetalleCompraModel();
         
     
         helper(['form']);
@@ -82,20 +83,42 @@ class Compras extends BaseController
         $this->temporal = new TemporalModel();
     
         if ($resultadoId) {
-            $resultadoVenta = $this->temporal->porCompra($id_compras);
-            foreach ($resultadoVenta as $row) {
+            $resultadoCompra = $this->temporal->porCompra($id_compras);
+            foreach ($resultadoCompra as $row) {
                 $this->detalle_compra->save([
                     'id_Compra' => $resultadoId,
                     'id_Producto' => $row['id_Producto'],
                     'descripcion' => $row['descripcion'],
-                    'stock' => $row['stock'],
-                    'precio_compraU' => $row['precio_compraU']
+                    'cantidad' => $row['cantidad'],
+                    'precioUnitario' => $row['precioUnitario']
                 ]);
                 $this->productos = new ProductosModel();
-                $this->productos->actualizaStock($row['id_Producto'], $row['stock']);
+                $this->productos->actualizarProductoCompra($row['id_Producto'], $row['stock']);
             }
-            $this->temporal->eliminarCompra($id_compras);
+            $this->temporal->eeliminarProductoCompra($id_compras);
         }
+        return redirect()->to(base_url()."/productos");
+    } 
+    function muestraCompraPdf($id_compra){
+        $data ['id_Compra']=$id_compra;
+        echo view('encabezado');
+        echo view('compras/ver_compra_pdf', $data);
+        echo view('pie');
+
+    }
+    function generarCompraPdf ($id_compra)
+    {
+        $datosCompras=$this->compras->where('id_Compra', $id_compra)->firts();
+       $detalle_compra=$this->detalle_compra->select('*')->where('id_Compra', $id_compra)->findAll();
+
+       $pdf=new \FPDF('P','mm','letter');
+       $pdf->AddPage();
+       $pdf->SetMargins(10,10,10);
+       $pdf->SetTitle('compras');
+       $pdf->SetFont('Ariel','B',10);
+       $pdf->Cell(195,5,"entrada de productos",0,1,"C");
+       $this->response->setHeader('Content-Type','application/pdf');
+       $pdf->Output('compra_pdf.pdf','I');
     }
     
    

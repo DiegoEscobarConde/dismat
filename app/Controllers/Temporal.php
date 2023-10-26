@@ -44,7 +44,7 @@ class Temporal extends BaseController
             }
             
          $res['datos']=$this->cargarProductos($id_compra);
-         $res['total']=$this->totalProductos($id_compra);
+         $res['total']=number_format($this->totalProductos($id_compra),2,'_',',');
           $res['error']=$error;
           echo json_encode($res);
        
@@ -67,8 +67,8 @@ class Temporal extends BaseController
          $fila.="<td>".$row['precio']."</td>";
          $fila.="<td>".$row['cantidad']."</td>";
          $fila.="<td>".$row['subtotal']."</td>";
-         $fila.="<td><a onclick=\"eliminar producto(".$row['id_Producto'].",'".$id_compra."')\"
-         class='borrar'><span class'btn btn-danger'></span></a></td>";
+         $fila.="<td><a onclick=\"eliminarProducto(".$row['id_Producto'].",'".$id_compra."')\"
+         class='borrar'><span class' svg-inline--fa fa-cog fa-w-16 fa-fw'></span></a></td>";
          $fila.="</tr>" ;
 
        }
@@ -88,7 +88,31 @@ class Temporal extends BaseController
     return $total;
 
     }
-}    
+    public function eliminar($id_Producto,$id_compra)
+    {
+       
+        
+           
+                $datosExiste=$this->temporal->porIdProductoCompra($id_Producto,$id_compra);
+                if($datosExiste){
+                    if($datosExiste->cantidad > 1){  
+                    $cantidad=$datosExiste->cantidad-1;
+                    $subtotal=$cantidad*$datosExiste->precio;
+                    $this->temporal->actualizarProductoCompra($id_Producto,$cantidad,$id_compra,$subtotal);
+                }else{
+                   
+                    $this->temporal->eliminarProductoCompra($id_Producto,$id_compra);
+                    
+                }
+
+ 
+} 
+         $res['datos']=$this->cargarProductos($id_compra);
+         $res['total']=number_format($this->totalProductos($id_compra),2,'_',',');
+          $res['error']='';
+          echo json_encode($res);
+}   
+}
 
 
  
