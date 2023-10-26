@@ -1,0 +1,42 @@
+INFO - 2023-10-26 00:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 00:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 01:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 01:27:58 --> Undefined array key "precio_venta"
+in APPPATH\Controllers\Temporal.php on line 85.
+ 1 APPPATH\Controllers\Temporal.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_venta"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 85)
+ 2 APPPATH\Controllers\Temporal.php(47): App\Controllers\Temporal->totalProductos('6539c09788536')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '6539c09788536')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 01:28:02 --> Undefined array key "precio_venta"
+in APPPATH\Controllers\Temporal.php on line 85.
+ 1 APPPATH\Controllers\Temporal.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_venta"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 85)
+ 2 APPPATH\Controllers\Temporal.php(47): App\Controllers\Temporal->totalProductos('6539c09788536')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', 2, '6539c09788536')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 01:28:12 --> Undefined array key "precio_venta"
+in APPPATH\Controllers\Temporal.php on line 85.
+ 1 APPPATH\Controllers\Temporal.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_venta"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 85)
+ 2 APPPATH\Controllers\Temporal.php(47): App\Controllers\Temporal->totalProductos('6539c09788536')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', 2, '6539c09788536')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 01:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 01:29:29 --> Undefined array key "precio_compraU"
+in APPPATH\Controllers\Temporal.php on line 85.
+ 1 APPPATH\Controllers\Temporal.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_compraU"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 85)
+ 2 APPPATH\Controllers\Temporal.php(47): App\Controllers\Temporal->totalProductos('6539c0ea8b2ac')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('13', '100', '6539c0ea8b2ac')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 01:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 01:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 01:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 01:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 02:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 02:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

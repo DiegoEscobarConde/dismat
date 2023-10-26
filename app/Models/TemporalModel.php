@@ -13,7 +13,7 @@ class TemporalModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id_Producto', 'codigo','descripcion','cantidad','precio','total','nota'];
+    protected $allowedFields = ['id_Producto', 'codigo','descripcion','cantidad','precio','subtotal','nota'];
 
     // Dates
     protected $useTimestamps = false;
@@ -55,9 +55,9 @@ class TemporalModel extends Model
         return $datos;
 
       } 
-      public function actualizarProductoCompra($id_Producto,$cantidad,$total,$nota){
+      public function actualizarProductoCompra($id_Producto,$cantidad,$subtotal,$nota){
         $this->set('cantidad',$cantidad);
-        $this->set('total',$total);
+        $this->set('subtotal',$subtotal);
         $this->where('id_Producto',$id_Producto);
         $this->where('nota',$nota);
         $this->update();

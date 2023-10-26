@@ -43,7 +43,7 @@
     
           <div class=" col-12 col-sm-4">
               <label for="">totalPago</label>
-              <input class ="form-control" id="total" name="total" type="text" 
+              <input class ="form-control" id="subtotal" name="subtotal" type="text" 
              disabled/>
           </div>  
           
@@ -71,7 +71,7 @@
        <div class="row">
           <div class="col-12 col-sm-6 offset-md-6">
               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
-               <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;"/>
+               <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
               
               
                <button type="button" id="completar_compra" class="btn btn-success">comprar</button>
@@ -112,14 +112,14 @@ function buscarProducto(e, tagCodigo, codigo) {
                                    $("#descripcion").val(resultado.datos.descripcion);
                                    $("#cantidad").val(1);
                                    $("#precio_compraU").val(resultado.datos.precio_compraU);
-                                   $("#total").val(resultado.datos.total);
+                                   $("#subtotal").val(resultado.datos.precio_compraU);
                                    $("#cantidad").focus();
                               } else {
                                    $("#id_Producto").val('');
                                    $("#descripcion").val('');
                                    $("#cantidad").val('');
-                                   $("#precio_compra").val('');
-                                   $("#total").val('');
+                                   $("#precio_compraU").val('');
+                                   $("#subtotal").val('');
                               }
                          }
                     }
@@ -152,7 +152,7 @@ function agregarProducto(id_Producto, cantidad, id_compra) {
                               $("#descripcion").val('');
                               $("#cantidad").val('');
                               $("#precio_compraU").val('');
-                              $("#total").val('');
+                              $("#subtotal").val('');
                              
                          } else {
                               // Maneja la situación si hubo un error al agregar el producto

@@ -25,10 +25,10 @@ class Temporal extends BaseController
                 $datosExiste=$this->temporal->porIdProductoCompra($id_Producto,$id_compra);
                 if($datosExiste){
                     $cantidad=$datosExiste->cantidad+$cantidad;
-                    $total=$cantidad*$datosExiste->precio;
-                    $this->temporal->actualizarProductoCompra($id_Producto,$cantidad,$id_compra,$total);
+                    $subtotal=$cantidad*$datosExiste->precio;
+                    $this->temporal->actualizarProductoCompra($id_Producto,$cantidad,$id_compra,$subtotal);
                 }else{
-                    $total=$cantidad*$productos['precio_compraU'];
+                    $subtotal=$cantidad*$productos['precio_compraU'];
                     $this->temporal->save([
                         'nota' =>$id_compra,
                         'id_Producto'=>$id_Producto,
@@ -36,7 +36,7 @@ class Temporal extends BaseController
                         'descripcion'=>$productos['descripcion'],
                         'precio'=>$productos['precio_compraU'],
                         'cantidad'=>$cantidad,
-                        'total'=> $total,
+                        'subtotal'=> $subtotal,
                     ]);
                 }
             }else{
@@ -66,13 +66,13 @@ class Temporal extends BaseController
          $fila.="<td>".$row['descripcion']."</td>";
          $fila.="<td>".$row['precio']."</td>";
          $fila.="<td>".$row['cantidad']."</td>";
-         $fila.="<td>".$row['total']."</td>";
+         $fila.="<td>".$row['subtotal']."</td>";
          $fila.="<td><a onclick=\"eliminar producto(".$row['id_Producto'].",'".$id_compra."')\"
-         class='borrar'><span class'fas fa-fw-fa-trash'></span></a></td>";
+         class='borrar'><span class'btn btn-danger'></span></a></td>";
          $fila.="</tr>" ;
 
        }
-    return $fila;
+             return $fila;
     }
     public function totalProductos ($id_compra)
     {
@@ -81,14 +81,17 @@ class Temporal extends BaseController
     $total=0;
         foreach($resultado as $row) 
        {
-        $total+=$row['total'];
-
+        $total+=$row['subtotal'];
+      
+        
        }
     return $total;
+
     }
+}    
 
 
  
    
-}
+
 
