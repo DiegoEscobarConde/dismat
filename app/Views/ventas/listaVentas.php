@@ -10,14 +10,17 @@
     <input type="date" name="fecha_fin" id="fecha_fin">
 
     <input type="submit" value="Ver Ventas">
-
+<p>
+<a href="<?php echo base_url(); ?>ventas/eliminados" class="btn btn-warning">anuladas</a>
+</p>
     <div class="table">
             <table class="table table-sm" id="tablaLista" width="100%" cellspacing="0" text="center"> 
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>fecha y hora</th>
                         <th>razon social</th>
                         <th>n° nota remision</th>
+                        <th>usuario</th>
                         <th>total</th>
                        
                         <th>comprobante NR</th>
@@ -28,13 +31,14 @@
                
                     <?php foreach($datos as $dato){?>
                        <tr>
-                          <td><?php echo $dato['id_Venta']?></td>
+                          <td><?php echo $dato['fechaRegistro']?></td>
                           <td><?php echo $dato['id_cliente']?></td>                         
                           <td><?php echo $dato['notaR']?></td>
+                          <td><?php echo $dato['usuarios']?></td>
                           <td><?php echo $dato['total']?></td>
-                           <td>   <a href="<?php echo base_url(). '/ventas/pdf/'?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                           <td>   <a href="<?php echo base_url(). '/ventas/muestraVentaPdf/'?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                            <?php }?>
-</form>
+
 <?php
 if (isset($_GET['fecha_inicio']) && isset($_GET['fecha_fin'])) {
     $fecha_inicio = $_GET['fecha_inicio'];
@@ -46,6 +50,6 @@ if (isset($_GET['fecha_inicio']) && isset($_GET['fecha_fin'])) {
     // Muestra las ventas en una tabla o de la manera que desees.
 }
 ?>
-
+</form>
 
         </main>

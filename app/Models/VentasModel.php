@@ -40,18 +40,34 @@ class VentasModel extends Model
       protected $afterDelete    = [];
      
      
-     public function insertarVenta($id_Venta,$total,$id,$id_cliente){
+    public function insertarVenta($id_Venta,$total,$id,$id_cliente,$notaR){
       
         $this->insert([
-          'notaR'=>$id_Venta,
-          'total'=>$total,
-          'id'=>$id,
+          'id_Venta'=> $id_Venta,
+          'total'=> $total,
+          'id'=> $id,
           'id_cliente'=>$id_cliente,
+          'notaR'=>$notaR
           
         ]);
-    return $this->insertID();
+          return $this->insertID();
       
-      }
+         }
+    
+      
+ 
+      public function obtener($activo = 1){
+        $this->select('ventas.*, u.usuario AS usuarios, c.primerApellido AS clientes');
+        $this->join('usuarios AS u', 'ventas.id = u.id'); // Cambio en la condición de unión
+        $this->join('clientes AS c', 'ventas.id_cliente = c.id'); // Cambio en la condición de unión
+        $this->where('ventas.estado', $activo);
+        $this->orderBy('ventas.fechaRegistro', 'DESC');
+        $datos = $this->findAll();
+        return $datos;
+    }
+    
+    
+    
  
     }
 

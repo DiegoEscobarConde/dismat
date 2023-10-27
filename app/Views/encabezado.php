@@ -14,7 +14,7 @@ $user_session =session()?>
     <title>DISMAT</title>
 
     <!-- Custom fonts for this template -->
-    <link href="<?php echo base_url() ;?>/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() ;?>vendor/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="<?php echo base_url() ;?>vendor/css/fonts.googleapis.css"
         rel="stylesheet">
@@ -28,7 +28,7 @@ $user_session =session()?>
    
 
     <!-- Custom styles for this page -->
-    <link href="<?php echo base_url() ;?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ;?>/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     
     <!-- <script src="<?php echo base_url() ;?>/js/jquery-3.7.1.min.js"></script>-->
     <script src="<?php echo base_url() ;?>/js/jquery.min.js"></script>

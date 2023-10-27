@@ -924,3 +924,910 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
 11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
 12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 07:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-27 07:20:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `venta...' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:20:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `venta...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`, *, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`, *, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`, *, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`, *, `u`.`usuarios` AS `usuario`, `c`.`primerApellido` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:21:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ven...' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:21:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ven...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`, *, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`, *, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`, *, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`, *, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:23:36 --> mysqli_sql_exception: Unknown column 'u.usuarios' in 'field list' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:23:36 --> Unknown column 'u.usuarios' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuarios` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:24:08 --> mysqli_sql_exception: Unknown column 'ventas.activo' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:24:08 --> Unknown column 'ventas.activo' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:24:48 --> mysqli_sql_exception: Unknown column 'c.id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:24:48 --> Unknown column 'c.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:25:53 --> mysqli_sql_exception: Unknown column 'u.id_Ventas' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:25:53 --> Unknown column 'u.id_Ventas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Ventas`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Ventas`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Ventas`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Ventas`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Ventas`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Ventas`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Ventas`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Ventas`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:26:14 --> mysqli_sql_exception: Unknown column 'u.id_Venta' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:26:14 --> Unknown column 'u.id_Venta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Venta`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Venta`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Venta`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id_Venta`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:27:04 --> mysqli_sql_exception: Unknown column 'c.id_Venta' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:27:04 --> Unknown column 'c.id_Venta' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id_Venta`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:27:20 --> mysqli_sql_exception: Unknown column 'c.id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:27:20 --> Unknown column 'c.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:30:37 --> mysqli_sql_exception: Unknown column 'ventas.id_usuario' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:30:37 --> Unknown column 'ventas.id_usuario' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:33:28 --> mysqli_sql_exception: Unknown column 'c.id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:33:28 --> Unknown column 'c.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `usuarios`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` ON `ventas`.`id` = `usuarios`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `usuarios`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` ON `ventas`.`id` = `usuarios`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `usuarios`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` ON `ventas`.`id` = `usuarios`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `usuarios`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` ON `ventas`.`id` = `usuarios`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:35:44 --> mysqli_sql_exception: Unknown column 'c.id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:35:44 --> Unknown column 'c.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:35:46 --> mysqli_sql_exception: Unknown column 'c.id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-27 07:35:46 --> Unknown column 'c.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = 1
+ORDER BY `ventas`.`fechaRegistro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `usuarios`, `c`.`primerApellido` AS `clientes`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`estado` = :ventas.estado:
+ORDER BY `ventas`.`fechaRegistro` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(70): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(36): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 07:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 07:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 07:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 07:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 07:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-27 07:46:42 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 58.
+ 1 APPPATH\Controllers\Ventas.php(58): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 07:46:42 --> mysqli_sql_exception: Column 'notaR' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(65): App\Models\VentasModel->insertarVenta(NULL, '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-27 07:46:42 --> Column 'notaR' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'\', NULL, NULL, \'2023-10-27 07:46:42\', \'2023-10-27 07:46:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'\', NULL, NULL, \'2023-10-27 07:46:42\', \'2023-10-27 07:46:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'\', NULL, NULL, \'2023-10-27 07:46:42\', \'2023-10-27 07:46:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:notaR:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(65): App\Models\VentasModel->insertarVenta(null, '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-27 07:53:15 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 58.
+ 1 APPPATH\Controllers\Ventas.php(58): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:53:15 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:53:59 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:54:01 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:55:19 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:55:47 --> Undefined variable $data
+in APPPATH\Controllers\Ventas.php on line 86.
+ 1 APPPATH\Controllers\Ventas.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Ventas.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:56:33 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:58:10 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:58:13 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:58:22 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:58:26 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:58:59 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 07:59:02 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 08:00:08 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 08:02:16 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 08:02:20 --> Too few arguments to function App\Controllers\Ventas::muestraVentaPdf(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Ventas.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->muestraVentaPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 08:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-27 08:02:44 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 58.
+ 1 APPPATH\Controllers\Ventas.php(58): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 08:02:44 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(65): App\Models\VentasModel->insertarVenta(''653b6e9636fa2'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-27 08:02:44 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b6e9636fa2\\\'\', \'\', NULL, NULL, \'2023-10-27 08:02:44\', \'2023-10-27 08:02:44\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b6e9636fa2\\\'\', \'\', NULL, NULL, \'2023-10-27 08:02:44\', \'2023-10-27 08:02:44\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b6e9636fa2\\\'\', \'\', NULL, NULL, \'2023-10-27 08:02:44\', \'2023-10-27 08:02:44\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:notaR:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(65): App\Models\VentasModel->insertarVenta('\'653b6e9636fa2\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 08:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 08:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-27 09:00:18 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 09:00:18 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(75): App\Models\VentasModel->insertarVenta(''653b7c0c61496'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-27 09:00:18 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b7c0c61496\\\'\', \'\', NULL, NULL, \'2023-10-27 09:00:18\', \'2023-10-27 09:00:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b7c0c61496\\\'\', \'\', NULL, NULL, \'2023-10-27 09:00:18\', \'2023-10-27 09:00:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'653b7c0c61496\\\'\', \'\', NULL, NULL, \'2023-10-27 09:00:18\', \'2023-10-27 09:00:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`notaR`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:notaR:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(75): App\Models\VentasModel->insertarVenta('\'653b7c0c61496\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-27 09:04:03 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 09:04:04 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(76): App\Models\VentasModel->insertarVenta(''653b7c0c61496'', '', NULL, NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-27 09:04:04 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`total`, `id`, `id_cliente`, `notaR`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', NULL, NULL, NULL, \'2023-10-27 09:04:03\', \'2023-10-27 09:04:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`total`, `id`, `id_cliente`, `notaR`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', NULL, NULL, NULL, \'2023-10-27 09:04:03\', \'2023-10-27 09:04:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`total`, `id`, `id_cliente`, `notaR`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\', NULL, NULL, NULL, \'2023-10-27 09:04:03\', \'2023-10-27 09:04:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`total`, `id`, `id_cliente`, `notaR`, `fechaRegistro`, `fechaActualizacion`) VALUES (:total:, :id:, :id_cliente:, :notaR:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(76): App\Models\VentasModel->insertarVenta('\'653b7c0c61496\'', '', null, null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

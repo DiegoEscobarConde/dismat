@@ -30,17 +30,27 @@ class Ventas extends BaseController
 
     
 
-    public function lista($estado = 1)
+    public function lista()
     {
         
-        $ventas = $this->clientes->where('estado',$estado)->findAll();
-      $data = ['titulo' => 'libro de ventas','ventas'=>$ventas];
+        $datos=$this->ventas->obtener(1);
+      $data = ['titulo' => 'libro de ventas','datos'=>$datos];
 
        echo view('encabezado');
        echo view('ventas/listaVentas',$data);
        echo view('pie');
 
     }
+    public function eliminar($id_Producto){
+        $productos=$this->detalle_Venta->where('id_Venta',$id_Producto)->findAll();
+foreach ($productos as $producto) {
+               $this->productos->actualizaSock ($producto['id_Producto'],$producto['$cantidad'],['+']);
+    
+    }
+     $this->ventas->update($id_Producto,['estado'=>0]);
+     return redirect()->to(base_url().'/ventas/listaVentas');
+
+}
      public function ventas()
     {
         
@@ -54,19 +64,20 @@ class Ventas extends BaseController
     }
    public function guarda()
     {
-        $id_venta=$this->request->getGet('id_Venta');
+        $id_Venta=$this->request->getPost('id_Venta');
         $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
         $id_Cliente=$this->request->getPost('id_Cliente');
         $id=$this->request->getGet('id');
+        $notaR=$this->request->getGet('notaR');
        
        
-        var_dump($id_venta);
+        var_dump($id_Venta);
         var_dump($total);
-        $resultadoId=$this->ventas->insertarVenta($id_venta,$total,$id,$id_Cliente);
+        $resultadoId=$this->ventas->insertarVenta($id_Venta,$total,$id,$id_Cliente,$notaR);
        
         $this->temporal=new TemporalModel();
         if($resultadoId){
-            $resultadoVenta=$this->temporal->porCompra($id_venta);
+            $resultadoVenta=$this->temporal->porCompra($id_Venta);
             foreach($resultadoVenta as $row){
                 $this->detalle_Venta->save([
                     'id_Venta'=>$resultadoId,
@@ -78,21 +89,21 @@ class Ventas extends BaseController
                 $this->productos=new ProductosModel();
                 $this->productos->actualizaStock($row['id_Producto'],$row['cantidad'],'-');
             }
-            $this->temporal->eliminarCompra($id_venta);
+            $this->temporal->eliminarCompra($id_Venta);
         }
        return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
     }
-    function muestraVentaPdf($id_venta){
-        $data ['id_Compra']=$id_venta;
+    function muestraVentaPdf($id_Venta){
+        $data ['id_Venta']=$id_Venta;
         echo view('encabezado');
         echo view('compras/ver_ticket', $data);
         echo view('pie');
 
     }
-    function generarCompraPdf ($id_venta)
+    function generarCompraPdf ($id_Venta)
     {
-        $datosventas=$this->ventas->where('id_Venta', $id_venta)->firts();
-       $detalle_venta=$this->detalle_venta->select('*')->where('id_Venta', $id_venta)->findAll();
+        $datosventas=$this->ventas->where('id_Venta', $id_Venta)->firts();
+      // $detalle_venta=$this->detalle_venta->select('*')->where('id_Venta', $id_venta)->findAll();
 
        $pdf=new \FPDF('P','mm','letter');
        $pdf->AddPage();
@@ -103,6 +114,7 @@ class Ventas extends BaseController
        $this->response->setHeader('Content-Type','application/pdf');
        $pdf->Output('compra_pdf.pdf','I');
     }
+
   
     public function pdf()
     {
