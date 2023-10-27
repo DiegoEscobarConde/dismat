@@ -75,6 +75,7 @@ $user_session =session()?>
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url() ;?>categorias">Categoria</a>
                         <a class="collapse-item" href="<?php echo base_url() ;?>productos">Productos</a>
+                        <a class="collapse-item" href="<?php echo base_url() ;?>prueba">Pr</a>
                     </div>
                
             </li>

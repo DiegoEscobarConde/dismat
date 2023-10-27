@@ -39,14 +39,7 @@ class VentasModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-      /**
-       * Summary of insertarVenta
-       * @param mixed $id_Venta
-       * @param mixed $total
-       * @param mixed $id
-       * @param mixed $id_cliente
-       * @return mixed
-       */
+     
       public function insertarVenta($id_Venta,$total,$id,$id_cliente){
       
         $this->insert([
@@ -59,6 +52,7 @@ class VentasModel extends Model
       
         return $this->insertID();
       }
+   
             
         
 

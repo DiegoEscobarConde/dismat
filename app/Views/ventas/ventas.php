@@ -8,7 +8,7 @@
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
       
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
-   <input type="hidden" id="id_Venta" name="id_Venta" value="<?php echo $idVentaTmp; ?>"/>
+   <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
                 <div class="card">
                                 <div class="card-body">  
 
@@ -461,7 +461,7 @@ function buscarProducto(e, tagCodigo, codigo) {
 function agregarProducto(id_Producto, cantidad, id_venta) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_venta ,
+               url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_venta ,
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto
@@ -496,10 +496,10 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
 
 $(function() {
 		$("#completar_venta").click(function() {
-			var nFilas = $("#tablaProductos tr").length;
-
+			let nFilas = $("#tablaProductos tr").length;
+                    
 			if (nFilas < 2) {
-				$('#modalito').modal('show');
+				
 			} else {
 				$("#form_venta").submit();
 			}
