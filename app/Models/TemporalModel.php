@@ -68,7 +68,11 @@ class TemporalModel extends Model
           $this->where('nota', $nota);
           $this->delete();
       }
-
+      public function eliminarCompra($nota)
+{
+  $this->where('nota', $nota);
+  $this->delete();
+}
         
 
         

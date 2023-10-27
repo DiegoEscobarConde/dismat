@@ -144,7 +144,7 @@
 
        <div class="modal-footer">
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-          <button type="button" class="btn btn-primary" >Guardar cliente</button>
+          <button type="button" class="btn btn-primary" href="<?php echo base_url(); ?>/clientes" >Guardar cliente</button>
        </div>
     </div>
   </div>
@@ -332,7 +332,7 @@
                 function(){
                     e=jQuery.Event("keydown");
                     e.which=13;
-                    agregarProducto(e,ui.item.id,1,' <?php echo $idVentaTmp; ?>');
+                    agregarProducto();
                 }
             )
            
@@ -459,6 +459,7 @@ function buscarProducto(e, tagCodigo, codigo) {
 
 	
 function agregarProducto(id_Producto, cantidad, id_venta) {
+    
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
                url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_venta ,
@@ -490,24 +491,23 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
                     }
                }
           });
-     }
+     
 }
 
 
-$(function() {
+
 		$("#completar_venta").click(function() {
 			let nFilas = $("#tablaProductos tr").length;
                     
 			if (nFilas < 2) {
-				
+				alert("debeb agregarProducto")
 			} else {
 				$("#form_venta").submit();
 			}
 		});
-	});
-
+	
             
-
+     }
 </script>
    
   

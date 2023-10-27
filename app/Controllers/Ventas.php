@@ -30,11 +30,11 @@ class Ventas extends BaseController
 
     
 
-    public function lista()
+    public function lista($estado = 1)
     {
         
-    
-      $data = ['titulo' => 'libro de ventas'];
+        $ventas = $this->clientes->where('estado',$estado)->findAll();
+      $data = ['titulo' => 'libro de ventas','ventas'=>$ventas];
 
        echo view('encabezado');
        echo view('ventas/listaVentas',$data);
@@ -54,14 +54,15 @@ class Ventas extends BaseController
     }
    public function guarda()
     {
-        $id_venta=$this->request->getPost('id_Venta');
+        $id_venta=$this->request->getGet('id_Venta');
         $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
         $id_Cliente=$this->request->getPost('id_Cliente');
+        $id=$this->request->getGet('id');
        
-        $session=session();
+       
         var_dump($id_venta);
         var_dump($total);
-        $resultadoId=$this->ventas->insertarVenta($id_venta,$total,$session->id,$id_Cliente);
+        $resultadoId=$this->ventas->insertarVenta($id_venta,$total,$id,$id_Cliente);
        
         $this->temporal=new TemporalModel();
         if($resultadoId){
@@ -77,10 +78,32 @@ class Ventas extends BaseController
                 $this->productos=new ProductosModel();
                 $this->productos->actualizaStock($row['id_Producto'],$row['cantidad'],'-');
             }
-            $this->temporal->eliminarProductoVenta($id_venta);
+            $this->temporal->eliminarCompra($id_venta);
         }
-       // return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
+       return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
     }
+    function muestraVentaPdf($id_venta){
+        $data ['id_Compra']=$id_venta;
+        echo view('encabezado');
+        echo view('compras/ver_ticket', $data);
+        echo view('pie');
+
+    }
+    function generarCompraPdf ($id_venta)
+    {
+        $datosventas=$this->ventas->where('id_Venta', $id_venta)->firts();
+       $detalle_venta=$this->detalle_venta->select('*')->where('id_Venta', $id_venta)->findAll();
+
+       $pdf=new \FPDF('P','mm','letter');
+       $pdf->AddPage();
+       $pdf->SetMargins(10,10,10);
+       $pdf->SetTitle('ventas');
+       $pdf->SetFont('Ariel','B',10);
+       $pdf->Cell(195,5,"entrada de productos",0,1,"C");
+       $this->response->setHeader('Content-Type','application/pdf');
+       $pdf->Output('compra_pdf.pdf','I');
+    }
+  
     public function pdf()
     {
         $db = \Config\Database::connect();

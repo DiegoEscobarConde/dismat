@@ -1351,3 +1351,25 @@ in SYSTEMPATH\Model.php on line 838.
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-10-26 23:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-26 23:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 20:21:08 --> Undefined variable $datos
+in APPPATH\Views\ventas\listaVentas.php on line 29.
+ 1 APPPATH\Views\ventas\listaVentas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\ventas\\listaVentas.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\ventas\\listaVentas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('ventas/listaVentas', [], true)
+ 5 APPPATH\Controllers\Ventas.php(40): view('ventas/listaVentas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 20:23:08 --> Undefined variable $datos
+in APPPATH\Views\ventas\listaVentas.php on line 29.
+ 1 APPPATH\Views\ventas\listaVentas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\ventas\\listaVentas.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\ventas\\listaVentas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('ventas/listaVentas', [], true)
+ 5 APPPATH\Controllers\Ventas.php(40): view('ventas/listaVentas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->lista()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

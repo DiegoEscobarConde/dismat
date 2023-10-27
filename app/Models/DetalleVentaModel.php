@@ -39,23 +39,7 @@ class DetalleVentaModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-     /* public function insertaVenta($id_Venta,$total,$id,$id_cliente){
-        $this->insert([
-          'id_Venta'=>$id_Venta,
-          'total'=>$total,
-          'id'=>$id,
-          'id_cliente'=>$id_cliente,
-
-        ]);
-        return $this->insertID();
-      }*/
-      public function porIdProducto($id_Producto){
-        $this->select('*');
-        $this->where('id_Producto',$id_Producto);
-        $datos=$this->findAll();
-        return $datos;
-
-      }
+     
             
         
 

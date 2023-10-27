@@ -19,7 +19,7 @@ class DetalleCompraModel extends Model
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
-    protected $updatedField  = 'fechaActualizacion';
+    protected $updatedField  = '';
     protected $deletedField  = 'deleted_at';
 
     // Validation
@@ -56,6 +56,7 @@ class DetalleCompraModel extends Model
         return $datos;
 
       }
+      
             
         
 
