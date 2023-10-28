@@ -135,16 +135,7 @@ class Clientes extends BaseController
         }
         echo json_encode($returnData);
     }
-  /* public function buscar()
-    {
-        $busCli = $this->request->getPost('clientes');
 
-        $model = new ClientesModel(); // Reemplaza 'MiModelo' con el nombre de tu modelo
-        $resultado = $model->like('ci_Nit', $busCli)->findAll(); // Cambia 'nombre' por el campo que deseas buscar
-
-        // Devuelve los resultados como JSON
-        return $this->response->setJSON($resultado);
-    }*/
   
 
 

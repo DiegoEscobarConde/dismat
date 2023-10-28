@@ -93,7 +93,7 @@ protected $reglas,$reglasLogin;
           $nombres = $this->request->getPost('nombres');
           $apellido = $this->request->getPost('primerApellido');
          if (is_string($nombres)){  
-          $password = substr(bin2hex(random_bytes(4)), 0, 8);
+          $hash = substr(bin2hex(random_bytes(4)), 0, 8);
           $nombreUsuario = strtolower(substr($nombres, 0, 3) . $apellido);;
           
           
@@ -103,7 +103,7 @@ protected $reglas,$reglasLogin;
          'email' => $this->request->getPost('email'),
          'celular' => $this->request->getPost('celular'),
          'usuario' => $nombreUsuario,
-         'password' => $hash,$password,
+         'password' => $hash,
          'id_Empleado' => $this->request->getPost('id_Empleado'),
          'estado'=> 1
         ]);
@@ -260,37 +260,7 @@ protected $reglas,$reglasLogin;
      
 
     
-  /*  public function enviar()
-    {
-        if($this->request->getMethod() =="post"){  
-            $usuario =$this->request->getPost('usuario');
-            $password =$this->request->getPost('password');
-        // Cargar la librería de correo electrónico
-        $email = \Config\Services::email();
-    
-        // Configurar el asunto y el contenido del correo
-        $email->setSubject('Tus credenciales de acceso');
-        $mensaje = "Tu nombre de usuario es: $usuario<br>Tu contraseña es: $password";
-        $email->setMessage($mensaje);
-    
-        // Opcional: Configurar el remitente (from)
-        $email->setFrom('escobar.diego@gmail.com', 'diego');
-    
-        // Configurar los destinatarios (usuarios) como un arreglo de correos
-        $destinatarios = array();
-        foreach ($usuario as $usuarios) {
-            $destinatarios[] = $usuarios['email']; // Supongamos que el campo es 'correo'
-        }
-        $email->setTo($destinatarios);
-    
-        // Enviar el correo
-        if ($email->send()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-      }*/
+ 
       public function enviarCredenciales()
       {
         if($this->request->getMethod() =="post"){ 
@@ -303,14 +273,14 @@ protected $reglas,$reglasLogin;
        $email=\Config\Services::email();
       
 
-       $email->setFrom('escobar.diego.1091@gmai.com', 'diego');
+       $email->setFrom('escobar.diego.1091@gmail.com', 'diego');
        $email->setTo($correo);
 
       /* $email->setCC('another@another-example.com');
        $email->setBCC('them@their-example.com');*/
        
        $email->setSubject( $asunto );
-       $email->setMessage ("Tu nombre de usuario es: $nombreUsuario<br>Tu contraseña es: $password");
+       $email->setMessage ("Tu nombre de usuario es: $nombreUsuario <br> Tu contraseña es: $password");
        
        $email->send();
   

@@ -144,10 +144,11 @@
         ======================================-->
 
        <div class="modal-footer">
-          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-          <button type="button" class="btn btn-primary" href="<?php echo base_url(); ?>/clientes" >Guardar cliente</button>
-       </div>
+      <a href="<?php echo base_url(); ?>/clientes/insertar" type="button" class="btn btn-success">Guardar</a>
+      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
     </div>
+  </div>
+  </div>
   </div>
 </form>
 </div>

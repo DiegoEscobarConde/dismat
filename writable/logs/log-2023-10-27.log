@@ -2099,3 +2099,10 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
 13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-10-27 23:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-27 23:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-27 21:46:07 --> Call to undefined method App\Models\ClientesModel::obtenerClienteRecienRegistrado
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Clientes.php(74): CodeIgniter\Model->__call('obtenerClienteRecienRegistrado', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Clientes->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
