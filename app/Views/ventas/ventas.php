@@ -6,9 +6,10 @@
 
 <form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>ventas/guarda" autocomplete="off">
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
-      
+
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
    <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
+   
                 <div class="card">
                                 <div class="card-body">  
 
@@ -296,7 +297,23 @@
  
 <script>
     
-   
+    $("#usuarios").autocomplete({
+    source: "<?php echo base_url(); ?>/usuarios/autocompleteData3",
+    minLength: 2,
+    select: function (event, ui) {
+        event.preventDefault();
+        var nombres =  ui.item.value;
+       
+        // Asigna el valor del cliente al campo "Cliente"
+        $("#Label").val(usuarios);
+
+        // Asigna el valor del NIT a los campos "nit" y "resultadoLabel2"
+       
+
+        $("#id").val(ui.item.id);
+        $("#usuarios").val(ui.item.value);
+    }
+});
     $("#clientes").autocomplete({
     source: "<?php echo base_url(); ?>/clientes/autocompleteData",
     minLength: 2,

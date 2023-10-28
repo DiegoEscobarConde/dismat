@@ -64,17 +64,16 @@ foreach ($productos as $producto) {
     }
    public function guarda()
     {
-        $id_Venta=$this->request->getPost('id_Venta');
-        $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
-        $id_Cliente=$this->request->getPost('id_Cliente');
-        $id=$this->request->getGet('id');
-        $notaR=$this->request->getGet('notaR');
-       
-       
-        var_dump($id_Venta);
+        $id_Venta = $this->request->getPost('id_Venta');
+    $total = preg_replace('/[\$,]/', '', $this->request->getPost('total'));
+    $id_Cliente = $this->request->getPost('id_cliente');
+    $notaR = $this->request->getPost('id'); // Asumiendo que notaR proviene de una fuente válida
+var_dump($id_Venta);
         var_dump($total);
-        $resultadoId=$this->ventas->insertarVenta($id_Venta,$total,$id,$id_Cliente,$notaR);
-       
+    // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
+    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_Cliente, $notaR);
+
+    // Resto de tu lógica...
         $this->temporal=new TemporalModel();
         if($resultadoId){
             $resultadoVenta=$this->temporal->porCompra($id_Venta);
@@ -91,7 +90,7 @@ foreach ($productos as $producto) {
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
-       return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
+       //return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
     }
     function muestraVentaPdf($id_Venta){
         $data ['id_Venta']=$id_Venta;
@@ -227,7 +226,9 @@ foreach ($productos as $producto) {
         //PONER COLOR BLANCO AL TEXTO DEL LOGOTIPO (GROMAR) Y AUMENTAR LA HORA A LA FECHA
         //COLOCAR CORREOS DE LA EMPRESA O DUEÑO DE LA EMPRESA.
     }
-   
+ 
+
+	
  
 
 

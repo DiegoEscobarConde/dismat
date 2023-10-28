@@ -40,14 +40,14 @@ class VentasModel extends Model
       protected $afterDelete    = [];
      
      
-    public function insertarVenta($id_Venta,$total,$id,$id_cliente,$notaR){
+    public function insertarVenta($id_Venta,$total,$id,$id_cliente){
       
         $this->insert([
-          'id_Venta'=> $id_Venta,
+          'notaR'=> $id_Venta,
           'total'=> $total,
           'id'=> $id,
           'id_cliente'=>$id_cliente,
-          'notaR'=>$notaR
+          
           
         ]);
           return $this->insertID();
@@ -65,6 +65,7 @@ class VentasModel extends Model
         $datos = $this->findAll();
         return $datos;
     }
+  
     
     
     

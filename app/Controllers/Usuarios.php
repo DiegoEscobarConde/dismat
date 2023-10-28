@@ -337,6 +337,8 @@ protected $reglas,$reglasLogin;
          
            
        }
+
+  
 }
     
                
