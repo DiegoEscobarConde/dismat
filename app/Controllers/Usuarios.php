@@ -84,30 +84,54 @@ protected $reglas,$reglasLogin;
 
     }
     public function insertar()
-    {
-        
-        if($this->request->getMethod() =="post" && $this->validate($this->reglas))
-        {
-        
-         $hash = password_hash($this->request->getVar('password'),PASSWORD_DEFAULT);
-          $nombres = $this->request->getPost('nombres');
-          $apellido = $this->request->getPost('primerApellido');
-         if (is_string($nombres)){  
-          $hash = substr(bin2hex(random_bytes(4)), 0, 8);
-          $nombreUsuario = strtolower(substr($nombres, 0, 3) . $apellido);;
-          
-          
-    $this->usuarios->save(['nombres' => $this->request->getPost('nombres'),
+{
+    if ($this->request->getMethod() == "post" && $this->validate($this->reglas)) {
+        $password = $this->request->getPost('password');
+        $nombres = $this->request->getPost('nombres');
+        $apellido = $this->request->getPost('primerApellido');
+       
+        $passwordAlfanumerico = $this->generarPassword(); // Genera una contraseña alfanumérica de 8 caracteres
+        $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
+        $nombreUsuario=strtolower(substr($nombres, 0, 3).$apellido);
+        $correo=$this->request->getPost('email');
+         // Almacena $passwordEncriptado en la base de datos
+          // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico   
+          $accion = $this->request->getPost('accion');
+          if ($accion === "guardar") {     
+         $this->usuarios->save(['nombres' => $this->request->getPost('nombres'),
          'primerApellido' => $this->request->getPost('primerApellido'),
          'segundoApellido' => $this->request->getPost('segundoApellido'),
-         'email' => $this->request->getPost('email'),
+         'email' => $correo,
          'celular' => $this->request->getPost('celular'),
          'usuario' => $nombreUsuario,
-         'password' => $hash,
+         'password' => $passwordAlfanumerico,
          'id_Empleado' => $this->request->getPost('id_Empleado'),
          'estado'=> 1
         ]);
-            return redirect()->to(base_url().'/usuarios');
+        return redirect()->to(base_url() . 'usuarios');
+
+    } elseif ($accion === "enviar") {
+             // Envía el correo electrónico
+             $email = \Config\Services::email();
+        
+             // Configurar los datos del correo
+             $email->setFrom('escobar.diego.1091@gmail.com', 'diego'); // Establece el encabezado 'From' con tu dirección de correo
+            
+             $email->setTo($correo);
+             $email->setSubject("envio de credenciales");
+             $mensaje = "<p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
+             $email->setMessage($mensaje);
+     
+             // Intentar enviar el correo
+             if ($email->send()) {
+                 // El correo se envió exitosamente
+                 return redirect()->to(base_url() . 'usuarios');
+             } else {
+                 // Hubo un error al enviar el correo
+                 echo $email->printDebugger(); // Esto mostrará información de depuración para ayudarte a diagnosticar problemas
+             }
+
+        return redirect()->to(base_url() . '/usuarios');
         }else{
             $empleados = $this->empleados->where('estado',1)->findAll();
             $datos = ['titulo' => 'Agregar Usuario','empleados'=>$empleados,
@@ -119,9 +143,23 @@ protected $reglas,$reglasLogin;
         }
        
     
-    }
+    
         
     }
+}
+    function generarPassword() {
+        $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $longitud = 8; // Longitud de la contraseña deseada
+        $password = '';
+    
+        for ($i = 0; $i < $longitud; $i++) {
+            $password .= $caracteres[rand(0, strlen($caracteres) - 1)];
+        }
+    
+        return $password;
+    }
+    
+    
   
 
     public function editar($id)
@@ -176,29 +214,30 @@ protected $reglas,$reglasLogin;
     
     public function login()
     {
-   
       echo view('login');
     }
     public function valida()
     {
         if($this->request->getMethod() =="post"){  
             $usuario =$this->request->getPost('usuario');
-            $password =$this->request->getPost('password');
+            $passwordAlfanumerico =$this->request->getPost('password');
             
             $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
                  if($datosUsuario != null)
                 {
                     var_dump($usuario);
                     var_dump($datosUsuario['password']);
-                     if(password_verify($password,$datosUsuario['password']))
+                     if(password_verify($passwordAlfanumerico,$datosUsuario['password']))
                         {
-                            $datosSession= [
+                            $datosSession= 
+                            [
                            'id'=> $datosUsuario ['id'],
                            'usuario'=> $datosUsuario ['usuario'],
-                           'id_Empleado'=> $datosUsuario ['id_Empleado']];
-                            $sesion =session();
-                            $sesion->set($datosSession);
-                            return redirect()->to(base_url(). '/');
+                           'id_Empleado'=> $datosUsuario ['id_Empleado']
+                            ];
+                            $session =session();
+                            $session->set($datosSession);
+                            return redirect()->to(base_url(). '/productos');
                         } else
                            {
                              $data['error']="las contraseñas no coinciden";
@@ -211,105 +250,91 @@ protected $reglas,$reglasLogin;
                            }
          
      }
-
     }
+
+
+    
     public function logout() {
         $session = session(); // Obtener la instancia de la sesión
         $session->destroy(); // Eliminar toda la información de la sesión
-        return redirect()->to('login');
+        return redirect()->to(base_url());
     }
     
   
-   /* public function valida()
-        {
-          
-    
-                $usuario =$this->request->getPost('usuario');
-                $password =$this->request->getPost('password');
-                $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
-                     if($datosUsuario != null)
-                    {
-                         if(password_verify($password,$datosUsuario['password']))
-                            {
-                                $datosSession= [
-                               'id'=> $datosUsuario ['id'],
-                               'nombres'=> $datosUsuario ['nombres'],
-                               'primerApellido'=> $datosUsuario ['primerApellido'],
-                               'segundoApellido'=> $datosUsuario ['segundoApellido'],
-                               'email'=> $datosUsuario ['email'],
-                               'celular'=> $datosUsuario ['celular'],
-                               'usuario'=> $datosUsuario ['usuario'],
-                               'id_Empleado'=> $datosUsuario ['id_Empleado']];
-                                $sesion =session();
-                                $sesion->set($datosSession);
-                                return redirect()->to(base_url(). '/');
-                            } else
-                               {
-                                 $data['error']="las contraseñas no coinciden";
-                                 echo view('login'.$data);
-                                }
-                     } else
-                               {
-                                 $data['error']="el  ususario no existe";
-                                 echo view('login',$data);
-                               }
-             
-         } 
-        }*/
+
+        
     
      
 
-    
+        public function enviarCredenciales( )
+        {
+            if ($this->request->getMethod() == "post"){    
+            $nombreUsuario = $this->usuarios->getPost('usuario');
+            $passwordAlfanumerico  =$this->request->getPost('password');
+            $correo=$this->request->getPost('email');
+            $asunto=$this->request->getPost('asunto');
+          
+                $password = $this->request->getPost('password');
+                $nombres = $this->request->getPost('nombres');
+                $apellido = $this->request->getPost('primerApellido');
+        
+                $passwordAlfanumerico = $this->generarPassword(); // Genera una contraseña alfanumérica de 8 caracteres
+                $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
+                $nombreUsuario=strtolower(substr($nombres, 0, 3).$apellido);
+              
+                 // Almacena $passwordEncriptado en la base de datos
+                  // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico
+        
+                   
+                  
+                  
+             
+                // Cargar la librería de correo electrónico
+                $email = \Config\Services::email();
+        
+                // Configurar los datos del correo
+                $email->setFrom('escobar.diego.1091@gmail.com', 'diego'); // Establece el encabezado 'From' con tu dirección de correo
+               
+                $email->setTo($correo);
+                $email->setSubject($asunto);
+                $mensaje = "<p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
+                $email->setMessage($mensaje);
+        
+                // Intentar enviar el correo
+                if ($email->send()) {
+                    // El correo se envió exitosamente
+                    return redirect()->to(base_url() . 'usuarios');
+                } else {
+                    // Hubo un error al enviar el correo
+                    echo $email->printDebugger(); // Esto mostrará información de depuración para ayudarte a diagnosticar problemas
+                }
+            }
+        }
+
+        
  
-      public function enviarCredenciales()
-      {
-        if($this->request->getMethod() =="post"){ 
-          // Cargar la librería de correo electrónico
-          $nombreUsuario =$this->request->getPost('usuario');
-          $password =$this->request->getPost('password');
-          $correo=$this->request->getPost('email');
-          $asunto=$this->request->getPost('asunto');
-         
-       $email=\Config\Services::email();
-      
+   
 
-       $email->setFrom('escobar.diego.1091@gmail.com', 'diego');
-       $email->setTo($correo);
-
-      /* $email->setCC('another@another-example.com');
-       $email->setBCC('them@their-example.com');*/
-       
-       $email->setSubject( $asunto );
-       $email->setMessage ("Tu nombre de usuario es: $nombreUsuario <br> Tu contraseña es: $password");
-       
-       $email->send();
-  
-       return redirect()->to(base_url().'usuarios'); 
-      }
-    }
-    
-       
        public function email()
        {
            if($this->request->getMethod() =="post" )
            {
              
-               $this->usuarios->save(['usuarios' => $this->request->getPost('id')]);
+               $this->usuarios->save(['usuario' => $this->request->getPost('usuario')]);
                return redirect()->to(base_url().'usuarios');
            }else{
    
                $datos = ['titulo' => 'enviar correo','validation' =>$this->validator];
    
                echo view('encabezado');
-               echo view('usuarios/email',$datos);
-               echo view('pie');
-           }
-         
-           
-       }
+               echo view('usuarios/email',$datos);        
 
-  
+            
+        }
+    }
 }
+
+
     
                
 

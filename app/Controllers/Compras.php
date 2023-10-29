@@ -76,7 +76,7 @@ class Compras extends BaseController
         $session=session();
        
         var_dump($id_compras);
-    var_dump($total);
+        var_dump($total);
  
     
         $resultadoId = $this->compras->insertaCompra($id_compras, $total, $session->id);
@@ -95,7 +95,7 @@ class Compras extends BaseController
                 $this->productos = new ProductosModel();
                 $this->productos->actualizarProductoCompra($row['id_Producto'], $row['stock']);
             }
-            $this->temporal->eeliminarProductoCompra($id_compras);
+            
         }
         return redirect()->to(base_url()."/productos");
     } 

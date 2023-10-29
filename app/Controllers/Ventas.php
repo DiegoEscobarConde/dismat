@@ -62,16 +62,17 @@ foreach ($productos as $producto) {
        echo view('pie');
 
     }
-   public function guarda()
+   public function guarda()//funcion antigua +pdf por si no da chatgpt
     {
         $id_Venta = $this->request->getPost('id_Venta');
     $total = preg_replace('/[\$,]/', '', $this->request->getPost('total'));
     $id_Cliente = $this->request->getPost('id_cliente');
-    $notaR = $this->request->getPost('id'); // Asumiendo que notaR proviene de una fuente válida
+     // Asumiendo que notaR proviene de una fuente válida
+     $session=session('id');
 var_dump($id_Venta);
         var_dump($total);
     // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
-    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_Cliente, $notaR);
+    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_Cliente, $session->id);
 
     // Resto de tu lógica...
         $this->temporal=new TemporalModel();
@@ -90,7 +91,7 @@ var_dump($id_Venta);
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
-       //return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
+       return redirect()->to(base_url()."/ventas/eliminados/".$resultadoId);
     }
     function muestraVentaPdf($id_Venta){
         $data ['id_Venta']=$id_Venta;
@@ -228,7 +229,9 @@ var_dump($id_Venta);
     }
  
 
-	
+ 
+
+   
  
 
 

@@ -12,8 +12,8 @@
 
    <!-- DataTales Example -->
 
-        <div class="table">
-            <table class="table table-sm" id="dataTable" width="100%" cellspacing="0">
+   <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                
                 <thead>
                     <tr>
@@ -42,10 +42,11 @@
                           <td><?php echo $dato['email']?></td>
                           <td><?php echo $dato['celular']?></td>
                           <td><?php echo $dato['usuario']?></td>
-                          <td><?php echo $dato['id_Empleado']?></td>
+                          <td><?php echo $dato['password']?></td>
                          
                           
-                          <td>   <a href="<?php echo base_url(). '/usuarios/email/'.$dato ['id'];?>"  class="btn btn-success"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td>  <input type="hidden" id="accion" name="accion" value="">
+                              <button type="submit" class="btn btn-primary" name="accion" value="enviar">Enviar Correo</button></td>
                        
                           <td>   <a href="<?php echo base_url(). '/usuarios/editar/'.$dato['id'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                        
@@ -66,9 +67,7 @@
   </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#dataTable').DataTable();
-    });
+  
 </script>
   
 

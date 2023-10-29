@@ -47,6 +47,7 @@
               value="<?php echo set_value('celular')?>"
               autofocus require/>
           </div>  
+           
      </div>
 </div>
 <div class=" form-group">
@@ -66,7 +67,9 @@
      </div>
 </div>
 </div>
-        <button type="submit" class="btn btn-success">Guardar</button>
+<input type="hidden" id="accion" name="accion" value=""> <!-- Este campo indicará la acción a realizar -->
+    <button type="submit" class="btn btn-success" name="accion" value="guardar">Guardar</button>
+    <button type="submit" class="btn btn-primary" name="accion" value="enviar">Enviar Correo</button>
         <a href="<?php echo base_url(); ?>/usuarios" class="btn btn-primary">Regresar</a>
         
  

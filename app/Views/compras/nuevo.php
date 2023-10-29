@@ -57,7 +57,8 @@
      </div>
 </div>
       <div class="row">
-          <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
+        
+          <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive " width="100%">
                <thead class="thead-dark">
                     <th>#</th>
                     <th>codigo</th>
@@ -75,18 +76,19 @@
               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
                <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
                <button type="button" id="completar_compra" name="completar_compra" class="btn btn-success">comprar</button>
-             
-						
+
           </div>
       </div>
+      
 </form>
 </div>
 </main>
 <script>
 
 
-    $(document).ready(function(){ 
-     $("#completar_compra").click(function () {
+$(document).ready(function() {
+     $("#completar_compra").on(function () {
+          
      let nfila = $("#tablaproductos tr").length;
      if (nfila < 2) {
           // No hay productos en la compra, puedes manejar esta situación aquí
@@ -97,6 +99,7 @@
      }
 });
 });
+
 
 function buscarProducto(e, tagCodigo, codigo) {
      var enterkey = 13;
@@ -137,6 +140,7 @@ function agregarProducto(id_Producto, cantidad, id_compra) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
                url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_compra ,
+               
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto
@@ -170,7 +174,7 @@ function agregarProducto(id_Producto, cantidad, id_compra) {
 function eliminarProducto(id_Producto, id_compra) {
       
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra ,
+               url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra  + "/" + cantidad,
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto

@@ -4,7 +4,7 @@
     
 <?php $idVentaTmp = uniqid();?>
 
-<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>ventas/guarda" autocomplete="off">
+<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url('ventas/guarda'); ?>" autocomplete="off">
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
 
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
@@ -262,6 +262,7 @@
           </div>   
      </div>
 </div>
+
       <div class="row">
           <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
                <thead class="thead-dark">
@@ -276,15 +277,17 @@
                <tbody></tbody>
           </table>
       </div>
+      </div>
        <div class="row">
           <div class="col-12 col-sm-6 offset-md-6">
               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
                <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
-              
-              
-               <button type="button" id="completar_venta" class="btn btn-success">venta</button>
-             
-						
+               <button type="button" id="completar_venta" name="completar_venta
+               " class="btn btn-success">vender</button>
+
+          </div>        
+
+          </div>		
           </div>
       </div>
       </div>
@@ -298,23 +301,8 @@
  
 <script>
     
-    $("#usuarios").autocomplete({
-    source: "<?php echo base_url(); ?>/usuarios/autocompleteData3",
-    minLength: 2,
-    select: function (event, ui) {
-        event.preventDefault();
-        var nombres =  ui.item.value;
-       
-        // Asigna el valor del cliente al campo "Cliente"
-        $("#Label").val(usuarios);
 
-        // Asigna el valor del NIT a los campos "nit" y "resultadoLabel2"
-       
 
-        $("#id").val(ui.item.id);
-        $("#usuarios").val(ui.item.value);
-    }
-});
     $("#clientes").autocomplete({
     source: "<?php echo base_url(); ?>/clientes/autocompleteData",
     minLength: 2,
@@ -520,7 +508,7 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
 			if (nFilas < 2) {
 				alert("debeb agregarProducto")
 			} else {
-				$("#form_venta").submit();
+				$("#completar_venta").submit();
 			}
 		});
 	

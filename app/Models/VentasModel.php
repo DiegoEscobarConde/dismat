@@ -53,6 +53,7 @@ class VentasModel extends Model
           return $this->insertID();
       
          }
+  
     
       
  

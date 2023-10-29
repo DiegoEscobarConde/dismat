@@ -42,7 +42,7 @@ use CodeIgniter\Model;
           protected $afterDelete    = [];
           public function getUsersWithRoles()
           {
-              return $this->select('usuarios.*, rol AS rol_nombre')
+              return $this->select('usuarios.*, rol AS rol')
                   ->join('empleados', 'empleados.id_Empleado = usuarios.id_Empleado')
                   ->findAll();
           }
