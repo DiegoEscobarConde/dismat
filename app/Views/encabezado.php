@@ -1,6 +1,6 @@
 
 <?php 
-$user_session =session()?>
+$session =session()?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,7 +50,7 @@ $user_session =session()?>
 
 
 <body id="page-top"  >
-
+ 
     <!-- Page Wrapper -->
     <div id="wrapper"   >
 
@@ -167,49 +167,36 @@ $user_session =session()?>
 <div id="content">
 
     <!-- Topbar -->
-    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
 
         <!-- Sidebar Toggle (Topbar) -->
         <form class="form-inline">
             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                 <i class="fa fa-bars"></i>
             </button>
-        </form>
+        
 
        
 
            
             <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <?php echo $user_session->usuario;?>>
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $user_session->usuario;?></span>
-                    <img class="img-profile rounded-circle"
-                        src="img/undraw_profile.svg">
-                </a>
-                <!-- Dropdown - User Information -->
-                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                    aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#">
-                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Profile
-                    </a>
-                    <a class="dropdown-item" href="#">
-                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Settings
-                    </a>
-                    <a class="dropdown-item" href="#">
-                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Activity Log
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?php echo base_url();?>/usuarios/logout" data-toggle="modal" data-target="#logoutModal">
-                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Logout
-                    </a>
-                </div>
-            </li>
+            <ul class="navbar-nav ms-auto  me-3 me-lg-4 me-md-3 my-2 my-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="<?php echo $session->nombreUsuario; ?>"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $session->nombre; ?></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCambioPasword">
+                            Cambiar password</a>
+                        <a class="dropdown-item" href="#">Otro</a>
+                        <a class="dropdown-item" href="#">Otro</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="<?php echo base_url(); ?>/usuarios/logout">Cerrar sessión</a>
+                    </div>
+                </li>
+            </ul>
 
         </ul>
-
+</form>
     </nav>

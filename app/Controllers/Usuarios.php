@@ -97,7 +97,7 @@ protected $reglas,$reglasLogin;
          // Almacena $passwordEncriptado en la base de datos
           // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico   
           $accion = $this->request->getPost('accion');
-          if ($accion === "guardar") {     
+          if ($accion === "guardaryenviar") {     
          $this->usuarios->save(['nombres' => $this->request->getPost('nombres'),
          'primerApellido' => $this->request->getPost('primerApellido'),
          'segundoApellido' => $this->request->getPost('segundoApellido'),
@@ -108,9 +108,7 @@ protected $reglas,$reglasLogin;
          'id_Empleado' => $this->request->getPost('id_Empleado'),
          'estado'=> 1
         ]);
-        return redirect()->to(base_url() . 'usuarios');
-
-    } elseif ($accion === "enviar") {
+       
              // Envía el correo electrónico
              $email = \Config\Services::email();
         
@@ -119,7 +117,7 @@ protected $reglas,$reglasLogin;
             
              $email->setTo($correo);
              $email->setSubject("envio de credenciales");
-             $mensaje = "<p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
+             $mensaje = "<p>bienvenida $nombres</p><p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
              $email->setMessage($mensaje);
      
              // Intentar enviar el correo
@@ -227,11 +225,12 @@ protected $reglas,$reglasLogin;
                 {
                     var_dump($usuario);
                     var_dump($datosUsuario['password']);
-                     if(password_verify($passwordAlfanumerico,$datosUsuario['password']))
+                     if($passwordAlfanumerico.$datosUsuario['password'])
                         {
                             $datosSession= 
                             [
                            'id'=> $datosUsuario ['id'],
+                           'nombre'=> $datosUsuario ['nombre'],
                            'usuario'=> $datosUsuario ['usuario'],
                            'id_Empleado'=> $datosUsuario ['id_Empleado']
                             ];

@@ -21,7 +21,7 @@
 <div class="col-md-6 col-lg-4">
 <div class="login-wrap p-0">
 <h3 class="mb-4 text-center"> <i class="fas fa-fw fa-cog"></i>BIENVENIDO</h3>
-<form method="POST" action="<?php echo base_url(); ?>/valida" class="signin-form">
+<form method="POST" action="<?php echo base_url(); ?>usuarios/valida" class="signin-form">
 <div class="form-group">
 <input id="usuario" name="usuario" type="text" class="form-control" placeholder="usuario" required>
 </div>

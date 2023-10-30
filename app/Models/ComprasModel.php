@@ -39,14 +39,14 @@ class ComprasModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-        public function insertaCompra($id,$total,$id_compras) {
+       public function insertaCompra($id,$total,$id_compras) {
           $this->insert([
             'nota'=> $id_compras,
             'totalPago'=>$total,
             'id'=> $id,
            ]);
            return $this->insertID();
-        }   
+        }  
         
 
         

@@ -4,11 +4,12 @@
     
 <?php $idVentaTmp = uniqid();?>
 
-<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url('ventas/guarda'); ?>" autocomplete="off">
+<form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>/ventas/guarda" autocomplete="off"> 
+<input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
 
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
-   <input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
+  
    
                 <div class="card">
                                 <div class="card-body">  
@@ -219,7 +220,7 @@
   <div class="row">
           <div class=" col-12 col-sm-4">
                <input type="hidden" id="id_Producto" name="id_Producto"/>
-               <input type="hidden" id="id_Compra" name="id_Compra" value="<?php echo $idVentaTmp;?>"/>
+              
               <label for="">codigo</label>
               <input class ="form-control" id="codigo" name="codigo" type="text" placeholder="codigo" onkeyup="buscarProducto(event,this,this.value)"
               autofocus/>
@@ -258,7 +259,7 @@
           <div class=" col-12 col-sm-4">
               <label for=""><br>&nbsp;</label>
              <button id="agregar_producto" name="agregar_producto" type="button"
-             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
+             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,<?php echo $idVentaTmp;?>)">agregar producto</button>
           </div>   
      </div>
 </div>
@@ -282,8 +283,11 @@
           <div class="col-12 col-sm-6 offset-md-6">
               <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
                <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
-               <button type="button" id="completar_venta" name="completar_venta
-               " class="btn btn-success">vender</button>
+               <div>
+                <button type="button" id="completar_venta" 
+               class="btn btn-success">vender</button>     
+               </div>
+              
 
           </div>        
 
@@ -302,7 +306,7 @@
 <script>
     
 
-
+$(function(){ 
     $("#clientes").autocomplete({
     source: "<?php echo base_url(); ?>/clientes/autocompleteData",
     minLength: 2,
@@ -321,11 +325,12 @@
         $("#clientes").val(ui.item.value);
     }
 });
+});
 
 // Evento que se dispara cuando se presiona Enter en el campo de código
 
 
-
+$(function(){  
     $("#codigo").autocomplete({
         source: "<?php echo base_url(); ?>/productos/autocompleteData1",
         minLength : 2,
@@ -345,44 +350,13 @@
                }
   
            });
+          });
            
 
 
            
            //ojo
-       /*   function buscarProducto(e, tagCodigo, codigo) {
-     var enterkey = 13;
-     if (codigo != '') {
-          if (e.which == enterkey) {
-               $.ajax({
-                    url: '<?php echo base_url(); ?>/productos/buscarPorCodigo1/' + codigo,
-                    dataType: 'json',
-                    success: function (resultado) {
-                         if (resultado == 0) {
-                              $(tagCodigo).val('');
-                         } else {
-                              $(tagCodigo).removeClass('has-error');
-                              $("#resultado_error").html(resultado.error);
-                              if (resultado.existe) {
-                                   $("#id_Producto").val(resultado.datos.id_Producto);
-                                   $("#descripcion").val(resultado.datos.descripcion);
-                                   $("#cantidad").val(1);
-                                   $("#precio_ventaU").val(resultado.datos.precio_ventaU);
-                                   $("#total").val(resultado.datos.precio_ventaU);
-                                   $("#cantidad").focus();
-                              } else {
-                                   $("#id_Producto").val('');
-                                   $("#descripcion").val('');
-                                   $("#cantidad").val('');
-                                   $("#precio_ventaU").val('');
-                                   $("#total").val('');
-                              }
-                         }
-                    }
-               });
-          }
-     }
-}*/
+  
 function buscarProducto(e, tagCodigo, codigo) {
      var enterkey = 13;
      if (codigo != '') {
@@ -416,15 +390,11 @@ function buscarProducto(e, tagCodigo, codigo) {
           }
      }
 }
-
-
-/*function agregarProducto(e,id_Producto, cantidad, id_venta) {
-    let enterKey = 13;
-    if(codigo!=''){
-        if(e.which == enterkey){
+function agregarProducto(id_Producto, cantidad, id_Venta) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/ '+ id_Producto + "/"+ cantidad + "/" + id_venta ,
+               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_Vompra ,
+               
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto
@@ -443,8 +413,8 @@ function buscarProducto(e, tagCodigo, codigo) {
                               $("#codigo").val('');
                               $("#descripcion").val('');
                               $("#cantidad").val('');
-                              $("#precio_ventaU").val('');
-                              $("#total").val('');
+                              $("#precio_compraU").val('');
+                              $("#subtotal").val('');
                              
                          } else {
                               // Maneja la situación si hubo un error al agregar el producto
@@ -455,8 +425,9 @@ function buscarProducto(e, tagCodigo, codigo) {
           });
      }
 }
-}
-}*/
+
+
+
 
    //////////////////////////////////////////////////
    //nueva forma//////
@@ -464,18 +435,26 @@ function buscarProducto(e, tagCodigo, codigo) {
   
 
 	
-function agregarProducto(id_Producto, cantidad, id_venta) {
-    
-     if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
-          $.ajax({
-               url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_venta ,
+/*function agregarProducto(id_Producto, cantidad, id_venta) {
+    let enterKey=13;
+    if(codigo != ''){  
+     if(e.which== enterKey)
+     {   
+     if (id_Producto != null && id_Producto != 0 && cantidad > 0)
+      {
+          $.ajax
+          ({
+               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_venta ,
                success: function (resultado) {
-                    if (resultado == 0) {
+                    if (resultado == 0) 
+                    {
                          // Maneja la situación si no se pudo agregar el producto
                          alert("No se pudo agregar el producto.");
-                    } else {
+                    } else 
+                    {
                          var resultado = JSON.parse(resultado);
-                         if (resultado.error == '') {
+                         if (resultado.error == '') 
+                         {
                               // Limpia la tabla de productos
                               $("#tablaProductos tbody").empty();
                               // Agrega los datos del producto al DataTable
@@ -490,30 +469,32 @@ function agregarProducto(id_Producto, cantidad, id_venta) {
                               $("#precio_ventaU").val('');
                               $("#subtotal").val('');
                              
-                         } else {
+                         } else 
+                         {
                               // Maneja la situación si hubo un error al agregar el producto
                               alert("Error al agregar el producto: " + resultado.error);
                          }
                     }
                }
           });
-     
-}
-
-
-
-		$("#completar_venta").click(function() {
-			let nFilas = $("#tablaProductos tr").length;
-                    
-			if (nFilas < 2) {
-				alert("debeb agregarProducto")
-			} else {
-				$("#completar_venta").submit();
-			}
-		});
-	
-            
      }
+   }
+}
+}*/
+
+
+$(document).ready(function() {
+    $("#completar_venta").click(function() {
+        let nfilas = $("#tablaProductos tr").length;
+
+        if (nfilas < 2) {
+            alert("Debes agregar al menos un producto.");
+        } else {
+            $("#form_venta").submit(); // Corrige el selector del formulario
+        }
+    });
+});
+
 </script>
    
   

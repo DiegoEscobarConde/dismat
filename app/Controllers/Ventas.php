@@ -6,8 +6,8 @@ use App\Models\VentasModel;
 use App\Models\ProductosModel;
 use App\Models\DetalleVentaModel;
 use App\Models\TemporalModel;
-use App\Models\ClientesModel;
-use App\Models\UsuariosModel;
+
+
 
 
 
@@ -21,8 +21,8 @@ class Ventas extends BaseController
         $this->ventas = new VentasModel();
         $this->productos = new ProductosModel();
         $this->detalle_Venta = new DetalleVentaModel();
-        $this->temporal= new TemporalModel();
-        $this->clientes= new ClientesModel();
+      
+        
       
         helper(['form']);
        
@@ -66,19 +66,19 @@ foreach ($productos as $producto) {
     {
         $id_Venta = $this->request->getPost('id_Venta');
     $total = preg_replace('/[\$,]/', '', $this->request->getPost('total'));
-    $id_Cliente = $this->request->getPost('id_cliente');
+    $id_cliente = $this->request->getPost('id_cliente');
      // Asumiendo que notaR proviene de una fuente válida
-     $session=session('id');
-var_dump($id_Venta);
+     $session=session();
+        var_dump($id_Venta);
         var_dump($total);
     // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
-    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_Cliente, $session->id);
+    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_cliente, $session->id_usuario);
 
     // Resto de tu lógica...
         $this->temporal=new TemporalModel();
         if($resultadoId){
-            $resultadoVenta=$this->temporal->porCompra($id_Venta);
-            foreach($resultadoVenta as $row){
+            $resultadoCompra=$this->temporal->porCompra($id_Venta);
+            foreach($resultadoCompra as $row){
                 $this->detalle_Venta->save([
                     'id_Venta'=>$resultadoId,
                     'id_Producto'=>$row['id_Producto'],
@@ -87,11 +87,11 @@ var_dump($id_Venta);
                     'precioVenta'=>$row['precioVenta']
                 ]);
                 $this->productos=new ProductosModel();
-                $this->productos->actualizaStock($row['id_Producto'],$row['cantidad'],'-');
+                $this->productos->actualizaStock($row['id_Producto'],$row['stock'],'-');
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
-       return redirect()->to(base_url()."/ventas/eliminados/".$resultadoId);
+      // return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
     }
     function muestraVentaPdf($id_Venta){
         $data ['id_Venta']=$id_Venta;

@@ -8,7 +8,7 @@
      </div>
  <?php }?>
       
-<form method="POST" action="<?php echo base_url(); ?>/usuarios/insertar" autocomplete="off">
+<form method="POST" id="registroForm" action="<?php echo base_url(); ?>/usuarios/insertar" autocomplete="off">
 <?php csrf_field();?>
 <div class=" form-group">
      <div class="row">
@@ -68,8 +68,9 @@
 </div>
 </div>
 <input type="hidden" id="accion" name="accion" value=""> <!-- Este campo indicará la acción a realizar -->
-    <button type="submit" class="btn btn-success" name="accion" value="guardar">Guardar</button>
-    <button type="submit" class="btn btn-primary" name="accion" value="enviar">Enviar Correo</button>
+<button type="submit" class="btn btn-success" name="accion" value="guardaryenviar">Guardar</button>
+    <button type="submit" class="btn btn-primary" name="accion" value="guardaryenviar">Enviar Correo</button>
+
         <a href="<?php echo base_url(); ?>/usuarios" class="btn btn-primary">Regresar</a>
         
  
