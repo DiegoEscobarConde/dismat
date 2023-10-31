@@ -64,7 +64,7 @@ class Temporal extends BaseController
          $fila.="<td>".$numfila."</td>";
          $fila.="<td>".$row['codigo']."</td>";
          $fila.="<td>".$row['descripcion']."</td>";
-         $fila.="<td>".$row['precio_compraU']."</td>";
+         $fila.="<td>".$row['precio']."</td>";
          $fila.="<td>".$row['cantidad']."</td>";
          $fila.="<td>".$row['subtotal']."</td>";
          $fila.="<td><a onclick=\"eliminarProducto(".$row['id_Producto'].", '".$id_compra."')\"

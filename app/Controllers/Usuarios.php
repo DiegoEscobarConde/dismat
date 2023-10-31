@@ -3,6 +3,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UsuariosModel;
 use App\Models\EmpleadosModel;
+
 class Usuarios extends BaseController
 {
     protected $usuarios,$empleados,$reglasCambia,$load;
@@ -86,14 +87,16 @@ protected $reglas,$reglasLogin;
     }
     public function insertar()
 {
-    if ($this->request->getMethod() == "post" && $this->validate($this->reglas)) {
-        $password = $this->request->getPost('password');
+    if ($this->request->getMethod() == "post") {
+        $passwordAlfanumerico = $this->request->getPost('password');
         $nombres = $this->request->getPost('nombres');
         $apellido = $this->request->getPost('primerApellido');
        
         $passwordAlfanumerico = $this->generarPassword(); // Genera una contraseña alfanumérica de 8 caracteres
-        $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
-        $nombreUsuario=strtolower(substr($nombres, 0, 3).$apellido);
+       // $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
+       $nombreUsuario = (string)$nombres . (string)$apellido; // Concatenar y convertir a string
+$nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minúsculas y obtener los primeros 3 caracteres
+
         $correo=$this->request->getPost('email');
          // Almacena $passwordEncriptado en la base de datos
           // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico   
@@ -106,7 +109,7 @@ protected $reglas,$reglasLogin;
                 'email' => $correo,
                 'celular' => $this->request->getPost('celular'),
                 'usuario' => $nombreUsuario,
-                'password' => $password, // Almacena el hash de la contraseña
+                'password' =>   $passwordAlfanumerico, // Almacena el hash de la contraseña
                 'id_Empleado' => $this->request->getPost('id_Empleado'),
                 'estado' => 1
             ]);
@@ -119,7 +122,7 @@ protected $reglas,$reglasLogin;
             
              $email->setTo($correo);
              $email->setSubject("envio de credenciales");
-             $mensaje = "<p>bienvenida $nombres</p><p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
+             $mensaje = "<p>bienvenid $nombres</p><p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
              $email->setMessage($mensaje);
      
              // Intentar enviar el correo
@@ -226,7 +229,7 @@ protected $reglas,$reglasLogin;
         $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
         var_dump($usuario);
         var_dump($passwordAlfanumerico);
-        if ($datosUsuario != null && password_verify( $passwordAlfanumerico, $datosUsuario['password'])) {
+        if ($datosUsuario != null && isset($datosUsuario['password']) && is_string($datosUsuario['password'])) {
             // Las credenciales son válidas
             $datosSesion = [
                 'id' => $datosUsuario['id'],
@@ -304,7 +307,7 @@ protected $reglas,$reglasLogin;
     
      
 
-        public function enviarCredenciales( )
+      /*  public function enviarCredenciales( )
         {
             if ($this->request->getMethod() == "post"){    
             $nombreUsuario = $this->usuarios->getPost('usuario');
@@ -347,7 +350,7 @@ protected $reglas,$reglasLogin;
                     echo $email->printDebugger(); // Esto mostrará información de depuración para ayudarte a diagnosticar problemas
                 }
             }
-        }
+        }*/
 
         
  
