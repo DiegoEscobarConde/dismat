@@ -98,16 +98,17 @@ protected $reglas,$reglasLogin;
           // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico   
           $accion = $this->request->getPost('accion');
           if ($accion === "guardaryenviar") {     
-         $this->usuarios->save(['nombres' => $this->request->getPost('nombres'),
-         'primerApellido' => $this->request->getPost('primerApellido'),
-         'segundoApellido' => $this->request->getPost('segundoApellido'),
-         'email' => $correo,
-         'celular' => $this->request->getPost('celular'),
-         'usuario' => $nombreUsuario,
-         'password' => $passwordAlfanumerico,
-         'id_Empleado' => $this->request->getPost('id_Empleado'),
-         'estado'=> 1
-        ]);
+            $this->usuarios->save([
+                'nombres' => $this->request->getPost('nombres'),
+                'primerApellido' => $this->request->getPost('primerApellido'),
+                'segundoApellido' => $this->request->getPost('segundoApellido'),
+                'email' => $correo,
+                'celular' => $this->request->getPost('celular'),
+                'usuario' => $nombreUsuario,
+                'password' => $password, // Almacena el hash de la contraseña
+                'id_Empleado' => $this->request->getPost('id_Empleado'),
+                'estado' => 1
+            ]);
        
              // Envía el correo electrónico
              $email = \Config\Services::email();
@@ -224,10 +225,10 @@ protected $reglas,$reglasLogin;
                  if($datosUsuario != null)
                 {
                     var_dump($usuario);
-                    var_dump($datosUsuario['password']);
-                     if($passwordAlfanumerico.$datosUsuario['password'])
-                        {
-                            $datosSession= 
+                    var_dump($passwordAlfanumerico);
+                    if (password_verify($passwordAlfanumerico, $datosUsuario['password'])) {
+                        // Contraseña válida
+                         $datosSession= 
                             [
                            'id'=> $datosUsuario ['id'],
                            'nombre'=> $datosUsuario ['nombre'],
@@ -236,20 +237,25 @@ protected $reglas,$reglasLogin;
                             ];
                             $session =session();
                             $session->set($datosSession);
-                            return redirect()->to(base_url(). '/productos');
-                        } else
+                            return redirect()->to(base_url(). '/categoria');
+                    } 
+                           
+                        else
                            {
                              $data['error']="las contraseñas no coinciden";
                              echo view('login',$data);
                             }
-                 } else
-                           {
+                 } else  {
                              $data['error']="el  ususario no existe";
                              echo view('login',$data);
                            }
+                        } else  {
+                            $data=['validation'=>$this->validator];
+                            echo view('login',$data);
+                          }
          
      }
-    }
+    
 
 
     
