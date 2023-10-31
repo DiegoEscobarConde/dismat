@@ -613,3 +613,319 @@ WARNING - 2023-10-31 07:34:21 --> [DEPRECATED] password_verify(): Passing null t
  3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
  4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 07:57:01 --> Undefined array key "nombre"
+in APPPATH\Controllers\Usuarios.php on line 234.
+ 1 APPPATH\Controllers\Usuarios.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Usuarios.php', 234)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->valida()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 07:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 07:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 10:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 16:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 16:55:59 --> Call to a member function library() on null
+in APPPATH\Controllers\Usuarios.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 17:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 17:23:01 --> Undefined variable $session
+in APPPATH\Views\encabezado.php on line 77.
+ 1 APPPATH\Views\encabezado.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\encabezado.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\encabezado.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('encabezado', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(70): view('encabezado')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 17:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 17:24:30 --> Undefined variable $session
+in APPPATH\Views\encabezado.php on line 189.
+ 1 APPPATH\Views\encabezado.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\encabezado.php', 189)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\encabezado.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('encabezado', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(70): view('encabezado')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 17:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 17:46:09 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65413d4d56f6c')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 17:46:17 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65413d4d56f6c')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 17:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 17:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 18:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 19:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 19:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 19:56:21 --> mysqli_sql_exception: Unknown column 'nota' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\app\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp2\htdocs\dismat\app\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-31 19:56:21 --> Unknown column 'nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temporal`
+WHERE `nota` = :nota:
+AND `id_Producto` = :id_Producto:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 20:20:02 --> mysqli_sql_exception: Unknown column 'nota' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\app\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp2\htdocs\dismat\app\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-31 20:20:02 --> Unknown column 'nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temporal`
+WHERE `nota` = :nota:
+AND `id_Producto` = :id_Producto:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 20:20:03 --> mysqli_sql_exception: Unknown column 'nota' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\app\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp2\htdocs\dismat\app\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-31 20:20:03 --> Unknown column 'nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temporal`
+WHERE `nota` = :nota:
+AND `id_Producto` = :id_Producto:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 20:20:03 --> mysqli_sql_exception: Unknown column 'nota' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\app\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp2\htdocs\dismat\app\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-31 20:20:03 --> Unknown column 'nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temporal`
+WHERE `nota` = :nota:
+AND `id_Producto` = :id_Producto:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 20:20:03 --> mysqli_sql_exception: Unknown column 'nota' in 'where clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\app\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp2\htdocs\dismat\app\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-31 20:20:03 --> Unknown column 'nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `temporal`
+WHERE `nota` = \'65415bdc24513\'
+AND `id_Producto` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temporal`
+WHERE `nota` = :nota:
+AND `id_Producto` = :id_Producto:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\TemporalModel.php(47): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Temporal.php(25): App\Models\TemporalModel->porIdProductoCompra('12', '65415bdc24513')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65415bdc24513')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 20:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 20:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 20:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 20:29:58 --> Undefined array key "precio_ventaU"
+in APPPATH\Controllers\Temporal.php on line 67.
+ 1 APPPATH\Controllers\Temporal.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_ventaU"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 67)
+ 2 APPPATH\Controllers\Temporal.php(46): App\Controllers\Temporal->cargarProductos('654163be22e9f')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1000', '654163be22e9f')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 21:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 21:06:12 --> Undefined array key "precio_compraU"
+in APPPATH\Controllers\Temporal.php on line 67.
+ 1 APPPATH\Controllers\Temporal.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_compraU"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 67)
+ 2 APPPATH\Controllers\Temporal.php(46): App\Controllers\Temporal->cargarProductos('65416c38b48ba')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '145', '65416c38b48ba')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 21:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 21:07:57 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65416ca5ee2c9')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 21:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 21:09:20 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65416cfa8319c')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 21:11:50 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 31.
+ 1 APPPATH\Controllers\Temporal.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '65416cfa8319c')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 21:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 21:12:18 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 31.
+ 1 APPPATH\Controllers\Temporal.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('13', '69', '65416d9d1d535')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

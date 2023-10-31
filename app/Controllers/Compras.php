@@ -9,13 +9,14 @@ use App\Models\DetalleCompraModel;
 class Compras extends BaseController
 {
     protected $compras,$temporal,$id,$productos;
-    protected $detalle_compra;
+    protected $detalle_compra,$session;
 
     public function __construct()
     {
         $this->compras = new ComprasModel();
         $this->detalle_compra = new DetalleCompraModel();
-        
+      
+        $this->session = \Config\Services::session();
     
         helper(['form']);
        
@@ -47,12 +48,13 @@ class Compras extends BaseController
         $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
       $session=session();
     
-        
+       
         $resultadoId=$this->compras->insertaCompra($id_compras,$total,$session->id);
+        
         $this->temporal=new TemporalModel();
         if($resultadoId){
-            $resultadoVenta=$this->temporal->porCompra($id_compras);
-            foreach($resultadoVenta as $row){
+            $resultadoCompra=$this->temporal->porCompra($id_compras);
+            foreach($resultadoCompra as $row){
                 $this->detalle_compra->save([
                     'id_Compra'=>$resultadoId,
                     'id_Producto'=>$row['id_Producto'],

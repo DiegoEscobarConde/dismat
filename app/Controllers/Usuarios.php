@@ -5,12 +5,13 @@ use App\Models\UsuariosModel;
 use App\Models\EmpleadosModel;
 class Usuarios extends BaseController
 {
-    protected $usuarios,$empleados,$reglasCambia;
+    protected $usuarios,$empleados,$reglasCambia,$load;
 protected $reglas,$reglasLogin;
     public function __construct()
     {
         $this-> usuarios = new UsuariosModel();
         $this-> empleados = new EmpleadosModel();
+       
 
         helper(['form']);
         $this->reglas =[
@@ -216,6 +217,38 @@ protected $reglas,$reglasLogin;
       echo view('login');
     }
     public function valida()
+{
+    if ($this->request->getMethod() == "post") {
+        $usuario = $this->request->getPost('usuario');
+        $passwordAlfanumerico = $this->request->getPost('password');
+
+        // Realiza la búsqueda del usuario en la base de datos
+        $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
+        var_dump($usuario);
+        var_dump($passwordAlfanumerico);
+        if ($datosUsuario != null && password_verify( $passwordAlfanumerico, $datosUsuario['password'])) {
+            // Las credenciales son válidas
+            $datosSesion = [
+                'id' => $datosUsuario['id'],
+                'nombre' => $datosUsuario['nombre'],
+                'usuario' => $datosUsuario['usuario'],
+                'id_Empleado' => $datosUsuario['id_Empleado']
+            ];
+            $session =session();
+           $session->set($datosSesion); // Inicia sesión
+
+            return redirect()->to(base_url() . '/categoria');
+        } else {
+            $data['error'] = "Las credenciales son incorrectas";
+            echo view('login', $data);
+        }
+    } else {
+        $data = ['validation' => $this->validator];
+        echo view('login', $data);
+    }
+}
+
+   /* public function valida()
     {
         if($this->request->getMethod() =="post"){  
             $usuario =$this->request->getPost('usuario');
@@ -226,18 +259,18 @@ protected $reglas,$reglasLogin;
                 {
                     var_dump($usuario);
                     var_dump($passwordAlfanumerico);
-                    if (password_verify($passwordAlfanumerico, $datosUsuario['password'])) {
+                    if (($passwordAlfanumerico. $datosUsuario['usuario'])) {
                         // Contraseña válida
                          $datosSession= 
                             [
                            'id'=> $datosUsuario ['id'],
-                           'nombre'=> $datosUsuario ['nombre'],
+                           'nombres'=> $datosUsuario ['nombres'],
                            'usuario'=> $datosUsuario ['usuario'],
                            'id_Empleado'=> $datosUsuario ['id_Empleado']
                             ];
                             $session =session();
                             $session->set($datosSession);
-                            return redirect()->to(base_url(). '/categoria');
+                            return redirect()->to(base_url(). '/categorias');
                     } 
                            
                         else
@@ -254,7 +287,7 @@ protected $reglas,$reglasLogin;
                             echo view('login',$data);
                           }
          
-     }
+     }*/
     
 
 

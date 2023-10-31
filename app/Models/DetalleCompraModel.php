@@ -39,11 +39,11 @@ class DetalleCompraModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-      public function insertaCompra($id_detallecompra,$total,$id,$id_cliente){
+      public function insertaCompra($id_detallecompra,$total,$id_usuarios,$id_cliente){
         $this->insert([
           'id_Compra'=>$id_detallecompra,
           'total'=>$total,
-          'id'=>$id,
+          'id'=>$id_usuarios,
           'id_cliente'=>$id_cliente,
 
         ]);

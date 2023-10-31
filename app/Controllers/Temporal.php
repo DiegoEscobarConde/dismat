@@ -34,7 +34,7 @@ class Temporal extends BaseController
                         'id_Producto'=>$id_Producto,
                         'codigo'=>$productos['codigo'],
                         'descripcion'=>$productos['descripcion'],
-                        'precio'=>$productos['precio'],
+                        'precio'=>$productos['precio_compraU'],
                         'cantidad'=>$cantidad,
                         'subtotal'=> $subtotal,
                     ]);
@@ -43,7 +43,7 @@ class Temporal extends BaseController
                 $error ="no existe el producto";
             }
             
-         $res['datos']=$this->cargarProductos($id_compra);
+         $res['datos']= $this->cargarProductos($id_compra);
          $res['total']=number_format($this->totalProductos($id_compra),2,'.',',');
           $res['error']=$error;
           echo json_encode($res);
@@ -64,7 +64,7 @@ class Temporal extends BaseController
          $fila.="<td>".$numfila."</td>";
          $fila.="<td>".$row['codigo']."</td>";
          $fila.="<td>".$row['descripcion']."</td>";
-         $fila.="<td>".$row['precio']."</td>";
+         $fila.="<td>".$row['precio_compraU']."</td>";
          $fila.="<td>".$row['cantidad']."</td>";
          $fila.="<td>".$row['subtotal']."</td>";
          $fila.="<td><a onclick=\"eliminarProducto(".$row['id_Producto'].", '".$id_compra."')\"

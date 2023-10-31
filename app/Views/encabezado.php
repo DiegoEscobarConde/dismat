@@ -1,6 +1,6 @@
 
 <?php 
-$session =session()?>
+$user_session = session()?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,6 +50,7 @@ $session =session()?>
 
 
 <body id="page-top"  >
+    
  
     <!-- Page Wrapper -->
     <div id="wrapper"   >
@@ -182,10 +183,10 @@ $session =session()?>
             <!-- Nav Item - User Information -->
             <ul class="navbar-nav ms-auto  me-3 me-lg-4 me-md-3 my-2 my-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo $session->nombreUsuario; ?>"></a>
+                    <a class="nav-link active" href=""></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $session->nombre; ?></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $user_session->nombre; ?></a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCambioPasword">
                             Cambiar password</a>
