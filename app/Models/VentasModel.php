@@ -19,7 +19,7 @@ class VentasModel extends Model
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
-    protected $updatedField  = 'fechaActualizacion';
+    protected $updatedField  = '';
     protected $deletedField  = 'deleted_at';
 
     // Validation
@@ -40,7 +40,7 @@ class VentasModel extends Model
       protected $afterDelete    = [];
      
      
-    public function insertarVenta($id_Venta,$total,$id_usuario,$id_cliente){
+   /* public function insertarVenta($id_Venta,$total,$id_usuario,$id_cliente){
       
         $this->insert([
           'nota'=> $id_Venta,
@@ -50,7 +50,20 @@ class VentasModel extends Model
         ]);
           return $this->insertID();
       
-         }
+         }*/
+         
+         public function insertarVenta($id_Venta, $total, $id_usuario, $id_cliente) {
+
+          
+          $data = [
+              'nota' => $id_Venta,
+              'total' => $total,
+              'id' => $id_usuario,
+              'id_cliente' => $id_cliente,
+          ];
+          $this->db->table('ventas')->insert($data);
+          return $this->db->insertID();
+      }
   
     
       

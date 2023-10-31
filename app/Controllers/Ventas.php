@@ -71,6 +71,8 @@ foreach ($productos as $producto) {
      $session=session();
         var_dump($id_Venta);
         var_dump($total);
+        var_dump($id_cliente);
+       
     // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
     $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_cliente, $session->id_usuario);
 
@@ -91,6 +93,7 @@ foreach ($productos as $producto) {
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
+        return redirect()->to(base_url()."/productos".$resultadoId);
       // return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
     }
     function muestraVentaPdf($id_Venta){

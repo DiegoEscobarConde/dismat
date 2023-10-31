@@ -41,7 +41,7 @@ class Compras extends BaseController
 
     }
     
-   /* public function guarda()
+    public function guarda()
     {
         $id_compras=$this->request->getPost('id_Compra');
         $total=preg_replace('/[\$,]/','',$this->request->getPost('total'));
@@ -65,10 +65,10 @@ class Compras extends BaseController
             }
             $this->temporal->eliminarCompra($id_compras);
         }
-    }*/
+    }
   
 
-    public function guarda()
+  /*  public function guarda()
     {
         
         $id_compras = $this->request->getPost('id_Compra');
@@ -90,15 +90,15 @@ class Compras extends BaseController
                     'id_Producto' => $row['id_Producto'],
                     'descripcion' => $row['descripcion'],
                     'cantidad' => $row['cantidad'],
-                    'precioUnitario' => $row['precioUnitario']
+                    'precio' => $row['precio']
                 ]);
                 $this->productos = new ProductosModel();
-                $this->productos->actualizarProductoCompra($row['id_Producto'], $row['stock']);
+                $this->productos->actualizaStock($row['id_Producto'], $row['cantidad']);
             }
             
         }
         return redirect()->to(base_url()."/productos");
-    } 
+    } */
     function muestraCompraPdf($id_compra){
         $data ['id_Compra']=$id_compra;
         echo view('encabezado');

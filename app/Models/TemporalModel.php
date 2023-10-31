@@ -13,14 +13,14 @@ class TemporalModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id_Producto', 'codigo','descripcion','cantidad','precio','subtotal','nota'];
+    protected $allowedFields = ['id_Producto', 'codigo','descripcion','cantidad','precio','subtotal','notab'];
 
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
     protected $createdField  = '';
     protected $updatedField  = '';
-    protected $deletedField  = 'deleted_at';
+    protected $deletedField  = '';
 
     // Validation
     protected $validationRules      = [];
@@ -41,7 +41,7 @@ class TemporalModel extends Model
      
       public function porIdProductoCompra($id_Producto,$nota){
         $this->select('*');
-        $this->where('nota',$nota);
+        $this->where('notab',$nota);
         $this->where('id_Producto',$id_Producto);
      
         $datos=$this->get()->getRow();
@@ -50,7 +50,7 @@ class TemporalModel extends Model
       }     
       public function porCompra($nota){
         $this->select('*');
-        $this->where('nota',$nota);
+        $this->where('notab',$nota);
         $datos=$this->findAll();
         return $datos;
 
@@ -59,18 +59,18 @@ class TemporalModel extends Model
         $this->set('cantidad',$cantidad);
         $this->set('subtotal',$subtotal);
         $this->where('id_Producto',$id_Producto);
-        $this->where('nota',$nota);
+        $this->where('notab',$nota);
         $this->update();
       } 
       public function eliminarProductoCompra($id_Producto,$nota)
       {
           $this->where('id_Producto', $id_Producto);
-          $this->where('nota', $nota);
+          $this->where('notab', $nota);
           $this->delete();
       }
       public function eliminarCompra($nota)
 {
-  $this->where('nota', $nota);
+  $this->where('notab', $nota);
   $this->delete();
 }
         

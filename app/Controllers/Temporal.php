@@ -34,7 +34,7 @@ class Temporal extends BaseController
                         'id_Producto'=>$id_Producto,
                         'codigo'=>$productos['codigo'],
                         'descripcion'=>$productos['descripcion'],
-                        'precio'=>$productos['precio_compraU'],
+                        'precio'=>$productos['precio'],
                         'cantidad'=>$cantidad,
                         'subtotal'=> $subtotal,
                     ]);

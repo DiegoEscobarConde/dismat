@@ -259,7 +259,7 @@
           <div class=" col-12 col-sm-4">
               <label for=""><br>&nbsp;</label>
              <button id="agregar_producto" name="agregar_producto" type="button"
-             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,<?php echo $idVentaTmp;?>)">agregar producto</button>
+             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
           </div>   
      </div>
 </div>
@@ -341,9 +341,7 @@ $(function(){
             $("#codigo").val(ui.item.value);
             setTimeout(
                 function(){
-                    e=jQuery.Event("keydown");
-                    e.which=13;
-                    agregarProducto();
+                    
                 }
             )
            
@@ -393,10 +391,11 @@ function buscarProducto(e, tagCodigo, codigo) {
 function agregarProducto(id_Producto, cantidad, id_Venta) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_Vompra ,
-               
+               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_Venta ,
+              
                success: function (resultado) {
                     if (resultado == 0) {
+                          console.log(resultado);
                          // Maneja la situación si no se pudo agregar el producto
                          alert("No se pudo agregar el producto.");
                     } else {

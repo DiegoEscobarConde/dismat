@@ -80,7 +80,7 @@ class DetalleVenta extends BaseController
       
         
     }*/
-    public function autocompleteData1(){
+  /*  public function autocompleteData1(){
         $returnData = array();
         $valor =$this->request->getGet('term');
         $productos =$this->productos->like('codigo',$valor)->where('estado',1)->findAll();
@@ -95,7 +95,7 @@ class DetalleVenta extends BaseController
             }
         }
         echo json_encode($returnData);
-    }
+    }*/
     
 }
 

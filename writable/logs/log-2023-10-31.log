@@ -1,0 +1,482 @@
+CRITICAL - 2023-10-31 02:32:49 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719568)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '653ff77368965')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 02:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 02:35:39 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719739)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654067f07acb5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 02:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 02:35:50 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719750)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654067f07acb5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 02:35:51 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719751)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654067f07acb5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 02:35:51 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719751)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654067f07acb5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 02:35:51 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698719751)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654067f07acb5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:16:22 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698722182)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '65407161246a5')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:18:34 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698722314)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '10', '654072039c7f0')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:21:12 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698722472)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654072a01edf1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:27:52 --> "App\Models\TemporalModel" model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1300.
+ 1 SYSTEMPATH\BaseModel.php(1300): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\TemporalModel')
+ 2 SYSTEMPATH\BaseModel.php(1267): CodeIgniter\BaseModel->intToDate(1698722872)
+ 3 SYSTEMPATH\BaseModel.php(766): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Temporal.php(32): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '6540742d17a12')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:29:46 --> Undefined array key "precio_compraU"
+in APPPATH\Controllers\Temporal.php on line 67.
+ 1 APPPATH\Controllers\Temporal.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_compraU"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 67)
+ 2 APPPATH\Controllers\Temporal.php(46): App\Controllers\Temporal->cargarProductos('6540749d1ece0')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '6540749d1ece0')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-31 03:31:17 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:31:17 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(75): App\Models\VentasModel->insertarVenta(''654074f7a3cee'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:31:17 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:31:17\', \'2023-10-31 03:31:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:31:17\', \'2023-10-31 03:31:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:31:17\', \'2023-10-31 03:31:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(75): App\Models\VentasModel->insertarVenta('\'654074f7a3cee\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:34:42 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:34:42 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''654074f7a3cee'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:34:42 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:34:42\', \'2023-10-31 03:34:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:34:42\', \'2023-10-31 03:34:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:34:42\', \'2023-10-31 03:34:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'654074f7a3cee\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:36:10 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:36:10 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''654074f7a3cee'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:36:10 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:10\', \'2023-10-31 03:36:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:10\', \'2023-10-31 03:36:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'654074f7a3cee\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:10\', \'2023-10-31 03:36:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'654074f7a3cee\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-31 03:36:35 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:36:35 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:36:35 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:35\', \'2023-10-31 03:36:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:35\', \'2023-10-31 03:36:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:36:35\', \'2023-10-31 03:36:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:38:05 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:38:05 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:38:05 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:38:05\', \'2023-10-31 03:38:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:38:05\', \'2023-10-31 03:38:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:38:05\', \'2023-10-31 03:38:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:40:41 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:40:41 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-31 03:40:41 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:40:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:40:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL, \'2023-10-31 03:40:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`, `fechaRegistro`) VALUES (:nota:, :total:, :id:, :id_cliente:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(45): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:52:45 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 03:52:45 --> Call to a member function database() on null
+in APPPATH\Models\VentasModel.php on line 57.
+ 1 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:53:04 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:53:05 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-31 03:53:05 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (:nota:, :total:, :id:, :id_cliente:)', [...], false)
+ 5 APPPATH\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:54:15 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:54:15 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-31 03:54:15 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (:nota:, :total:, :id:, :id_cliente:)', [...], false)
+ 5 APPPATH\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-31 03:54:20 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Ventas.php on line 68.
+ 1 APPPATH\Controllers\Ventas.php(68): preg_replace('/[\\$,]/', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 03:54:20 --> mysqli_sql_exception: Column 'id' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp2\htdocs\dismat\app\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\dismat\app\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta(''6540763271f3e'', '', NULL, NULL)
+#6 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+#7 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-31 03:54:20 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (\'\\\'6540763271f3e\\\'\', \'\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`nota`, `total`, `id`, `id_cliente`) VALUES (:nota:, :total:, :id:, :id_cliente:)', [...], false)
+ 5 APPPATH\Models\VentasModel.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Ventas.php(77): App\Models\VentasModel->insertarVenta('\'6540763271f3e\'', '', null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Ventas->guarda()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 03:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 03:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

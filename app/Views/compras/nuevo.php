@@ -87,17 +87,15 @@
 
 
 $(document).ready(function() {
-     $("#completar_compra").on(function () {
-          
-     let nfila = $("#tablaproductos tr").length;
-     if (nfila < 2) {
-          // No hay productos en la compra, puedes manejar esta situación aquí
-          alert("No hay productos en la compra.");
-     } else {
-          // Envía el formulario para completar la compra
-          $("#form_compra").submit();
-     }
-});
+    $("#completar_compra").click(function() {
+        let nfilas = $("#tablaProductos tr").length;
+
+        if (nfilas < 2) {
+            alert("Debes agregar al menos un producto.");
+        } else {
+            $("#form_compra").submit(); // Corrige el selector del formulario
+        }
+    });
 });
 
 
@@ -139,12 +137,12 @@ function buscarProducto(e, tagCodigo, codigo) {
 function agregarProducto(id_Producto, cantidad, id_compra) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_compra ,
+               url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_compra ,
                
                success: function (resultado) {
                     if (resultado == 0) {
                          // Maneja la situación si no se pudo agregar el producto
-                         alert("No se pudo agregar el producto.");
+                    
                     } else {
                          var resultado = JSON.parse(resultado);
                          if (resultado.error == '') {
@@ -172,7 +170,7 @@ function agregarProducto(id_Producto, cantidad, id_compra) {
      }
 }
 function eliminarProducto(id_Producto, id_compra) {
-      
+     if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
                url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra  + "/" + cantidad,
                success: function (resultado) {
@@ -194,6 +192,7 @@ function eliminarProducto(id_Producto, id_compra) {
                }
           });
      }
+}
 
 
   
