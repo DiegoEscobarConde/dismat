@@ -1,60 +1,69 @@
-<!doctype html>
-<html lang="es">
-<head>
-<title>dismat</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="<?php echo base_url() ;?>css/fonts.googleapis1/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-<link href="<?php echo base_url() ;?>css/font-awesome1.min.css" rel="stylesheet">
-<link  href="<?php echo base_url() ;?>css/style1.css" rel="stylesheet">
-
-<body class="img js-fullheight"><i><img src="logoLogin" alt=""></i>
-
-<section class="ftco-section">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-6 text-center mb-5">
-
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="col-md-6 col-lg-4">
-<div class="login-wrap p-0">
-<h3 class="mb-4 text-center"> <i class="fas fa-fw fa-cog"></i>BIENVENIDO</h3>
-<form method="POST" action="<?php echo base_url(); ?>usuarios/valida" class="signin-form">
-<div class="form-group">
-<input id="usuario" name="usuario" type="text" class="form-control" placeholder="usuario" required>
-</div>
-<div class="form-group">
-<input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
-<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-</div>
-<div class="form-group">
-<button type="submit" class="form-control btn btn-primary submit px-3">INICIAR</button>
-</div>
-<?php if (isset($validation)) { ?>
-     <div class="alert alert-danger">
-     <?php echo $validation->listErrors();?>
-     </div>
- <?php }?>
- <?php if (isset($error)) { ?>
-     <div class="alert alert-danger">
-     <?php echo $error;?>
-     </div>
- <?php }?>
-
-</form>
-
-
-</div>
-</div>
-</div>
-</div>
-
-<script src="<?php echo base_url() ;?>js/jquery.min.js"></script>
-<script src="<?php echo base_url() ;?>js/popper.js"></script>
-<script src="<?php echo base_url() ;?>js/bootstrap.min.js"></script>
-<script src="<?php echo base_url() ;?>js/main.js"></script>
-<script src="<?php echo base_url() ;?>js/beacon1.min.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Login - SB Admin</title>
+        <link href="<?php echo base_url() ;?>/css/stylecss.css" rel="stylesheet" />
+        <script src="<?php echo base_url() ;?>/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                                                <label for="inputPassword">Password</label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
+                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <a class="small" href="password.html">Forgot Password?</a>
+                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-footer text-center py-3">
+                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div id="layoutAuthentication_footer">
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="<?php echo base_url() ;?>/js/bootstrap.bundle.min.js;" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url() ;?>js/scripts.js"></script>
+    </body>
 </html>

@@ -517,3 +517,4 @@ in APPPATH\Controllers\Temporal.php on line 37.
  3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
  4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 04:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
