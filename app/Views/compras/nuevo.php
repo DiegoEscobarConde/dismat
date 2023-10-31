@@ -135,6 +135,7 @@ function buscarProducto(e, tagCodigo, codigo) {
 
 
 function agregarProducto(id_Producto, cantidad, id_compra) {
+    
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
                url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_compra ,

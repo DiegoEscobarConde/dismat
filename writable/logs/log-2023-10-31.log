@@ -480,3 +480,40 @@ INFO - 2023-10-31 03:55:39 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-10-31 03:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-31 03:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-31 03:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 04:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 04:29:22 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654082944673f')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 04:29:25 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654082944673f')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 04:38:22 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654082944673f')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-31 04:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-31 04:38:33 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654084c19fbf4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 04:38:45 --> Undefined array key "precio"
+in APPPATH\Controllers\Temporal.php on line 37.
+ 1 APPPATH\Controllers\Temporal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Temporal.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Temporal->insertar('12', '1', '654084c19fbf4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporal))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

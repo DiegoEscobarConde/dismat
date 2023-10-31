@@ -305,7 +305,7 @@
  
 <script>
     
-
+  
 $(function(){ 
     $("#clientes").autocomplete({
     source: "<?php echo base_url(); ?>/clientes/autocompleteData",
