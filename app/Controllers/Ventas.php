@@ -6,6 +6,7 @@ use App\Models\VentasModel;
 use App\Models\ProductosModel;
 use App\Models\DetalleVentaModel;
 use App\Models\TemporalModel;
+use App\Models\ClientesModel;
 
 
 
@@ -14,13 +15,16 @@ use App\Models\TemporalModel;
 
 class Ventas extends BaseController
 {
-    protected $ventas,$clientes,$productos,$detalle_Venta,$temporal,$compras,$db,$id;
+    protected $ventas,$clientes,$productos,$detalle_Venta,$temporal,$compras,$session,$db;
    
     public function __construct()
     {
         $this->ventas = new VentasModel();
         $this->productos = new ProductosModel();
         $this->detalle_Venta = new DetalleVentaModel();
+        $this->clientes = new ClientesModel();
+        
+        $this->session = session();
       
         
       
@@ -54,7 +58,7 @@ foreach ($productos as $producto) {
      public function ventas()
     {
         
-    
+        if(!isset($this->session->usuario)){return redirect()->to(base_url('/categorias'));}
       $data = ['titulo' => 'NUEVA VENTA'];
 
        echo view('encabezado');
@@ -62,6 +66,7 @@ foreach ($productos as $producto) {
        echo view('pie');
 
     }
+
    public function guarda()//funcion antigua +pdf por si no da chatgpt
     {
         $id_Venta = $this->request->getPost('id_Venta');
@@ -72,10 +77,11 @@ foreach ($productos as $producto) {
         var_dump($id_Venta);
         var_dump($total);
         var_dump($id_cliente);
+        var_dump($session->usuario);
        
-    // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
-    $resultadoId = $this->ventas->insertarVenta($id_Venta, $total, $id_cliente, $session->id_usuario);
 
+    // Asegúrate de que 'id' no se incluye en la inserción si es autoincremental
+    $resultadoId=$this->ventas->insertaVenta($id_Venta,$total,$session->id,$id_cliente);  
     // Resto de tu lógica...
         $this->temporal=new TemporalModel();
         if($resultadoId){
@@ -84,29 +90,65 @@ foreach ($productos as $producto) {
                 $this->detalle_Venta->save([
                     'id_Venta'=>$resultadoId,
                     'id_Producto'=>$row['id_Producto'],
-                    'nombre'=>$row['nombre'],
+                    'descripcion'=>$row['descripcion'],
                     'cantidad'=>$row['cantidad'],
-                    'precioVenta'=>$row['precioVenta']
+                    'precio'=>$row['precio']
                 ]);
                 $this->productos=new ProductosModel();
-                $this->productos->actualizaStock($row['id_Producto'],$row['stock'],'-');
+                $this->productos->actualizaStock($row['id_Producto'],$row['cantidad'],'-');
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
         return redirect()->to(base_url()."/productos".$resultadoId);
       // return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
+      
     }
-    function muestraVentaPdf($id_Venta){
-        $data ['id_Venta']=$id_Venta;
+  /*  public function guarda()//original 
+    {
+        $id_Venta=$this->request->getPost('id_Venta');
+        $total=$this->request->getPost('total');   
+        $id_cliente = $this->request->getPost('id_cliente');     
+        $session=session(); 
+        $resultadoId = $this->ventas->insertaVenta($session->id, $id_Venta, $total, $id_cliente);
+
+       
+        if($resultadoId){
+            $this->temporal= new TemporalModel();
+            $resultadoCompra=$this->temporal->porCompra($id_Venta);
+            foreach($resultadoCompra as $row){
+                var_dump($resultadoId);
+                var_dump($row['id_Producto'],);
+                var_dump($row['descripcion']);
+                var_dump($row['cantidad']);
+                var_dump($row['precioVenta']);
+                $this->detalle_Venta->save([
+                    'id_Venta'=>$resultadoId,
+                    'id_Producto'=>$row['id_Producto'],
+                    'descripcion'=>$row['descripcion'],
+                    'cantidad'=>$row['cantidad'],
+                    'precio' => $row['precio'],
+                ]);
+                 $this->productos=new ProductosModel();
+               $this->productos->actualizaStock($row['id_Producto'],$row['cantidad']);
+               
+            }
+            
+            $this->temporal->eliminarCompra($id_Venta);
+        }
+        return redirect()->to(base_url()."/productos");
+    }*/
+ 
+    function muestraVentaPdf($id_compra){
+       $data['id_Compra']=$id_compra;
         echo view('encabezado');
-        echo view('compras/ver_ticket', $data);
+        echo view('ventas/ver_venta_pdf',$data);
         echo view('pie');
 
     }
-    function generarCompraPdf ($id_Venta)
+    function generarCompraPdf ($id_compra)
     {
-        $datosventas=$this->ventas->where('id_Venta', $id_Venta)->firts();
-      // $detalle_venta=$this->detalle_venta->select('*')->where('id_Venta', $id_venta)->findAll();
+        $datosventas=$this->ventas->where('id_Venta')->firts();
+       // $detalle_venta=$this->detalle_venta->select('*')->where('id_Venta', $id_venta)->findAll();
 
        $pdf=new \FPDF('P','mm','letter');
        $pdf->AddPage();

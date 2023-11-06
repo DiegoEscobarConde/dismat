@@ -134,66 +134,64 @@ function buscarProducto(e, tagCodigo, codigo) {
 }
 
 
+
 function agregarProducto(id_Producto, cantidad, id_compra) {
-    
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
-          $.ajax({
-               url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/"+ cantidad + "/" + id_compra ,
-               
-               success: function (resultado) {
-                    if (resultado == 0) {
-                         // Maneja la situación si no se pudo agregar el producto
-                    
+        $.ajax({
+            url: "<?php echo base_url(); ?>/temporal/insertar/" + id_Producto + "/" + cantidad + "/" + id_compra,
+            success: function (resultado) {
+                try {
+                    var resultadoJSON = JSON.parse(resultado);
+                    if (resultadoJSON.error == '') {
+                        // Limpia la tabla de productos
+                        $("#tablaProductos tbody").empty();
+                        // Agrega los datos del producto al DataTable
+                        $("#tablaProductos tbody").append(resultadoJSON.datos);
+                        // Actualiza el total
+                        $("#total").val(resultadoJSON.total);
+                        // Limpia los campos
+                        $("#id_Producto").val('');
+                        $("#codigo").val('');
+                        $("#descripcion").val('');
+                        $("#cantidad").val('');
+                        $("#precio_compraU").val('');
+                        $("#subtotal").val('');
                     } else {
-                         var resultado = JSON.parse(resultado);
-                         if (resultado.error == '') {
-                              // Limpia la tabla de productos
-                              $("#tablaProductos tbody").empty();
-                              // Agrega los datos del producto al DataTable
-                              $("#tablaProductos tbody").append(resultado.datos);
-                              // Actualiza el total
-                              $("#total").val(resultado.total);
-                              // Limpia los campos
-                              $("#id_Producto").val('');
-                              $("#codigo").val('');
-                              $("#descripcion").val('');
-                              $("#cantidad").val('');
-                              $("#precio_compraU").val('');
-                              $("#subtotal").val('');
-                             
-                         } else {
-                              // Maneja la situación si hubo un error al agregar el producto
-                              alert("Error al agregar el producto: " + resultado.error);
-                         }
+                        // Maneja la situación si hubo un error al agregar el producto
+                        alert("Error al agregar el producto: " + resultadoJSON.error);
                     }
-               }
-          });
-     }
+                } catch (error) {
+                    console.error("Error al analizar la respuesta JSON: " + error);
+                }
+            }
+        });
+    }
 }
-function eliminarProducto(id_Producto, id_compra) {
-     if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
-          $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra  + "/" + cantidad,
-               success: function (resultado) {
-                    if (resultado == 0) {
-                         // Maneja la situación si no se pudo agregar el producto
-                         $(tagCodigo).val('');
-                         alert("No se pudo agregar el producto.");
-                    } else {
-                         var resultado = JSON.parse(resultado);
-                        
-                              // Limpia la tabla de productos
-                              $("#tablaProductos tbody").empty();
-                              // Agrega los datos del producto al DataTable
-                              $("#tablaProductos tbody").append(resultado.datos);
-                              // Actualiza el total
-                              $("#total").val(resultado.total);
-                              // Limpia los campos                       
-                    }
-               }
-          });
-     }
+
+
+     function eliminarProducto(id_Producto, id_compra) {
+    $.ajax({
+        url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_compra,
+        dataType: 'json',
+        success: function (resultado) {
+            try {
+                var resultadoJSON = JSON.parse(resultado);
+                // Limpia la tabla de productos
+                $("#tablaProductos tbody").empty();
+                // Agrega los datos del producto al DataTable
+                $("#tablaProductos tbody").append(resultadoJSON.datos);
+                // Actualiza el total
+                $("#total").val(resultadoJSON.total);
+                // Limpia los campos
+            } catch (error) {
+                console.error("Error al analizar la respuesta JSON: " + error);
+                // Aquí puedes manejar el error de análisis JSON si es necesario
+            }
+        }
+    });
 }
+
+
 
 
   

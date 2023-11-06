@@ -13,7 +13,7 @@ class VentasModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = [ 'estado','total','id','id_cliente','nota'];
+    protected $allowedFields = ['id','nota', 'total','id_cliente','estado'];
 
     // Dates
     protected $useTimestamps = true;
@@ -40,32 +40,18 @@ class VentasModel extends Model
       protected $afterDelete    = [];
      
      
-   /* public function insertarVenta($id_Venta,$total,$id_usuario,$id_cliente){
-      
-        $this->insert([
-          'nota'=> $id_Venta,
-          'total'=> $total,
-          'id'=> $id_usuario,
-          'id_cliente'=>$id_cliente,
-        ]);
-          return $this->insertID();
-      
-         }*/
+   
          
-         public function insertarVenta($id_Venta, $total, $id_usuario, $id_cliente) {
-
-          
-          $data = [
-              'nota' => $id_Venta,
-              'total' => $total,
-              'id' => $id_usuario,
-              'id_cliente' => $id_cliente,
-          ];
-          $this->db->table('ventas')->insert($data);
-          return $this->db->insertID();
-      }
-  
-    
+      public function insertaVenta($id_Venta,$total,$usuario,$id_cliente) {
+        $this->insert([
+               'nota'=> $id_Venta, 
+               'total'=>$total,
+               'id'=> $usuario,
+               'id_cliente'=>$id_cliente          
+         ]);
+         return $this->insertID();
+      } 
+       
       
  
       public function obtener($activo = 1){

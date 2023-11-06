@@ -90,9 +90,6 @@ class Temporal extends BaseController
     }
     public function eliminar($id_Producto,$id_compra)
     {
-       
-        
-           
                 $datosExiste=$this->temporal->porIdProductoCompra($id_Producto,$id_compra);
                 if($datosExiste){
                     if($datosExiste->cantidad > 1){  

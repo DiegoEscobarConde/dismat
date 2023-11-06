@@ -233,14 +233,13 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
             // Las credenciales son válidas
             $datosSesion = [
                 'id' => $datosUsuario['id'],
-                'nombre' => $datosUsuario['nombre'],
                 'usuario' => $datosUsuario['usuario'],
                 'id_Empleado' => $datosUsuario['id_Empleado']
             ];
             $session =session();
            $session->set($datosSesion); // Inicia sesión
 
-            return redirect()->to(base_url() . '/categoria');
+            return redirect()->to(base_url() . '/categorias');
         } else {
             $data['error'] = "Las credenciales son incorrectas";
             echo view('login', $data);

@@ -13,14 +13,14 @@ class ProductosModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['codigo', 'descripcion', 'precio_ventaU', 'precio_compraU'
-    , 'stock', 'inventario', 'id_categoria', 'estado'];
+    protected $allowedFields = ['codigo', 'descripcion', 'precio_ventaU', 'precio_compraU',
+    'stock', 'inventario', 'id_categoria', 'estado'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
-    protected $updatedField  = 'fechaActualizacion';
+    protected $updatedField  = '';
     protected $deletedField  = 'deleted_at';
 
     // Validation
@@ -40,9 +40,9 @@ class ProductosModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-     public function actualizaStock ($id_Producto,$cantidad,$operador='+'){
-      $this->set ('stock',"stock' $operador $cantidad",FALSE);
-      $this-> where('id',$id_Producto);
+    public function actualizaStock ($id_Producto,$cantidad){
+      $this->set ('stock',"stock + $cantidad",FALSE);
+      $this-> where('id_Producto',$id_Producto);
     $this ->update();         
 }
 

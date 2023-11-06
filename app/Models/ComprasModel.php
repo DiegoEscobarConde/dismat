@@ -13,14 +13,14 @@ class ComprasModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['totalPago', 'estado','id_Proveedor','id_Producto','id','nota'];
+    protected $allowedFields = ['nota','totalPago','id', 'estado'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
     protected $updatedField  = '';
-    protected $deletedField  = 'delete_at';
+    protected $deletedField  = '';
 
     // Validation
     protected $validationRules      = [];
@@ -39,14 +39,20 @@ class ComprasModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-       public function insertaCompra($id,$total,$id_compras) {
+      public function insertaCompra($id_compra,$total,$usuario) {
           $this->insert([
-            'nota'=> $id_compras,
-            'totalPago'=>$total,
-            'id'=> $id,
+            'id'=> $usuario,
+             'nota'=> $id_compra, 
+             'totalPago'=>$total,
+                    
            ]);
            return $this->insertID();
         }  
+        
+   
+      
+     
+      
         
 
         

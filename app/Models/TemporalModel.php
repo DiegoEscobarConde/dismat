@@ -20,7 +20,7 @@ class TemporalModel extends Model
     protected $dateFormat    = 'datetime';
     protected $createdField  = '';
     protected $updatedField  = '';
-    protected $deletedField  = '';
+    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];
@@ -39,7 +39,7 @@ class TemporalModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-      public function porIdProductoCompra($id_Producto,$nota){
+     public function porIdProductoCompra($id_Producto,$nota){
         $this->select('*');
         $this->where('nota',$nota);
         $this->where('id_Producto',$id_Producto);
@@ -55,7 +55,7 @@ class TemporalModel extends Model
         return $datos;
 
       } 
-      public function actualizarProductoCompra($id_Producto,$cantidad,$subtotal,$nota){
+      public function actualizarProductoCompra($id_Producto,$nota,$cantidad,$subtotal){
         $this->set('cantidad',$cantidad);
         $this->set('subtotal',$subtotal);
         $this->where('id_Producto',$id_Producto);
@@ -70,8 +70,8 @@ class TemporalModel extends Model
       }
       public function eliminarCompra($nota)
 {
-  $this->where('nota', $nota);
-  $this->delete();
+        $this->where('nota', $nota);
+        $this->delete();
 }
         
 

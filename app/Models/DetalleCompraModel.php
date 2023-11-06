@@ -13,14 +13,14 @@ class DetalleCompraModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['cantidad','precioUnitario', 'id_Producto','id_Compra','id_Proveedor','id','descripcion'];
+    protected $allowedFields = ['id_Compra','id_Producto','descripcion','cantidad','precio'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fechaRegistro';
     protected $updatedField  = '';
-    protected $deletedField  = 'deleted_at';
+    protected $deletedField  = '';
 
     // Validation
     protected $validationRules      = [];
@@ -39,24 +39,9 @@ class DetalleCompraModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-      public function insertaCompra($id_detallecompra,$total,$id_usuarios,$id_cliente){
-        $this->insert([
-          'id_Compra'=>$id_detallecompra,
-          'total'=>$total,
-          'id'=>$id_usuarios,
-          'id_cliente'=>$id_cliente,
-
-        ]);
-        return $this->insertID();
-      }
-      public function porIdProducto($id_Producto){
-        $this->select('*');
-        $this->where('id_Producto',$id_Producto);
-        $datos=$this->get()->getRow();
-        return $datos;
-
-      }
-      
+         
+    
+   
             
         
 

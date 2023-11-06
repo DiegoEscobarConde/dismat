@@ -13,7 +13,7 @@ class DetalleVentaModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['cantidad', 'id_Producto','precioVenta','id_Venta','nombre'];
+    protected $allowedFields = ['cantidad', 'id_Producto','precio','id_Venta','descripcion'];
 
     // Dates
     protected $useTimestamps = true;

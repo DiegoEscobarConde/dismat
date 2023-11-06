@@ -2,10 +2,10 @@
 <main>
 <div class="container-fluid">
     
-<?php $idVentaTmp = uniqid();?>
+<?php $id_Venta = uniqid();?>
 
 <form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>/ventas/guarda" autocomplete="off"> 
-<input type="hidden" id="id_Venta" name="id_Venta" value="'<?php echo $idVentaTmp; ?>'"/>
+<input type="hidden" id="id_Venta" name="id_Venta" value="<?php echo $id_Venta; ?>"/>
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
 
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
@@ -18,7 +18,7 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label>NIT</label>
-                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_clientes" name="id_clientes" >
+                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_cliente" name="id_cliente" >
                                                     <input display= "flex" align-items=" center" type="text" class="form-control ui-autocomplete-input  " id="clientes" name="clientes" placeholder=""  onkeyup="" autocomplete="off" onkeyup=""/>
                                                 </div>
                                             </div>
@@ -162,7 +162,7 @@
                             <div class="col-12 col-sm-4">
                                 <input type="hidden" id="id_Producto" name="id_Producto">
                                 <label>codigo</label>
-                              <input  type="text" class="form-control" id="codigo" name="codigo" placeholder=""  onkeyup= "agregarProducto(event,this.value,1, <?php echo $idVentaTmp;?>);" autofocus />
+                              <input  type="text" class="form-control" id="codigo" name="codigo" placeholder=""  onkeyup= "agregarProducto(event,this.value,1, <?php echo $id_Venta;?>);" autofocus />
                             
                             <div class="col-sm-2">
                                <label for="codigo" id="resultado_error" style="color: red;" ></label>
@@ -172,7 +172,7 @@
                             <div class=" col-12 col-sm-4">
               <label for=""><br>&nbsp;</label>
               <button id="agregar_producto" name="agregar_producto" type="button"
-             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
+             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $id_Venta;?>')">agregar producto</button>
           </div>                            
                         </div>
       </div>-->
@@ -213,7 +213,7 @@
 </div>
 </div>-->
                 <!-- /.container-fluid -->
-                <div class="card">
+                  <div class="card">
                   <div class="card-body">
                 
  <div class=" form-group">
@@ -259,7 +259,7 @@
           <div class=" col-12 col-sm-4">
               <label for=""><br>&nbsp;</label>
              <button id="agregar_producto" name="agregar_producto" type="button"
-             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $idVentaTmp;?>')">agregar producto</button>
+             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $id_Venta;?>')">agregar producto</button>
           </div>   
      </div>
 </div>
@@ -321,7 +321,7 @@ $(function(){
         // Asigna el valor del NIT a los campos "nit" y "resultadoLabel2"
         $("#resultadoLabel2, #nit").val(nit);
 
-        $("#id_clientes").val(ui.item.id);
+        $("#id_cliente").val(ui.item.id);
         $("#clientes").val(ui.item.value);
     }
 });
@@ -412,7 +412,7 @@ function agregarProducto(id_Producto, cantidad, id_Venta) {
                               $("#codigo").val('');
                               $("#descripcion").val('');
                               $("#cantidad").val('');
-                              $("#precio_compraU").val('');
+                              $("#precio_ventaU").val('');
                               $("#subtotal").val('');
                              
                          } else {
