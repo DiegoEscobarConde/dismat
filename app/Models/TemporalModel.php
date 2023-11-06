@@ -55,6 +55,13 @@ class TemporalModel extends Model
         return $datos;
 
       } 
+      public function porCompra2($nota){
+        $this->select('*');
+        $this->where('nota',$nota);
+        $datos=$this->findAll();
+        return $datos;
+
+      } 
       public function actualizarProductoCompra($id_Producto,$nota,$cantidad,$subtotal){
         $this->set('cantidad',$cantidad);
         $this->set('subtotal',$subtotal);

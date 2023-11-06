@@ -1034,7 +1034,7 @@ function Output($dest='', $name='', $isUTF8=false)
 *                              Protected methods                               *
 *******************************************************************************/
 
-protected function _dochecks()
+/*protected function _dochecks()
 {
 	// Check mbstring overloading
 	if(ini_get('mbstring.func_overload') & 2)
@@ -1042,7 +1042,20 @@ protected function _dochecks()
 	// Ensure runtime magic quotes are disabled
 	if(get_magic_quotes_runtime())
 		@set_magic_quotes_runtime(0);
+}*/
+protected function _dochecks()
+{
+    // Check mbstring overloading
+    if (ini_get('mbstring.func_overload') & 2) {
+        $this->Error('mbstring overloading must be disabled');
+    }
+
+    // Ensure runtime magic quotes are disabled (only in PHP < 7.4)
+    if (function_exists('get_magic_quotes_runtime') && get_magic_quotes_runtime()) {
+        @set_magic_quotes_runtime(0);
+    }
 }
+
 
 protected function _checkoutput()
 {

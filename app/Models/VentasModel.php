@@ -42,15 +42,16 @@ class VentasModel extends Model
      
    
          
-      public function insertaVenta($id_Venta,$total,$usuario,$id_cliente) {
+     public function insertaVenta($id_Venta,$total,$id,$id_cliente) {
         $this->insert([
                'nota'=> $id_Venta, 
+               'id'=> $id,
                'total'=>$total,
-               'id'=> $usuario,
                'id_cliente'=>$id_cliente          
          ]);
          return $this->insertID();
       } 
+
        
       
  

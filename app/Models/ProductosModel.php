@@ -45,6 +45,11 @@ class ProductosModel extends Model
       $this-> where('id_Producto',$id_Producto);
     $this ->update();         
 }
+public function actualizaStock2($id_Producto,$cantidad){
+  $this->set ('stock',"stock - $cantidad",FALSE);
+  $this-> where('id_Producto',$id_Producto);
+$this ->update();         
+}
 
 
 }

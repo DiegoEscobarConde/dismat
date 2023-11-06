@@ -51,6 +51,42 @@ class Temporal extends BaseController
       
         
     }
+    public function insertar2($id_Producto,$cantidad,$id_compra)
+    {
+       
+        
+            $error='';
+            $productos =$this->productos->where('id_Producto',$id_Producto)->first();
+            if($productos){
+                $datosExiste=$this->temporal->porIdProductoCompra($id_Producto,$id_compra);
+                if($datosExiste){
+                    $cantidad=$datosExiste->cantidad+$cantidad;
+                    $subtotal=$cantidad*$datosExiste->precio;
+                    $this->temporal->actualizarProductoCompra($id_Producto,$cantidad,$id_compra,$subtotal);
+                }else{
+                    $subtotal=$cantidad*$productos['precio_ventaU'];
+                    $this->temporal->save([
+                        'nota' =>$id_compra,
+                        'id_Producto'=>$id_Producto,
+                        'codigo'=>$productos['codigo'],
+                        'descripcion'=>$productos['descripcion'],
+                        'precio'=>$productos['precio_ventaU'],
+                        'cantidad'=>$cantidad,
+                        'subtotal'=> $subtotal,
+                    ]);
+                }
+            }else{
+                $error ="no existe el producto";
+            }
+            
+         $res['datos']= $this->cargarProductos($id_compra);
+         $res['total']=number_format($this->totalProductos($id_compra),2,'.',',');
+          $res['error']=$error;
+          echo json_encode($res);
+       
+      
+        
+    }
     
    public function cargarProductos ($id_compra)
     {

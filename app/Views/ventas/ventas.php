@@ -18,7 +18,7 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label>NIT</label>
-                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_cliente" name="id_cliente" >
+                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_cliente" name="id_cliente" value="1" >
                                                     <input display= "flex" align-items=" center" type="text" class="form-control ui-autocomplete-input  " id="clientes" name="clientes" placeholder=""  onkeyup="" autocomplete="off" onkeyup=""/>
                                                 </div>
                                             </div>
@@ -379,7 +379,7 @@ function buscarProducto(e, tagCodigo, codigo) {
                                    $("#id_Producto").val('');
                                    $("#descripcion").val('');
                                    $("#cantidad").val('');
-                                   $("#precio_compraU").val('');
+                                   $("#precio_ventaU").val('');
                                    $("#subtotal").val('');
                               }
                          }
@@ -391,7 +391,7 @@ function buscarProducto(e, tagCodigo, codigo) {
 function agregarProducto(id_Producto, cantidad, id_Venta) {
      if (id_Producto != null && id_Producto != 0 && cantidad > 0) {
           $.ajax({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_Venta ,
+               url: '<?php echo base_url(); ?>/temporal/insertar2/' + id_Producto + "/"+ cantidad + "/" + id_Venta ,
               
                success: function (resultado) {
                     if (resultado == 0) {
