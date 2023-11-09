@@ -44,9 +44,9 @@
                           <td><?php echo $dato['celular']?></td>
                           <td><?php echo $dato['usuario']?></td>
                           <td><?php echo $dato['id_Empleado']?></td>
-                          <td>   <a href="<?php echo base_url(). '/usuarios/editar/'.$dato['id'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td>   <a href="<?php echo base_url(). '/usuarios/editar/'.$dato['id'];?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
                        
-                          <td><a href="<?php echo base_url(). '/usuarios/eliminar/'.$dato['id'];?>" title="Eliminar Registro" class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><a href="<?php echo base_url(). '/usuarios/eliminar/'.$dato['id'];?>" title="Eliminar Registro" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
                        
                        
                         </tr>

@@ -10,6 +10,8 @@
     <input type="date" name="fecha_fin" id="fecha_fin">
 
     <input type="submit" value="Ver Ventas">
+    <button type="button" id="imprimirVentas" class="btn btn-primary">Imprimir</button>
+
 <p>
 <a href="<?php echo base_url(); ?>ventas/eliminados" class="btn btn-warning">anuladas</a>
 </p>
@@ -20,36 +22,45 @@
                         <th>fecha y hora</th>
                         <th>razon social</th>
                         <th>n° nota remision</th>
-                        <th>usuario</th>
-                        <th>total</th>
-                       
+                        <th>total</th> 
                         <th>comprobante NR</th>
-                       
                     </tr>
                 </thead>         
                <tbody>
-               
-                    <?php foreach($datos as $dato){?>
+                    <?php foreach($ventas as $venta){?>
                        <tr>
-                          <td><?php echo $dato['fechaRegistro']?></td>
-                          <td><?php echo $dato['id_cliente']?></td>                         
-                          <td><?php echo $dato['notaR']?></td>
-                          <td><?php echo $dato['usuarios']?></td>
-                          <td><?php echo $dato['total']?></td>
-                           <td>   <a href="<?php echo base_url(). '/ventas/muestraVentaPdf/'?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><?php echo $venta['fechaRegistro']?></td>
+                          <td><?php echo $venta['id_cliente']?></td>                         
+                          <td><?php echo str_pad($venta['id_Venta'], 6, '0', STR_PAD_LEFT); ?></td>
+                          <td><?php echo $venta['total']?></td>
+                           <td>   <a href="<?php echo base_url(). 'ventas/muestraVentaPdf/'.$venta['id_Venta'];?>" class="btn btn-success"><i class="fas fa-file-alt"></i></a></td>
                            <?php }?>
 
 <?php
 if (isset($_GET['fecha_inicio']) && isset($_GET['fecha_fin'])) {
     $fecha_inicio = $_GET['fecha_inicio'];
     $fecha_fin = $_GET['fecha_fin'];
-
-    // Realiza la consulta a la base de datos para obtener las ventas en el rango de fechas
-    // Puedes utilizar SQL u otro método para obtener los datos.
-
-    // Muestra las ventas en una tabla o de la manera que desees.
 }
 ?>
 </form>
 
         </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('imprimirVentas').addEventListener('click', function() {
+        window.print();
+    });
+});
+
+            document.getElementById('imprimirVentas').addEventListener('click', function() {
+    // Realiza una solicitud AJAX para generar el informe PDF
+    $.ajax({
+        url: 'ventas/generarInformePDF',
+        type: 'post',
+        success: function(response) {
+            // El informe PDF se abrirá para su visualización e impresión
+        }
+    });
+});
+
+        </script>

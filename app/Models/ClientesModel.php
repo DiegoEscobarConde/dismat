@@ -40,12 +40,14 @@ class ClientesModel extends Model
       protected $beforeDelete   = [];
       protected $afterDelete    = [];
      
-            
-        
 
+
+
+   
+}
         
     
-}
+
 
 
 

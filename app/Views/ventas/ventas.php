@@ -57,11 +57,11 @@
         <!--=====================================
         CABEZA DEL MODAL
         ======================================-->
+        <div class="modal-header" style="background:#0000FF; color:white">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title" style="text-align: center">Agregar cliente</h4>
+</div>
 
-          <div class="modal-header" style="background:blueviolet; color:white" >
-             <button type="btn btn-primary" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title" style=" text-align: center">Agregar cliente</h4>
-          </div>
 
         <!--=====================================
         CUERPO DEL MODAL
@@ -131,96 +131,34 @@
                </div>
             </div>
 
-             <!-- ENTRADA PARA LA FECHA DE NACIMIENTO 
-            
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
-                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
-              </div>
-            </div> -->
 
         <!--=====================================
         PIE DEL MODAL
         ======================================-->
 
        <div class="modal-footer">
-      <a href="<?php echo base_url(); ?>/clientes/insertar" type="button" class="btn btn-success">Guardar</a>
+       <button type="button" class="btn btn-success" id="guardarCliente">Guardar</button>
+
+  
       <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
     </div>
   </div>
   </div>
   </div>
-</form>
+  <!--  <a href="<?php echo base_url(); ?>/clientes" type="button" class="btn btn-success">Guardar</a>-->
 </div>
 </div>
 </div>
 
    <h4 class="h5 mb-2 text-gray-800">Datos venta</h4>
-   <!--<div class="form-group">
-                        <div class="row">
-                            <div class="col-12 col-sm-4">
-                                <input type="hidden" id="id_Producto" name="id_Producto">
-                                <label>codigo</label>
-                              <input  type="text" class="form-control" id="codigo" name="codigo" placeholder=""  onkeyup= "agregarProducto(event,this.value,1, <?php echo $id_Venta;?>);" autofocus />
-                            
-                            <div class="col-sm-2">
-                               <label for="codigo" id="resultado_error" style="color: red;" ></label>
-                            </div>
-                            </div>
-                                                                                           
-                            <div class=" col-12 col-sm-4">
-              <label for=""><br>&nbsp;</label>
-              <button id="agregar_producto" name="agregar_producto" type="button"
-             class="btn btn-primary" onclick="agregarProducto(id_Producto.value,cantidad.value,'<?php echo $id_Venta;?>')">agregar producto</button>
-          </div>                            
-                        </div>
-      </div>-->
-
-                          
-   <!-- DataTales Example -->
-<!--<div class ="card">
-  <div class="card-body">
-  <div class="row">
-          <table id="tablaProductos" class="table table-hover table-striped table-sm table-responsive tablaProductos" width="100%">
-          <thead class="thead-dark">-->
-                  <!--  <th>#</th>
-                    <th>codigo</th>
-                    <th>nombre</th>
-                    <th>precio</th>
-                    <th>cantidad</th>
-                    <th>total</th>
-                    <th width="1%"></th>-->
-                    <!--<tr>
-            <th>Código</th>
-            <th>Descripción</th>
-            <th>Cantidad</th>
-            <th>Precio Unitario</th>
-            <th>Total</th>
-        </tr>
-               </thead>       
-                <tbody></tbody>
-            </table>
-       </div>
-            <div class="row">
-              <div class="col-12 col-sm-6 offset-md-6">
-                <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
-                <input type="text" id="total" name="total" size="7" readonly="false" value="0.00" style="font-weight:bold;  font-size:30px ; text-align: center;"/>
-                 <button type="button" id="completar_venta" class="btn btn-success">vender</button>
-               </div>
-             </div>   
-</div>
-</div>
-</div>-->
+ 
                 <!-- /.container-fluid -->
-                  <div class="card">
-                  <div class="card-body">
-                
- <div class=" form-group">
-  <div class="row">
+ <div class="card">
+   <div class="card-body">               
+     <div class=" form-group">
+      <div class="row">
           <div class=" col-12 col-sm-4">
-               <input type="hidden" id="id_Producto" name="id_Producto"/>
-              
+               <input type="hidden" id="id_Producto" name="id_Producto"/>             
               <label for="">codigo</label>
               <input class ="form-control" id="codigo" name="codigo" type="text" placeholder="codigo" onkeyup="buscarProducto(event,this,this.value)"
               autofocus/>
@@ -248,8 +186,7 @@
               <input class ="form-control" id="precio_ventaU" name="precio_ventaU" type="text" 
               disabled />
           </div>  
-     
-    
+
           <div class=" col-12 col-sm-4">
               <label for="">totalPago</label>
               <input class ="form-control" id="subtotal" name="subtotal" type="text" 
@@ -278,21 +215,19 @@
                <tbody></tbody>
           </table>
       </div>
-      </div>
+      
        <div class="row">
           <div class="col-12 col-sm-6 offset-md-6">
-              <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
-               <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
+                 <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
+                  <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
                <div>
-                <button type="button" id="completar_venta" 
-               class="btn btn-success">vender</button>     
+                  <button type="button" id="completar_venta" 
+                   class="btn btn-success">vender</button>     
                </div>
-              
-
           </div>        
 
-          </div>		
-          </div>
+       </div>		
+     </div>
       </div>
       </div>
       </div>
@@ -326,6 +261,34 @@ $(function(){
     }
 });
 });
+$(document).ready(function() {
+    $('#guardarCliente').click(function() {
+        // Realizar una solicitud AJAX cuando se haga clic en el botón "Guardar"
+        $.ajax({
+            url: '<?php echo base_url(); ?>/clientes/guardarNuevoCliente', // Ruta al controlador que guarda el nuevo cliente
+            type: 'post',
+            data: $('#modalAgregarCliente form').serialize(), // Serializa los datos del formulario
+            dataType: 'json', // Esperamos una respuesta JSON
+            success: function(response) {
+                // Manejar la respuesta del servidor (datos del cliente recién insertado)
+                if (response.error) {
+                    // Manejo de errores si es necesario
+                } else {
+                    // Actualizar el contenido de resultadoLabel con los datos del nuevo cliente
+                    $('#resultadoLabel').val(response.nombre);
+                    $('#resultadoLabel2').val(response.ci_nit);
+
+                    // Cierra el modal
+                    $('#modalAgregarCliente').modal('hide');
+                }
+            },
+            error: function(error) {
+                // Manejar errores si es necesario
+            }
+        });
+    });
+});
+
 
 // Evento que se dispara cuando se presiona Enter en el campo de código
 
@@ -424,62 +387,28 @@ function agregarProducto(id_Producto, cantidad, id_Venta) {
           });
      }
 }
-
-
-
-
-   //////////////////////////////////////////////////
-   //nueva forma//////
-
-  
-
-	
-/*function agregarProducto(id_Producto, cantidad, id_venta) {
-    let enterKey=13;
-    if(codigo != ''){  
-     if(e.which== enterKey)
-     {   
-     if (id_Producto != null && id_Producto != 0 && cantidad > 0)
-      {
-          $.ajax
-          ({
-               url: '<?php echo base_url(); ?>/temporal/insertar/' + id_Producto + "/"+ cantidad + "/" + id_venta ,
-               success: function (resultado) {
-                    if (resultado == 0) 
-                    {
-                         // Maneja la situación si no se pudo agregar el producto
-                         alert("No se pudo agregar el producto.");
-                    } else 
-                    {
-                         var resultado = JSON.parse(resultado);
-                         if (resultado.error == '') 
-                         {
-                              // Limpia la tabla de productos
-                              $("#tablaProductos tbody").empty();
-                              // Agrega los datos del producto al DataTable
-                              $("#tablaProductos tbody").append(resultado.datos);
-                              // Actualiza el total
-                              $("#total").val(resultado.total);
-                              // Limpia los campos
-                              $("#id_Producto").val('');
-                              $("#codigo").val('');
-                              $("#descripcion").val('');
-                              $("#cantidad").val('');
-                              $("#precio_ventaU").val('');
-                              $("#subtotal").val('');
-                             
-                         } else 
-                         {
-                              // Maneja la situación si hubo un error al agregar el producto
-                              alert("Error al agregar el producto: " + resultado.error);
-                         }
-                    }
-               }
-          });
-     }
-   }
+function eliminarProducto(id_Producto, id_Venta) {
+    $.ajax({
+        url: '<?php echo base_url(); ?>/temporal/eliminar/' + id_Producto + "/" + id_Venta,
+        dataType: 'json',
+        success: function (resultado) {
+            try {
+                var resultadoJSON = JSON.parse(resultado);
+                // Limpia la tabla de productos
+                $("#tablaProductos tbody").empty();
+                // Agrega los datos del producto al DataTable
+                $("#tablaProductos tbody").append(resultadoJSON.datos);
+                // Actualiza el total
+                $("#total").val(resultadoJSON.total);
+                // Limpia los campos
+            } catch (error) {
+                console.error("Error al analizar la respuesta JSON: " + error);
+                // Aquí puedes manejar el error de análisis JSON si es necesario
+            }
+        }
+    });
 }
-}*/
+
 
 
 $(document).ready(function() {
@@ -490,6 +419,7 @@ $(document).ready(function() {
             alert("Debes agregar al menos un producto.");
         } else {
             $("#form_venta").submit(); // Corrige el selector del formulario
+            alert("venta realizada con exito.");
         }
     });
 });

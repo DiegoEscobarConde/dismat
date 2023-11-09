@@ -40,9 +40,9 @@
                           <td><?php echo $dato['direccion']?></td>
                         
 
-                          <td>   <a href="<?php echo base_url(). '/clientes/editar/'.$dato['id_cliente'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td>   <a href="<?php echo base_url(). '/clientes/editar/'.$dato['id_cliente'];?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
                        
-                          <td><a href="<?php echo base_url(). '/clientes/eliminar/'.$dato['id_cliente'];?>"  class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><a href="<?php echo base_url(). '/clientes/eliminar/'.$dato['id_cliente'];?>"  class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
                        
                        
                         </tr>

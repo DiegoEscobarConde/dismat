@@ -14,6 +14,8 @@ $user_session = session()?>
     <title>DISMAT</title>
 
     <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link href="<?php echo base_url() ;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="<?php echo base_url() ;?>/css/fonts.googleapis.css"
@@ -56,15 +58,15 @@ $user_session = session()?>
     <div id="wrapper"   >
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion " id="accordionSidebar" style="background-color: #0000FF; " >
+        <ul class="navbar-nav sidebar sidebar-dark accordion " id="accordionSidebar" style="background-color: #015882; " >
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ;?>">
-                <div class="sidebar-brand-icon rotate-n-15"  style="background-color: #0000FF;">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon rotate-n-15"  style="background-color: #015882;">
+                   
                 </div>
               
-                <div class="sidebar-brand-text mx-3" href="<?php echo base_url() ;?>/">DISMAT</div>
+                <div class="sidebar-brand-text mx-3" href="<?php echo base_url() ;?>/"> <img src="<?php echo base_url() ;?>img/logo.png" width="160" height="60"></div>
             </a>
 
             <!-- Divider -->
@@ -74,7 +76,7 @@ $user_session = session()?>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseProducts"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fas fa-box"></i>
                     <span>PRODUCTOS</span>
                 </a>
                 <div id="collapseProducts" class="collapse" aria-labelledby="headingProducts" data-parent="#accordionSidebar">
@@ -91,7 +93,8 @@ $user_session = session()?>
             <li class="nav-item">
                 <a class="nav-link " href="<?php echo base_url() ;?>clientes" data-toggle="#" data-target="#"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fas fa-user"></i>
+
                     <span  >CLIENTES</span>
                 </a>
             </li>
@@ -99,13 +102,13 @@ $user_session = session()?>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompras"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fas fa-shopping-cart"></i>
                     <span>compras</span>
                 </a>
                 <div id="collapseCompras" class="collapse" aria-labelledby="headingCompras" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url() ;?>compras/nuevo">nueva compra </a>
-                        <a class="collapse-item" href="<?php echo base_url() ;?>compras">compras</a>
+                        <a class="collapse-item" href="<?php echo base_url() ;?>compras/lista">compras</a>
                     </div>
                 
             </li>
@@ -113,7 +116,7 @@ $user_session = session()?>
             <li class="nav-item">
                 <a class="nav-link " href="#" data-toggle="collapse" data-target="#collapseVentas"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fa-solid fa-truck"></i>
+                    <i class="fas fa-truck"></i>
                     <span  >VENTAS</span>
                 </a>
                 <div id="collapseVentas" class="collapse" aria-labelledby="headingVentas" data-parent="#accordionSidebar">
@@ -133,7 +136,7 @@ $user_session = session()?>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConfig"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Configuracion</span>
+                    <span>Usuarios</span>
                 </a>
                 <div id="collapseConfig" class="collapse" aria-labelledby="headingConfig" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -168,7 +171,7 @@ $user_session = session()?>
 <div id="content">
 
     <!-- Topbar -->
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark "style="background-color: #015882;" >
 
         <!-- Sidebar Toggle (Topbar) -->
         <form class="form-inline">
@@ -190,8 +193,7 @@ $user_session = session()?>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCambioPasword">
                             Cambiar password</a>
-                        <a class="dropdown-item" href="#">Otro</a>
-                        <a class="dropdown-item" href="#">Otro</a>
+                      
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="<?php echo base_url(); ?>/usuarios/logout">Cerrar sessión</a>
                     </div>

@@ -41,7 +41,7 @@
 
                           <td>   <a href="<?php echo base_url(). '/productos/editar/'.$dato['id_Producto'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
                        
-                          <td><a href="<?php echo base_url(). '/productos/eliminar/'.$dato['id_Producto'];?>"  class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><a href="<?php echo base_url(). '/productos/eliminar/'.$dato['id_Producto'];?>"  class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
                        
                        
                         </tr>

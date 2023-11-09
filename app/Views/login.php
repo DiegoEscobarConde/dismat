@@ -38,7 +38,7 @@
         <link href="<?php echo base_url() ;?>/css/stylecss.css" rel="stylesheet" />
         <script src="<?php echo base_url() ;?>/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-primary">
+    <body class="bg-danger">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>

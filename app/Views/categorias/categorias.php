@@ -13,7 +13,7 @@
    <!-- DataTales Example -->
 
         <div class="table">
-            <table class="table table-sm" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-sm display" id="dataTable" width="100%" cellspacing="0">
                
                 <thead>
                     <tr>
@@ -31,9 +31,9 @@
                        <tr>
                           <td><?php echo $dato['id_categoria']?></td>
                           <td><?php echo $dato['nombre']?></td>
-                          <td>   <a href="<?php echo base_url(). 'categorias/editar/'.$dato['id_categoria'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td>   <a href="<?php echo base_url(). 'categorias/editar/'.$dato['id_categoria'];?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
                        
-                          <td><a href="<?php echo base_url(). 'categorias/eliminar/'.$dato['id_categoria'];?>"  class="btn btn-danger"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td><a href="<?php echo base_url(). 'categorias/eliminar/'.$dato['id_categoria'];?>"  class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
                        
                        
                         </tr>

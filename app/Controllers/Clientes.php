@@ -47,7 +47,7 @@ class Clientes extends BaseController
        echo view('pie');
 
     }
-    public function insertar()
+   /* public function insertar()
     {
         if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
@@ -60,8 +60,10 @@ class Clientes extends BaseController
             'email' => $this->request->getPost('email'),
             'direccion' => $this->request->getPost('direccion'),
              ]);
-            return redirect()->to(base_url().'clientes');
-            
+             
+         
+     
+      
         }else{
 
 
@@ -71,10 +73,36 @@ class Clientes extends BaseController
             echo view('clientes/nuevo',$data);
             echo view('pie');
         }
-        $clientes= $this->clientes->obtenerClienteRecienRegistrado();
-        echo json_encode($clientes);
+      
         
+    }*/
+    public function guardarNuevoCliente() {
+        if ($this->request->getMethod() == 'post' && $this->validate($this->reglas)) {
+            $clienteData = [
+                'nombre' => $this->request->getPost('nombre'),
+                'primerApellido' => $this->request->getPost('primerApellido'),
+            'segundoApellido' => $this->request->getPost('segundoApellido'),
+            'ci_nit' => $this->request->getPost('ci_nit'),
+            'celular' => $this->request->getPost('celular'),
+            'email' => $this->request->getPost('email'),
+            'direccion' => $this->request->getPost('direccion'),
+               
+            ];
+    
+            // Guardar el nuevo cliente en la base de datos
+            $clienteId = $this->clientes->insert($clienteData);
+    
+            // Obtener los datos del cliente recién insertado
+            $clienteNuevo = $this->clientes->find($clienteId);
+    
+            // Devolver los datos del cliente como respuesta
+            return $this->response->setJSON($clienteNuevo);
+        } else {
+            // Manejo de errores si la validación falla
+            return $this->response->setJSON(['error' => 'La validación ha fallado']);
+        }
     }
+    
   
 
     public function editar($id)

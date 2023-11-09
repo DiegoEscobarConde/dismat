@@ -47,7 +47,8 @@ class VentasModel extends Model
                'nota'=> $id_Venta, 
                'id'=> $id,
                'total'=>$total,
-               'id_cliente'=>$id_cliente          
+               'id_cliente'=>$id_cliente ,
+                       
          ]);
          return $this->insertID();
       } 
@@ -65,7 +66,14 @@ class VentasModel extends Model
         return $datos;
     }
   
-    
+    public function obtenerVentasPorRangoDeFechas($fecha_inicio, $fecha_fin) {
+      return $this->db->table('ventas')
+          ->where('fechaRegistro >=', $fecha_inicio)
+          ->where('fechaRegistro <=', $fecha_fin)
+          ->get()
+          ->getResultArray();
+  }
+  
     
     
  
