@@ -4,7 +4,7 @@
    <h1 class="h3 mb-2 text-gray-800"><?php echo $titulo ?></h1>
         <div>
             <p>
-                
+            <a href="<?php echo base_url(); ?>clientes/nuevo" class="btn btn-info">Agregar</a>
                 <a href="<?php echo base_url(); ?>clientes/eliminados" class="btn btn-warning">Eliminados</a>
             </p>
         </div>

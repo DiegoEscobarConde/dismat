@@ -43,13 +43,7 @@
      </div>
 </div>
 <div class=" form-group">
-     <div class="row">
-          <div class=" col-12 col-sm-6">
-              <label for="">STOCK</label>
-              <input class ="form-control" id="stock" name="stock" type="text"
-              autofocus require/>
-          </div>  
-     </div>
+    
    
 <div class=" form-group">
      <div class="row">
@@ -67,7 +61,7 @@
      </div>
 </div>
         <button type="submit" class="btn btn-success">Guardar</button>
-        <a href="<?php echo base_url(); ?>/categorias" class="btn btn-primary">Regresar</a>
+        <a href="<?php echo base_url(); ?>/productos" class="btn btn-primary">Regresar</a>
        
  
 

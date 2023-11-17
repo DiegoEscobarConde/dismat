@@ -22,9 +22,9 @@
                         <th>precio compra</th>
                         <th>precio venta</th>
                         <th>stock</th>
-                        <th>categoria</th>
-                        <th></th>
-                        <th></th>
+                        <th>editar</th>
+                        <th>eliminar</th>
+                        
                     </tr>
                 </thead>         
                <tbody>
@@ -39,7 +39,7 @@
                           <td><?php echo $dato['stock']?></td>
                         
 
-                          <td>   <a href="<?php echo base_url(). '/productos/editar/'.$dato['id_Producto'];?>" class="btn btn-warning"><i class="fa-sharp fa-light fa-pen-nib"></i></a></td>
+                          <td>   <a href="<?php echo base_url(). '/productos/editar/'.$dato['id_Producto'];?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
                        
                           <td><a href="<?php echo base_url(). '/productos/eliminar/'.$dato['id_Producto'];?>"  class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
                        

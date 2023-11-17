@@ -21,17 +21,10 @@ class Ventas extends BaseController
         $this->ventas = new VentasModel();
         $this->productos = new ProductosModel();
         $this->detalle_Venta = new DetalleVentaModel();
-        $this->clientes = new ClientesModel();
-        
-        $this->session = session();
-      
-        
-      
-        helper(['form']);
-       
+        $this->clientes = new ClientesModel();      
+        $this->session = session();     
+       helper(['form']);      
     }
-
-    
 
     public function lista()
     {
@@ -62,48 +55,7 @@ class Ventas extends BaseController
        echo view('ventas/listaVentas',$data);
        echo view('pie');
     }
-    public function generarInformePDF() {
-        // Obtén los datos de las ventas, tal como lo hiciste en el controlador anterior
-        $fecha_inicio = $this->request->getVar('fecha_inicio');
-        $fecha_fin = $this->request->getVar('fecha_fin');
-    
-        // Llama a un modelo o servicio para obtener las ventas dentro del rango de fechas
-        $ventas = $this->ventas->obtenerVentasPorRangoDeFechas($fecha_inicio, $fecha_fin);
-        // Carga la biblioteca TCPDF
-       // $this->load->library('pdf');
-    
-        // Crear un nuevo objeto TCPDF
-        $pdf = new \FPDF('P', 'mm', 'letter');
-    
-        // Establece las propiedades del documento PDF
-        $pdf->SetTitle('Informe de Ventas');
-        $pdf->SetAuthor('Tu Nombre');
-        $pdf->SetSubject('Informe de Ventas');
-        $pdf->SetKeywords('Ventas, PDF, Informe');
-    
-        // Agrega una página
-        $pdf->AddPage();
-    
-        // Genera el contenido del informe
-        $html = '<h1>Informe de Ventas</h1>';
-        // Agrega los datos de las ventas al informe
-        $html .= '<table>';
-        // Aquí puedes agregar los datos de ventas, recorriendo el array de ventas
-        foreach ($ventas as $venta) {
-            $html .= '<tr>';
-            $html .= '<td>' . $venta['fechaRegistro'] . '</td>';
-            $html .= '<td>' . $venta['id_cliente'] . '</td>';
-            // Agrega más columnas según tus necesidades
-            $html .= '</tr>';
-        }
-        $html .= '</table>';
-    
-        // Escribir el contenido en el PDF
-        $pdf->writeHTML($html, true, false, true, false, '');
-    
-        // Genera el PDF y muestra el informe
-        $pdf->Output('InformeVentas.pdf', 'I');
-    }
+
     
     
     public function eliminar($id_Producto){
@@ -119,9 +71,8 @@ foreach ($productos as $producto) {
      public function ventas()
     {
         
-        if(!isset($this->session->usuario)){return redirect()->to(base_url('/login'));}
+        if(!isset($this->session->usuario)){return redirect()->to(base_url('/login'));}  
       $data = ['titulo' => 'NUEVA VENTA'];
-
        echo view('encabezado');
        echo view('ventas/ventas',$data);
        echo view('pie');
@@ -132,20 +83,21 @@ foreach ($productos as $producto) {
     {
         $id_Venta = $this->request->getPost('id_Venta');
     $total = preg_replace('/[\$,]/', '', $this->request->getPost('total'));
-    $id_cliente = $this->request->getPost('id_cliente');
-    
-  
      $session=session();
         var_dump($id_Venta);
         var_dump($total);
-        var_dump($id_cliente);
+     
         var_dump($session->usuario);
        
-        $this->ventas = new VentasModel();
-  
-    $resultadoId=$this->ventas->insertaVenta($id_Venta,$total,$session->id,$id_cliente);  
+     
     
-       
+        
+            $id_cliente = $this->request->getPost('id_cliente');
+        
+    
+        var_dump($id_cliente);
+    $resultadoId=$this->ventas->insertaVenta($id_Venta,$total,$id_cliente,$session->id);  
+     
         if($resultadoId){
              $this->temporal=new TemporalModel();
             $resultadoCompra=$this->temporal->porCompra2($id_Venta);
@@ -163,7 +115,7 @@ foreach ($productos as $producto) {
             }
             $this->temporal->eliminarCompra($id_Venta);
         }
-//return redirect()->to(base_url()."/productos");
+
        return redirect()->to(base_url()."/ventas/muestraVentaPdf/".$resultadoId);
       
     }
@@ -175,13 +127,17 @@ foreach ($productos as $producto) {
         echo view('pie');
 
     }
+   
  
 
     function generarVentaPdf($id_Venta)
     {
         $datosVenta = $this->ventas->where('id_Venta', $id_Venta)->first(); // Corrige 'firts' a 'first'
         $detalleVenta = $this->detalle_Venta->select('*')->where('id_Venta', $id_Venta)->findAll();
-    
+       
+            $datosCliente = $this->clientes->select('*')->where('id_cliente')->findAll();
+        
+            // Resto del código
         $pdf = new \FPDF('P', 'mm', 'letter');
         $pdf->AddPage();
         $pdf->SetMargins(10, 10, 10);
@@ -226,7 +182,7 @@ $pdf->SetLineWidth(0.2);
 $pdf->Rect(10, 47, 196, 17); 
 $pdf->SetFont('Arial', 'B', 6);// Agregar texto dentro del cuadro usando MultiCell
 $pdf->SetXY(10, 47); 
-$pdf->MultiCell(10, 7, "NIT/CI : ". $datosVenta['id_cliente']); 
+$pdf->MultiCell(10, 7, "NIT/CI : ");
 $pdf->SetXY(10, 47); 
 $pdf->MultiCell(15, 17, "NOMBRE :");
 $pdf->SetXY(10, 47); 
@@ -310,7 +266,56 @@ $pdf->Cell(195, 5, 'Total Bs: ' .$total, 2, '.', '.', 0, 0, 'C');
     
 
   
-
+  
+    public function generarInformePDF() {
+        // Obtén los datos de las ventas, tal como lo hiciste en el controlador anterior
+    
+        // Carga la biblioteca TCPDF
+       
+        
+            // Obtén las fechas de inicio y fin del formulario
+            $fecha_inicio = $this->request->getVar('fecha_inicio');
+            $fecha_fin = $this->request->getVar('fecha_fin');
+        
+            // Llama a un modelo o servicio para obtener las ventas dentro del rango de fechas
+            $ventas = $this->ventas->obtenerVentasPorRangoDeFechas($fecha_inicio, $fecha_fin);
+        
+            // Luego, puedes utilizar los datos de $ventas para generar el informe PDF, como se mostró en el ejemplo anterior.
+        
+        
+        // Crear un nuevo objeto TCPDF
+        $pdf = new \FPDF('P', 'mm', 'letter');
+    
+        // Establece las propiedades del documento PDF
+        $pdf->SetTitle('Informe de Ventas');
+        $pdf->SetAuthor('Tu Nombre');
+        $pdf->SetSubject('Informe de Ventas');
+        $pdf->SetKeywords('Ventas, PDF, Informe');
+    
+        // Agrega una página
+        $pdf->AddPage();
+    
+        // Genera el contenido del informe
+        $html = '<h1>Informe de Ventas</h1>';
+        // Agrega los datos de las ventas al informe
+        $html .= '<table>';
+        // Aquí puedes agregar los datos de ventas, recorriendo el array de ventas
+        foreach ($ventas as $venta) {
+            $html .= '<tr>';
+            $html .= '<td>' . $venta['fechaRegistro'] . '</td>';
+            $html .= '<td>' . $venta['id_cliente'] . '</td>';
+            // Agrega más columnas según tus necesidades
+            $html .= '</tr>';
+        }
+        $html .= '</table>';
+    
+        // Escribir el contenido en el PDF
+        $pdf->writeHTML($html, true, false, true, false, '');
+    
+        // Genera el PDF y muestra el informe
+        $pdf->Output('InformeVentas.pdf', 'I');
+    }
+    
  
 
  

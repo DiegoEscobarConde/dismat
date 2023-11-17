@@ -4,8 +4,13 @@
     
 <?php $id_Venta = uniqid();?>
 
+<?php $total= uniqid();?>
 <form id="form_venta" name="form_venta" class="form-horizontal" method="POST" action="<?php echo base_url(); ?>/ventas/guarda" autocomplete="off"> 
 <input type="hidden" id="id_Venta" name="id_Venta" value="<?php echo $id_Venta; ?>"/>
+<input type="hidden" name="id_cliente" id="id_cliente" value="" />
+
+
+
    <h1 class="h3 mb-2 text-center"><?php echo $titulo ?></h1>
 
    <h4 class="h5 mb-2 text-gray-800">Datos cliente</h4>
@@ -18,71 +23,87 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label>NIT</label>
-                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control ui-autocomplete-input " id="id_cliente" name="id_cliente" value="1" >
+                                                
+                                                    <input type="hidden" display= "flex" align-items=" center" class="form-control" id="id_cliente" name="id_cliente" >
                                                     <input display= "flex" align-items=" center" type="text" class="form-control ui-autocomplete-input  " id="clientes" name="clientes" placeholder=""  onkeyup="" autocomplete="off" onkeyup=""/>
                                                 </div>
                                             </div>
-                                           <div class="col-sm-3">   
-                                           <br> <span class="input-group-addon">
-                                                   <button flex=" 1" type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal"><i class="fas fa-user"></i>+</button>  
-                                              </span>
-                                           </div>
+                                            <div class="col-sm-3">   
+                                             <br> 
+                                         <span class="input-group-addon">
+                                                 <a href="<?php echo base_url(); ?>/clientes/nuevo" class="btn btn-danger">
+                                                  <i class="fas fa-user"></i>+
+                                                     </a>  
+                                            </span>
+                                              </div>
+
                                          </div>
-                                            <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label>Cliente</label>
-                                                    <input type="text" name="resultadoLabel" class="form-control" id="resultadoLabel" disabled required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label>nit</label>
-                                                  
-                                                    <input type="text" name="resultadoLabel2" id="resultadoLabel2" id="nit" class="form-control" disabled required>
-                                                </div>
-                                            </div>
-                                          </div>
+                                         <div class="row">
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label>Cliente</label>
+            <?php if (!empty($nuevoCliente)) : ?>
+                <input type="text" name="resultadoLabel" class="form-control" id="resultadoLabel" disabled value="<?= $nuevoCliente['nombre'] ?>" required/>
+            <?php else : ?>
+                <!-- Código original si no hay nuevo cliente -->
+                <input type="text" name="resultadoLabel" class="form-control" id="resultadoLabel" disabled required/>
+            <?php endif; ?>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label>NIT</label>
+            <?php if (!empty($nuevoCliente)) : ?>
+                <input type="text" name="resultadoLabel2" id="resultadoLabel2" id="nit" class="form-control" disabled value="<?= $nuevoCliente['nit'] ?>" required/>
+            <?php else : ?>
+                <!-- Código original si no hay nuevo cliente -->
+                <input type="text" name="resultadoLabel2" id="resultadoLabel2" id="nit" class="form-control" disabled required/>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
                                 </div>
                             </div>
     <!--=====================================
         MODAL AGREGAR CLIENTE
     ======================================-->
 
-<div id="modalAgregarCliente" class="modal fade" role="dialog">
- <div class="modal-dialog">
- <div class="modal-content">
- <form method="POST" action="<?php echo base_url(); ?>/clientes/insertar" autocomplete="off">
+ <div id="modalAgregarCliente" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+       <div class="modal-content">
+       <form method="POST" action="<?php echo base_url(); ?>/clientes/insertar" autocomplete="off">
 
         <!--=====================================
         CABEZA DEL MODAL
         ======================================-->
-        <div class="modal-header" style="background:#0000FF; color:white">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title" style="text-align: center">Agregar cliente</h4>
-</div>
+        <div class="modal-header" style="background:#0000FF; color:white" style="justify-content: space-between;">
+           <h4 class="modal-title" style="text-align: center">Agregar cliente</h4>
+          <button type="button" class="close" data-dismiss="modal" >&times;</button>
+       
+        </div>
 
 
         <!--=====================================
         CUERPO DEL MODAL
         ======================================-->
 
-        <div class="modal-body">
-           <div class="box-body">
+  <div class="modal-body">
+     <div class="box-body">
 
             <!-- ENTRADA PARA EL NOMBRE -->
             
                 <div class="form-group">
                  <div class="input-group">
-                   <span class="input-group-addon"><i class="fa fa-user"></i></span> 
-                     <input type="text" class="form-control input-lg" name="nombre" id="nombre" placeholder="Ingresar nombres" required>
+                     <span class="input-group-addon"><i class="fas fa-user"></i></span> 
+                     <input type="text" class="form-control " name="nombre" id="nombre" placeholder="Ingresar nombres" required>
                   </div>
                </div>
               <!-- ENTRADA PARA LOS APELLIDOS-->
             
-           <div class="form-group">
+            <div class="form-group">
                <div class="input-group">
-                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                   <span class="input-group-addon"><i class="fa fa-user"></i></span> 
                    <input type="text" class="form-control input-lg" name="primerApellido" id="primerApellido" placeholder="Ingresar Apellido Paterno" required>
                  </div>
              </div>
@@ -90,7 +111,7 @@
             
            <div class="form-group">
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
                  <input type="text" class="form-control input-lg" name="segundoApellido" id="segundoApellido" placeholder="Ingresar Apellido Materno" required>
                </div>
            </div>
@@ -136,19 +157,20 @@
         PIE DEL MODAL
         ======================================-->
 
-       <div class="modal-footer">
-       <button type="button" class="btn btn-success" id="guardarCliente">Guardar</button>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+            <a href="<?php echo base_url(); ?>/clientes" class="btn btn-primary">guardar</a>
 
-  
-      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-    </div>
-  </div>
-  </div>
-  </div>
-  <!--  <a href="<?php echo base_url(); ?>/clientes" type="button" class="btn btn-success">Guardar</a>-->
-</div>
-</div>
-</div>
+        </div>
+        </div>
+     </div>
+      </form>
+     </div>
+   </div>
+ </div>
+
+
+ 
 
    <h4 class="h5 mb-2 text-gray-800">Datos venta</h4>
  
@@ -218,19 +240,17 @@
       
        <div class="row">
           <div class="col-12 col-sm-6 offset-md-6">
-                 <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label>
+                 <label style="font-weight:bold; font-size:30px ; text-align: center;">total bs </label><input type="hidden" name="totalP" id="totalP" />
                   <input type="text" id="total" name="total" size="7" readonly="true" value="0.00" style="font-weight:bold; font-size:30px ; text-align: center;" />
                <div>
                   <button type="button" id="completar_venta" 
                    class="btn btn-success">vender</button>     
                </div>
           </div>        
-
        </div>		
      </div>
-      </div>
-      </div>
-      </div>
+ </div>
+    
 </form>
 </div>
 </main>
@@ -239,7 +259,7 @@
 
  
 <script>
-    
+
   
 $(function(){ 
     $("#clientes").autocomplete({
@@ -261,33 +281,7 @@ $(function(){
     }
 });
 });
-$(document).ready(function() {
-    $('#guardarCliente').click(function() {
-        // Realizar una solicitud AJAX cuando se haga clic en el botón "Guardar"
-        $.ajax({
-            url: '<?php echo base_url(); ?>/clientes/guardarNuevoCliente', // Ruta al controlador que guarda el nuevo cliente
-            type: 'post',
-            data: $('#modalAgregarCliente form').serialize(), // Serializa los datos del formulario
-            dataType: 'json', // Esperamos una respuesta JSON
-            success: function(response) {
-                // Manejar la respuesta del servidor (datos del cliente recién insertado)
-                if (response.error) {
-                    // Manejo de errores si es necesario
-                } else {
-                    // Actualizar el contenido de resultadoLabel con los datos del nuevo cliente
-                    $('#resultadoLabel').val(response.nombre);
-                    $('#resultadoLabel2').val(response.ci_nit);
 
-                    // Cierra el modal
-                    $('#modalAgregarCliente').modal('hide');
-                }
-            },
-            error: function(error) {
-                // Manejar errores si es necesario
-            }
-        });
-    });
-});
 
 
 // Evento que se dispara cuando se presiona Enter en el campo de código

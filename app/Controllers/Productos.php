@@ -189,6 +189,51 @@ class Productos extends BaseController
        echo json_encode($res);
     }
  
+function mostrarMinimos(){
+  echo view('encabezado') ; 
+  echo view('productos/ver_minimos') ; 
+  echo view('pie') ; 
+}
+public function generarMinimosPdf()
+{
+$pdf = new \FPDF('P','mm','letter');
+$pdf->AddPage();
+$pdf->SetMargins(10,10,10);
+$pdf->SetTitle("reporte de productos por categorias");
+$pdf->Image("img/logo.png",10,20,50);
+$pdf->SetFont('Arial', '', 10);
+$pdf->Cell(0,5,utf8_decode("reporte de productos por categorias"),0,1,'C');
+$pdf->Ln(25);
+$pdf->Cell(40, 5, utf8_decode('codigo'), 1, 0, 'C');
+$pdf->Cell(80, 5, utf8_decode('descripcion'), 1, 0, 'C');
+$pdf->Cell(40, 5, utf8_decode('piezas'), 1, 0, 'C');
+$pdf->Cell(40, 5, utf8_decode('stock'), 1, 1, 'C'); // Cambiado '0' a '1' para avanzar a la siguiente línea
+
+$datosProductos = $this->productos->getProductosMnimosConCategoria();
+$prevCategoria = null;
+
+foreach ($datosProductos as $producto) {
+    // Imprimir la categoría si ha cambiado
+    if ($producto['nombre'] != $prevCategoria) {
+        // Imprimir una fila con el nombre de la categoría
+        $pdf->Cell(200, 5, utf8_decode('Categoría: ' . $producto['nombre']), 1, 1, 'L');
+        
+        // Actualizar la categoría actual
+        $prevCategoria = $producto['nombre'];
+    }
+
+    // Imprimir los detalles del producto
+    $pdf->Cell(40, 5, utf8_decode($producto['codigo']), 1, 0, 'C');
+    $pdf->Cell(80, 5, utf8_decode($producto['descripcion']), 1, 0, 'C');
+    $pdf->Cell(40, 5, utf8_decode('piezas'), 1, 0, 'C');
+    $pdf->Cell(40, 5, utf8_decode($producto['stock']), 1, 1, 'C'); // Cambiado '0' a '1' para avanzar a la siguiente línea
+}
+
+
+
+$this->response->setHeader('Content-Type','application/pdf');
+$pdf->Output('ProductoMininmo.pdf','I');
+}
 
 }
 

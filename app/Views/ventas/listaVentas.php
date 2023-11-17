@@ -10,6 +10,7 @@
     <input type="date" name="fecha_fin" id="fecha_fin">
 
     <input type="submit" value="Ver Ventas">
+    
     <button type="button" id="imprimirVentas" class="btn btn-primary">Imprimir</button>
 
 <p>
@@ -20,7 +21,7 @@
                 <thead>
                     <tr>
                         <th>fecha y hora</th>
-                        <th>razon social</th>
+                        
                         <th>n° nota remision</th>
                         <th>total</th> 
                         <th>comprobante NR</th>
@@ -30,7 +31,7 @@
                     <?php foreach($ventas as $venta){?>
                        <tr>
                           <td><?php echo $venta['fechaRegistro']?></td>
-                          <td><?php echo $venta['id_cliente']?></td>                         
+                                                  
                           <td><?php echo str_pad($venta['id_Venta'], 6, '0', STR_PAD_LEFT); ?></td>
                           <td><?php echo $venta['total']?></td>
                            <td>   <a href="<?php echo base_url(). 'ventas/muestraVentaPdf/'.$venta['id_Venta'];?>" class="btn btn-success"><i class="fas fa-file-alt"></i></a></td>
@@ -45,22 +46,9 @@ if (isset($_GET['fecha_inicio']) && isset($_GET['fecha_fin'])) {
 </form>
 
         </main>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
+   <script>
     document.getElementById('imprimirVentas').addEventListener('click', function() {
-        window.print();
-    });
+    window.print();
 });
 
-            document.getElementById('imprimirVentas').addEventListener('click', function() {
-    // Realiza una solicitud AJAX para generar el informe PDF
-    $.ajax({
-        url: 'ventas/generarInformePDF',
-        type: 'post',
-        success: function(response) {
-            // El informe PDF se abrirá para su visualización e impresión
-        }
-    });
-});
-
-        </script>
+   </script> 

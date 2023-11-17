@@ -67,9 +67,9 @@
      </div>
 </div>
 </div>
-<input type="hidden" id="accion" name="accion" value=""> <!-- Este campo indicará la acción a realizar -->
-<button type="submit" class="btn btn-success" name="accion" value="guardaryenviar">Guardar</button>
-    <button type="submit" class="btn btn-primary" name="accion" value="guardaryenviar">Enviar Correo</button>
+<input type="hidden" id="accion" name="accion" value=""> <!-- Este es  campo indicará la acción a realizar -->
+<button type="submit" class="btn btn-success" name="accion" value="guardaryenviar">Guardar y Enviar</button>
+    
 
         <a href="<?php echo base_url(); ?>/usuarios" class="btn btn-primary">Regresar</a>
         

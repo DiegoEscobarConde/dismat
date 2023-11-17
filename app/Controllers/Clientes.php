@@ -2,15 +2,19 @@
 namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ClientesModel;
+use App\Models\UsuariosModel;
 
 
 class Clientes extends BaseController
 {
-    protected $clientes,$reglas,$busCli;
+    protected $clientes,$reglas,$busCli,$usuarios;
+    
    
     public function __construct()
     {
         $this->clientes = new ClientesModel();
+        $this->usuarios = new UsuariosModel();
+        
       
         helper(['form']);
         $this->reglas =[
@@ -47,7 +51,7 @@ class Clientes extends BaseController
        echo view('pie');
 
     }
-   /* public function insertar()
+   public function insertar()
     {
         if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
@@ -59,11 +63,17 @@ class Clientes extends BaseController
             'celular' => $this->request->getPost('celular'),
             'email' => $this->request->getPost('email'),
             'direccion' => $this->request->getPost('direccion'),
+            
              ]);
              
-         
-     
-      
+             $nuevoCliente = [
+                'nombre' => $this->request->getPost('nombre'),
+                'nit' => $this->request->getPost('ci_nit'),
+            ];
+        
+            // Redirige a la vista de ventas y pasa los datos del nuevo cliente como parámetro
+            return redirect()->to(base_url().'ventas/ventas')->with('nuevoCliente', $nuevoCliente);
+        
         }else{
 
 
@@ -75,34 +85,10 @@ class Clientes extends BaseController
         }
       
         
-    }*/
-    public function guardarNuevoCliente() {
-        if ($this->request->getMethod() == 'post' && $this->validate($this->reglas)) {
-            $clienteData = [
-                'nombre' => $this->request->getPost('nombre'),
-                'primerApellido' => $this->request->getPost('primerApellido'),
-            'segundoApellido' => $this->request->getPost('segundoApellido'),
-            'ci_nit' => $this->request->getPost('ci_nit'),
-            'celular' => $this->request->getPost('celular'),
-            'email' => $this->request->getPost('email'),
-            'direccion' => $this->request->getPost('direccion'),
-               
-            ];
-    
-            // Guardar el nuevo cliente en la base de datos
-            $clienteId = $this->clientes->insert($clienteData);
-    
-            // Obtener los datos del cliente recién insertado
-            $clienteNuevo = $this->clientes->find($clienteId);
-    
-            // Devolver los datos del cliente como respuesta
-            return $this->response->setJSON($clienteNuevo);
-        } else {
-            // Manejo de errores si la validación falla
-            return $this->response->setJSON(['error' => 'La validación ha fallado']);
-        }
     }
-    
+ 
+
+  
   
 
     public function editar($id)
@@ -120,7 +106,14 @@ class Clientes extends BaseController
     {
    
         $this->clientes->update($this->request->getPost('id_cliente'),
-        ['nombre' => $this->request->getPost('nombre')]);
+        ['nombre' => $this->request->getPost('nombre'),
+        'primerApellido' => $this->request->getPost('primerApellido'),
+        'segundoApellido' => $this->request->getPost('segundoApellido'),
+        'ci_nit' => $this->request->getPost('ci_nit'),
+        'celular' => $this->request->getPost('celular'),
+        'email' => $this->request->getPost('email'),
+        'direccion' => $this->request->getPost('direccion'),
+        'id'=>$this->request->getPost('id')]);
         return redirect()->to(base_url().'/clientes');
     }
     public function eliminar($id)

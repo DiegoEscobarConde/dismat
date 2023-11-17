@@ -55,8 +55,6 @@ protected $reglas,$reglasLogin;
                     ]
                     ];
          
-                    
-                
                 
     }
 
@@ -92,14 +90,13 @@ protected $reglas,$reglasLogin;
         $nombres = $this->request->getPost('nombres');
         $apellido = $this->request->getPost('primerApellido');
        
-        $passwordAlfanumerico = $this->generarPassword(); // Genera una contraseña alfanumérica de 8 caracteres
-       // $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
+        $passwordAlfanumerico = $this->generarPassword(); 
+       // $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); 
        $nombreUsuario = (string)$nombres . (string)$apellido; // Concatenar y convertir a string
-$nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minúsculas y obtener los primeros 3 caracteres
+$nombreUsuario = strtolower(substr($nombreUsuario, 0, 6)); 
 
         $correo=$this->request->getPost('email');
-         // Almacena $passwordEncriptado en la base de datos
-          // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico   
+          
           $accion = $this->request->getPost('accion');
           if ($accion === "guardaryenviar") {     
             $this->usuarios->save([
@@ -144,15 +141,12 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
             echo view('usuarios/nuevo',$datos);
             echo view('pie');
         }
-       
-    
-    
-        
+  
     }
 }
     function generarPassword() {
         $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $longitud = 8; // Longitud de la contraseña deseada
+        $longitud = 8; 
         $password = '';
     
         for ($i = 0; $i < $longitud; $i++) {
@@ -161,9 +155,6 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
     
         return $password;
     }
-    
-    
-  
 
     public function editar($id)
     {
@@ -213,8 +204,7 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
         $this->usuarios->update($id,['estado' => 1]);
         return redirect()->to(base_url().'/usuarios');
     }
-    
-    
+
     public function login()
     {
       echo view('login');
@@ -239,7 +229,7 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
             $session =session();
            $session->set($datosSesion); // Inicia sesión
 
-            return redirect()->to(base_url() . '/categorias');
+            return redirect()->to(base_url() . '/home');
         } else {
             $data['error'] = "Las credenciales son incorrectas";
             echo view('login', $data);
@@ -250,110 +240,11 @@ $nombreUsuario = strtolower(substr($nombreUsuario, 0, 3)); // Convertir a minús
     }
 }
 
-   /* public function valida()
-    {
-        if($this->request->getMethod() =="post"){  
-            $usuario =$this->request->getPost('usuario');
-            $passwordAlfanumerico =$this->request->getPost('password');
-            
-            $datosUsuario = $this ->usuarios->where('usuario',$usuario)->first();
-                 if($datosUsuario != null)
-                {
-                    var_dump($usuario);
-                    var_dump($passwordAlfanumerico);
-                    if (($passwordAlfanumerico. $datosUsuario['usuario'])) {
-                        // Contraseña válida
-                         $datosSession= 
-                            [
-                           'id'=> $datosUsuario ['id'],
-                           'nombres'=> $datosUsuario ['nombres'],
-                           'usuario'=> $datosUsuario ['usuario'],
-                           'id_Empleado'=> $datosUsuario ['id_Empleado']
-                            ];
-                            $session =session();
-                            $session->set($datosSession);
-                            return redirect()->to(base_url(). '/categorias');
-                    } 
-                           
-                        else
-                           {
-                             $data['error']="las contraseñas no coinciden";
-                             echo view('login',$data);
-                            }
-                 } else  {
-                             $data['error']="el  ususario no existe";
-                             echo view('login',$data);
-                           }
-                        } else  {
-                            $data=['validation'=>$this->validator];
-                            echo view('login',$data);
-                          }
-         
-     }*/
-    
-
-
-    
     public function logout() {
         $session = session(); // Obtener la instancia de la sesión
         $session->destroy(); // Eliminar toda la información de la sesión
         return redirect()->to(base_url());
     }
-    
-  
-
-        
-    
-     
-
-      /*  public function enviarCredenciales( )
-        {
-            if ($this->request->getMethod() == "post"){    
-            $nombreUsuario = $this->usuarios->getPost('usuario');
-            $passwordAlfanumerico  =$this->request->getPost('password');
-            $correo=$this->request->getPost('email');
-            $asunto=$this->request->getPost('asunto');
-          
-                $password = $this->request->getPost('password');
-                $nombres = $this->request->getPost('nombres');
-                $apellido = $this->request->getPost('primerApellido');
-        
-                $passwordAlfanumerico = $this->generarPassword(); // Genera una contraseña alfanumérica de 8 caracteres
-                $password = password_hash($passwordAlfanumerico, PASSWORD_DEFAULT); // Encripta la contraseña
-                $nombreUsuario=strtolower(substr($nombres, 0, 3).$apellido);
-              
-                 // Almacena $passwordEncriptado en la base de datos
-                  // Puedes guardar $passwordAlfanumerico en otra variable si necesitas enviarla por correo electrónico
-        
-                   
-                  
-                  
-             
-                // Cargar la librería de correo electrónico
-                $email = \Config\Services::email();
-        
-                // Configurar los datos del correo
-                $email->setFrom('escobar.diego.1091@gmail.com', 'diego'); // Establece el encabezado 'From' con tu dirección de correo
-               
-                $email->setTo($correo);
-                $email->setSubject($asunto);
-                $mensaje = "<p>Tu nombre de usuario es: $nombreUsuario</p><p>Tu contraseña es: $passwordAlfanumerico</p>";
-                $email->setMessage($mensaje);
-        
-                // Intentar enviar el correo
-                if ($email->send()) {
-                    // El correo se envió exitosamente
-                    return redirect()->to(base_url() . 'usuarios');
-                } else {
-                    // Hubo un error al enviar el correo
-                    echo $email->printDebugger(); // Esto mostrará información de depuración para ayudarte a diagnosticar problemas
-                }
-            }
-        }*/
-
-        
- 
-   
 
        public function email()
        {

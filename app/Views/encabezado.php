@@ -58,10 +58,10 @@ $user_session = session()?>
     <div id="wrapper"   >
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion " id="accordionSidebar" style="background-color: #015882; " >
+        <ul class="navbar-nav sidebar sidebar-dark accordion " id="accordionSidebar" style="background-color: #4A90E2; " >
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ;?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ;?>/home">
                 <div class="sidebar-brand-icon rotate-n-15"  style="background-color: #015882;">
                    
                 </div>
@@ -108,7 +108,7 @@ $user_session = session()?>
                 <div id="collapseCompras" class="collapse" aria-labelledby="headingCompras" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url() ;?>compras/nuevo">nueva compra </a>
-                        <a class="collapse-item" href="<?php echo base_url() ;?>compras/lista">compras</a>
+                      
                     </div>
                 
             </li>
@@ -146,6 +146,30 @@ $user_session = session()?>
                     </div>
               
             </li>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url() ;?>proveedores" data-toggle="#proveedores" data-target="#proveedores"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-store"></i>
+
+                    <span  >PROVEEDORES</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#menuReporte"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-list"></i>
+                    <span>Reportes</span>
+                </a>
+                <div id="menuReporte" class="collapse" aria-labelledby="headingConfig" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="<?php echo base_url() ;?>productos/mostrarMinimos">Reporte de Productos</a>
+                    <a class="collapse-item" href="<?php echo base_url() ;?>empleados">roles</a>
+                        
+                    </div>
+              
+            </li>
+            
 
             <!-- Nav Item - Charts -->
            
@@ -171,7 +195,7 @@ $user_session = session()?>
 <div id="content">
 
     <!-- Topbar -->
-    <nav class="sb-topnav navbar navbar-expand navbar-dark "style="background-color: #015882;" >
+    <nav class="sb-topnav navbar navbar-expand navbar-dark "style="background-color: #4A90E2;" >
 
         <!-- Sidebar Toggle (Topbar) -->
         <form class="form-inline">
@@ -191,8 +215,7 @@ $user_session = session()?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $user_session->usuario; ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCambioPasword">
-                            Cambiar password</a>
+                        
                       
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="<?php echo base_url(); ?>/usuarios/logout">Cerrar sessión</a>

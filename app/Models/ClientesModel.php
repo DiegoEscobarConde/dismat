@@ -14,7 +14,7 @@ class ClientesModel extends Model
     protected $useSoftDeletes = false;
 
     protected $allowedFields = ['nombre', 'primerApellido', 'segundoApellido','ci_nit'
-    ,'celular', 'email', 'direccion', 'estado'];
+    ,'celular', 'email', 'direccion', 'id','estado'];
 
     // Dates
     protected $useTimestamps = true;
@@ -41,7 +41,13 @@ class ClientesModel extends Model
       protected $afterDelete    = [];
      
 
-
+      public function obtenerDatosCliente($id_cliente)
+      {
+          // Consulta para obtener los datos del cliente por su ID
+          return $this->asArray()
+              ->where(['id_cliente' => $id_cliente])
+              ->first();
+      }
 
    
 }

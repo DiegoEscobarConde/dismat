@@ -91,7 +91,7 @@ class Compras extends BaseController
     
     function generarCompraPdf($id_compra)
     {
-      $datosCompras=$this->compras->where('id_Compra', $id_compra)->firts();
+      $datosCompras=$this->compras->where('id_Compra', $id_compra)->first();
        $detalle_compra=$this->detalle_compra->select('*')->where('id_Compra', $id_compra)->findAll();
 
        $pdf=new \FPDF('P','mm','letter');

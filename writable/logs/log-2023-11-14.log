@@ -1,0 +1,1688 @@
+INFO - 2023-11-14 09:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:17 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:35:24 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:24 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:35:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:37:07 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:40:30 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 217.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:55:51 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 09:55:51 --> Call to undefined method App\Models\ProductosModel::getProductosMnimos
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Productos.php(212): CodeIgniter\Model->__call('getProductosMnimos', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:57:05 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-14 09:57:05 --> mysqli_sql_exception: Column 'estado' in where clause is ambiguous in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-14 09:57:05 --> Column 'estado' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `stock` >= stock AND `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `stock` >= stock AND `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `stock` >= stock AND `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `stock` >= stock AND `estado` = 1', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 09:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 09:59:48 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-14 09:59:48 --> mysqli_sql_exception: Unknown column 'productos.categoria_id' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-14 09:59:48 --> Unknown column 'productos.categoria_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`categoria_id` = `categorias`.`id`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`categoria_id` = `categorias`.`id`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`categoria_id` = `categorias`.`id`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`categoria_id` = `categorias`.`id`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:00:35 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:00:36 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:00:36 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:00:36 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:00:36 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:00:36 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-14 10:00:36 --> mysqli_sql_exception: Unknown column 'categorias.id_Producto' in 'on clause' in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\dismat\app\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+#8 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-14 10:00:36 --> Unknown column 'categorias.id_Producto' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `productos`.*, `categorias`.`nombre` AS `categoria_nombre`
+FROM `productos`
+LEFT JOIN `categorias` ON `productos`.`id_categoria` = `categorias`.`id_Producto`
+WHERE `productos`.`stock` >= `productos`.`stock` AND `productos`.`estado` = 1', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductosModel.php(76): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Productos.php(212): App\Models\ProductosModel->getProductosMnimosConCategoria()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:01:42 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 10:01:42 --> Undefined array key "nombre"
+in APPPATH\Controllers\Productos.php on line 222.
+ 1 APPPATH\Controllers\Productos.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Productos.php', 222)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:04:54 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:06:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 233.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:08:43 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 10:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 10:13:50 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-14 17:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-14 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-14 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-14 17:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-14 17:24:34 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

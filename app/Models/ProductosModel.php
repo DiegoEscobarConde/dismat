@@ -50,6 +50,34 @@ public function actualizaStock2($id_Producto,$cantidad){
   $this-> where('id_Producto',$id_Producto);
 $this ->update();         
 }
+public function totoalProductos(){
+  return $this->where('estado',1)->countAllResults();
+}
+public function productosMnimos(){
+  $where="stock >=stock AND estado=1";
+  $this -> where($where);
+  $sql=$this->countAllResults();
+  return $sql;
+}
+/*public function getProductosMnimos(){
+  $where="stock >=stock AND estado=1";
+     return       $this -> where($where)->findAll();
+  
+ 
+}*/
+public function getProductosMnimosConCategoria()
+{
+    $where = "productos.stock >= productos.stock AND productos.estado = 1";
+
+    // Realizar una consulta más compleja para obtener los datos de la categoría
+    $productos = $this->select('productos.*, categorias.nombre AS nombre')
+        ->join('categorias', 'productos.id_categoria = categorias.id_categoria', 'left')
+        ->where($where)
+        ->findAll();
+
+    return $productos;
+}
+
 
 
 }

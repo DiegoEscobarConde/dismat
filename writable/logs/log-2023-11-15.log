@@ -1,0 +1,375 @@
+INFO - 2023-11-15 02:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH\ThirdParty\fpdf\fpdf.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(202): FPDF->SetTitle('reporte de productos por categorias')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:21 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-15 02:56:22 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Productos.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Productos->generarMinimosPdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 02:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 02:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:00:54 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:01:10 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:01:38 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:01:40 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:01:41 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:02:01 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:03:20 --> Invalid file: "roles/detalles.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('roles/detalles.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 3 APPPATH\Controllers\Empleados.php(116): view('roles/detalles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:03:45 --> Invalid file: "empleados/detalles.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('empleados/detalles.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('empleados/detalles', [], true)
+ 3 APPPATH\Controllers\Empleados.php(116): view('empleados/detalles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:05:05 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:05:15 --> Invalid file: "empleados/detalles.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('empleados/detalles.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('empleados/detalles', [], true)
+ 3 APPPATH\Controllers\Empleados.php(116): view('empleados/detalles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 03:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 03:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 03:49:13 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:50:53 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:50:56 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:51:00 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 03:55:59 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:13:44 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:13:45 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:14:40 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:16:07 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:16:08 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 04:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 04:16:49 --> Undefined variable $id_Empleado
+in APPPATH\Views\empleados\detalle.php on line 6.
+ 1 APPPATH\Views\empleados\detalle.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_Empleado', 'C:\\xampp2\\htdocs\\dismat\\app\\Views\\empleados\\detalle.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\dismat\\app\\Views\\empleados\\detalle.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('empleados/detalle', [], true)
+ 5 APPPATH\Controllers\Empleados.php(119): view('empleados/detalle', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:17:25 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-15 04:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 04:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 04:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-15 04:19:10 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 04:22:35 --> Too few arguments to function App\Controllers\Empleados::detalles(), 0 passed in C:\xampp2\htdocs\dismat\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Empleados.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Empleados->detalles()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

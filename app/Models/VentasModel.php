@@ -13,7 +13,7 @@ class VentasModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id','nota', 'total','id_cliente','estado'];
+    protected $allowedFields = ['nota', 'total','id','id_cliente','estado'];
 
     // Dates
     protected $useTimestamps = true;
@@ -42,13 +42,14 @@ class VentasModel extends Model
      
    
          
-     public function insertaVenta($id_Venta,$total,$id,$id_cliente) {
+     public function insertaVenta($id_Venta,$total,$id_cliente,$usuario) {
         $this->insert([
+           'id'=> $usuario,
                'nota'=> $id_Venta, 
-               'id'=> $id,
-               'total'=>$total,
+              
+               
                'id_cliente'=>$id_cliente ,
-                       
+                'total'=>$total,       
          ]);
          return $this->insertID();
       } 

@@ -31,6 +31,8 @@
                        <tr>
                           <td><?php echo $dato['id_Empleado']?></td>
                           <td><?php echo $dato['rol']?></td>
+                          <td>   <a href="<?php echo base_url(). 'empleados/detalles/'?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
+                       
                           <td>   <a href="<?php echo base_url(). 'empleados/editar/'.$dato['id_Empleado'];?>" class="btn btn-warning"><i class="fas fa-pen-nib"></i></a></td>
                        
                           <td><a href="<?php echo base_url(). 'empleados/eliminar/'.$dato['id_Empleado'];?>"  class="btn btn-danger"><i class="fas fa-trash"></i></a></td>

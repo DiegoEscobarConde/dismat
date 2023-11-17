@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
+        <title>DISMAT</title>
         <link href="<?php echo base_url() ;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="<?php echo base_url() ;?>/css/fonts.googleapis.css"
@@ -38,7 +38,7 @@
         <link href="<?php echo base_url() ;?>/css/stylecss.css" rel="stylesheet" />
         <script src="<?php echo base_url() ;?>/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-danger">
+    <body class="login" style="background-color: #015882;">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -46,7 +46,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4"><img src="<?php echo base_url() ;?>/img/icono.jpg" width="60" height="60"> Bienvenidos</h3></div>
                                     <div class="card-body">
                                         <form method="POST" action="<?php echo base_url();?>/usuarios/valida">
                                             <div class="form-floating mb-3">

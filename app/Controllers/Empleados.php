@@ -2,14 +2,16 @@
 namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\EmpleadosModel;
+use App\Models\PermisosModel;
 class Empleados extends BaseController
 {
-    protected $empleados;
+    protected $empleados,$permisos,$idRol;
     protected $reglas;
 
     public function __construct()
     {
         $this->empleados = new EmpleadosModel();
+        $this->permisos = new PermisosModel();
         helper(['form']);
         $this->reglas =[
             'rol'=>[
@@ -110,5 +112,14 @@ class Empleados extends BaseController
         $this->empleados->update($id,['estado' => 1]);
         return redirect()->to(base_url().'/empleados');
     }
+    public function detalles($idRol){
+        $permisos= $this->permisos->findAll();
+        var_dump($idRol);
+        $data =['titulo'=>'asignar permisos','permisos'=>$permisos,'id_Empleado'=> $idRol];
+    echo view('encabezado');
+     echo view('empleados/detalles',$data);
+    echo view('pie');
+    }
+
 }
 
