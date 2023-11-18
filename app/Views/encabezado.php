@@ -164,7 +164,7 @@ $user_session = session()?>
                 <div id="menuReporte" class="collapse" aria-labelledby="headingConfig" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="<?php echo base_url() ;?>productos/mostrarMinimos">Reporte de Productos</a>
-                    <a class="collapse-item" href="<?php echo base_url() ;?>empleados">roles</a>
+                  
                         
                     </div>
               

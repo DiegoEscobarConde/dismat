@@ -3,15 +3,17 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\EmpleadosModel;
 use App\Models\PermisosModel;
+use App\Models\DetalleRolesPermisosModel;
 class Empleados extends BaseController
 {
-    protected $empleados,$permisos,$idRol;
+    protected $empleados,$permisos,$idRol,$detalleRoles;
     protected $reglas;
 
     public function __construct()
     {
         $this->empleados = new EmpleadosModel();
         $this->permisos = new PermisosModel();
+        $this->detalleRoles = new DetalleRolesPermisosModel();
         helper(['form']);
         $this->reglas =[
             'rol'=>[
@@ -112,14 +114,26 @@ class Empleados extends BaseController
         $this->empleados->update($id,['estado' => 1]);
         return redirect()->to(base_url().'/empleados');
     }
-    public function detalles($idRol){
+    public function detalles(){
         $permisos= $this->permisos->findAll();
-        var_dump($idRol);
+        $idRol=$this->request->getPost('id_Empleados');
+       
         $data =['titulo'=>'asignar permisos','permisos'=>$permisos,'id_Empleado'=> $idRol];
     echo view('encabezado');
      echo view('empleados/detalles',$data);
     echo view('pie');
     }
+    public function guardaPermisos(){
+        if($this->request->getMethod()=="post"){
+            $idRol =$this ->request->getPost('id_Empleado');
+            $permisos =$this ->request->getPost('permisos');
+            foreach($permisos as $permiso){   
+                $this->detalleRoles->save(['id_Empleado'=>$idRol,'id_permiso'=>$permiso]);      
+        }
+        print_r($_POST);
+    }
 
+
+}
 }
 
