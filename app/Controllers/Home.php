@@ -11,5 +11,6 @@ class Home extends BaseController
        echo view ('contenido');
        echo view ('pie');
     }
+   
     
 }

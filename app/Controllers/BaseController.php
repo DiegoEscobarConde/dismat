@@ -25,6 +25,7 @@ abstract class BaseController extends Controller
      * Instance of the main Request object.
      *
      * @var CLIRequest|IncomingRequest
+     * 
      */
     protected $request;
 
@@ -50,9 +51,12 @@ abstract class BaseController extends Controller
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
+        
+
 
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
     }
+    
 }

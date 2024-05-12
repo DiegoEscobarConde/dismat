@@ -15,7 +15,7 @@ use CodeIgniter\Model;
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
     
-        protected $allowedFields = ['nombreUsuario','password','nombre','id_Empleado','estado'];
+        protected $allowedFields = ['nombres','primerApellido','segundoApellido','email','celular','usuario','password','id_Empleado','estado'];
     
         // Dates
         protected $useTimestamps = true;
@@ -40,6 +40,12 @@ use CodeIgniter\Model;
           protected $afterFind      = [];
           protected $beforeDelete   = [];
           protected $afterDelete    = [];
+          public function getUsersWithRoles()
+          {
+              return $this->select('usuarios.*, rol AS rol')
+                  ->join('empleados', 'empleados.id_Empleado = usuarios.id_Empleado')
+                  ->findAll();
+          }
       }
 
     

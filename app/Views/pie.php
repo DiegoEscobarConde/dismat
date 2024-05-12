@@ -1,6 +1,6 @@
-<body>
-<footer class="sticky-footer bg-white">
-                <div class="container my-auto">
+
+<footer class="main-footer">
+                <div class="container">
                     <div class="copyright text-center my-auto">
                         <span>Dismat &copy;  2023</span>
                     </div>
@@ -23,6 +23,7 @@
    
 
     <!-- Bootstrap core JavaScript-->
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
     <script src="<?php echo base_url() ;?>/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url() ;?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -36,11 +37,16 @@
     <script src="<?php echo base_url() ;?>/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url() ;?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url() ;?>/js/demo/datatables-demo.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/jquery-ui.min.js"></script>
+    
     <script>
         $('#modal-confirma').on('show.bs.modal',function(e){
             $($this).find('.btn-ok').after('href',$(e.relatedTarget).data('href'));
         });
     </script>
+    </footer>
 </body>
 </html>
 

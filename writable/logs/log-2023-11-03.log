@@ -1,0 +1,1690 @@
+INFO - 2023-11-03 14:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 14:46:34 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65442e64c8f38', '8000.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 14:46:34 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'8000.00\', \'65442e64c8f38\', \'2023-11-03 14:46:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'8000.00\', \'65442e64c8f38\', \'2023-11-03 14:46:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'8000.00\', \'65442e64c8f38\', \'2023-11-03 14:46:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65442e64c8f38', '8000.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 15:15:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450e8684342', '1440.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 15:15:34 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'1440.00\', \'65450e8684342\', \'2023-11-03 15:15:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'1440.00\', \'65450e8684342\', \'2023-11-03 15:15:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'1440.00\', \'65450e8684342\', \'2023-11-03 15:15:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450e8684342', '1440.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 15:16:58 --> Undefined array key "stock"
+in APPPATH\Controllers\Compras.php on line 64.
+ 1 APPPATH\Controllers\Compras.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 15:17:23 --> Undefined array key "stock"
+in APPPATH\Controllers\Compras.php on line 64.
+ 1 APPPATH\Controllers\Compras.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 15:17:30 --> Undefined array key "stock"
+in APPPATH\Controllers\Compras.php on line 64.
+ 1 APPPATH\Controllers\Compras.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 15:18:01 --> Undefined array key "stock"
+in APPPATH\Controllers\Compras.php on line 64.
+ 1 APPPATH\Controllers\Compras.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 15:22:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450f1ed9f32', '648.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 15:22:35 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:22:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:22:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:22:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450f1ed9f32', '648.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 15:23:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450f1ed9f32', '648.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 15:23:57 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:23:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:23:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'648.00\', \'65450f1ed9f32\', \'2023-11-03 15:23:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65450f1ed9f32', '648.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 15:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 15:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 15:30:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 15:30:26 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 15:30:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 15:30:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 15:30:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 16:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 16:04:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 16:04:11 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:04:11\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:04:11\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:04:11\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 16:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 16:19:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 16:19:05 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:19:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:19:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'13200.00\', \'65451202a9e46\', \'2023-11-03 16:19:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451202a9e46', '13200.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 16:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 16:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 16:19:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 16:19:26 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'712.00\', \'65451d82c4e6c\', \'2023-11-03 16:19:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'712.00\', \'65451d82c4e6c\', \'2023-11-03 16:19:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'712.00\', \'65451d82c4e6c\', \'2023-11-03 16:19:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 18:53:18 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 18:53:18 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 18:53:25 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 18:53:25 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (NULL, \'712.00\', \'65451d82c4e6c\', \'2023-11-03 18:53:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65451d82c4e6c', '712.00', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 18:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 18:56:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 18:56:17 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:56:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:56:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'10\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:56:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 18:59:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 18:59:12 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 18:59:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 18:59:43 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (\'mar\', \'28160.00\', \'65454246e3fc6\', \'2023-11-03 18:59:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('65454246e3fc6', '28160.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 18:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 18:59:59 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 19:18:58 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('28160.00', '65454246e3fc6', '', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 19:18:58 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:18:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:18:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:18:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('28160.00', '65454246e3fc6', '', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 19:22:01 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('28160.00', '65454246e3fc6', '', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 19:22:01 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:22:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:22:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454246e3fc6\', \'28160.00\', NULL, \'mar\', \'2023-11-03 19:22:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('28160.00', '65454246e3fc6', '', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 19:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 19:22:20 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 19:22:20 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:22:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:22:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:22:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 19:38:52 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 19:38:52 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 19:38:56 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 19:38:56 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (\'65454861069aa\', \'87280.00\', NULL, \'mar\', \'2023-11-03 19:38:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('87280.00', '65454861069aa', '', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 19:41:02 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 19:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 19:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 19:59:53 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 20:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 20:01:07 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 20:05:39 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 20:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 20:06:00 --> Undefined array key "precioUnitario"
+in APPPATH\Controllers\Compras.php on line 65.
+ 1 APPPATH\Controllers\Compras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precioUnitario"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-03 20:10:30 --> Undefined array key "stock"
+in APPPATH\Controllers\Compras.php on line 69.
+ 1 APPPATH\Controllers\Compras.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp2\\htdocs\\dismat\\app\\Controllers\\Compras.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:10:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:10:48'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:10:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:10:48'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:10:48\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:10:48\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:10:48\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:13:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:13:15'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:13:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:13:15'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:15\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:15\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:15\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:13:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:13:35'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:13:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:13:35'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:35\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:35\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:13:35\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:15:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:15:30'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:15:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:15:30'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:15:30\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:15:30\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:15:30\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:16:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:16:07'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:16:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:16:07'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:16:07\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:16:07\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:16:07\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:23:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:23:51'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:23:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 10, `fechaActualizacion` = '2023-11-03 20:23:51'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:23:51\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:23:51\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = \'2023-11-03 20:23:51\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 10, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('13', '10')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 20:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 20:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 20:24:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 123, `fechaActualizacion` = '2023-11-03 20:24:13'
+WHERE `id` = '12'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('12', '123')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 20:24:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 123, `fechaActualizacion` = '2023-11-03 20:24:13'
+WHERE `id` = '12'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 123, `fechaActualizacion` = \'2023-11-03 20:24:13\'
+WHERE `id` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 123, `fechaActualizacion` = \'2023-11-03 20:24:13\'
+WHERE `id` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 123, `fechaActualizacion` = \'2023-11-03 20:24:13\'
+WHERE `id` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 123, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(69): App\Models\ProductosModel->actualizaStock('12', '123')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:05:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654556e0a5b2d', '9840.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:05:23 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_usuarios` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:05:23\', \'2023-11-03 21:05:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:05:23\', \'2023-11-03 21:05:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:05:23\', \'2023-11-03 21:05:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654556e0a5b2d', '9840.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:06:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654556e0a5b2d', '9840.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:06:02 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:06:02\', \'2023-11-03 21:06:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:06:02\', \'2023-11-03 21:06:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'9840.00\', \'654556e0a5b2d\', \'2023-11-03 21:06:02\', \'2023-11-03 21:06:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654556e0a5b2d', '9840.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 21:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:06:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654560c5ef935', '160.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:06:25 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'160.00\', \'654560c5ef935\', \'2023-11-03 21:06:25\', \'2023-11-03 21:06:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'160.00\', \'654560c5ef935\', \'2023-11-03 21:06:25\', \'2023-11-03 21:06:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'mar\', \'160.00\', \'654560c5ef935\', \'2023-11-03 21:06:25\', \'2023-11-03 21:06:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(54): App\Models\ComprasModel->insertaCompra('654560c5ef935', '160.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:09:11 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('654560c5ef935', '160.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:09:11 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'160.00\', \'654560c5ef935\', \'mar\', \'2023-11-03 21:09:11\', \'2023-11-03 21:09:11\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'160.00\', \'654560c5ef935\', \'mar\', \'2023-11-03 21:09:11\', \'2023-11-03 21:09:11\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (NULL, \'160.00\', \'654560c5ef935\', \'mar\', \'2023-11-03 21:09:11\', \'2023-11-03 21:09:11\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(55): App\Models\ComprasModel->insertaCompra('654560c5ef935', '160.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 21:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 21:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:20:40 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545641dbe548', '3596.00', NULL, 'mar', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:20:40 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:20:40\', \'2023-11-03 21:20:40\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:20:40\', \'2023-11-03 21:20:40\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:20:40\', \'2023-11-03 21:20:40\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545641dbe548', '3596.00', null, 'mar', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 21:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 21:22:12 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545641dbe548', '3596.00', NULL, 'mar', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 21:22:12 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:22:12\', \'2023-11-03 21:22:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:22:12\', \'2023-11-03 21:22:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'3596.00\', \'6545641dbe548\', \'mar\', NULL, \'2023-11-03 21:22:12\', \'2023-11-03 21:22:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545641dbe548', '3596.00', null, 'mar', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:00:59 --> mysqli_sql_exception: Column 'nota' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456d93e71db', '400.00', NULL, 'mar', NULL)
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:00:59 --> Column 'nota' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'400.00\', \'65456d93e71db\', \'mar\', NULL, \'2023-11-03 22:00:59\', \'2023-11-03 22:00:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'400.00\', \'65456d93e71db\', \'mar\', NULL, \'2023-11-03 22:00:59\', \'2023-11-03 22:00:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'400.00\', \'65456d93e71db\', \'mar\', NULL, \'2023-11-03 22:00:59\', \'2023-11-03 22:00:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `nota`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :nota:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456d93e71db', '400.00', null, 'mar', null)
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:01:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 100, `fechaActualizacion` = '2023-11-03 22:01:47'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('13', '100')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:01:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 100, `fechaActualizacion` = '2023-11-03 22:01:47'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 100, `fechaActualizacion` = \'2023-11-03 22:01:47\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 100, `fechaActualizacion` = \'2023-11-03 22:01:47\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 100, `fechaActualizacion` = \'2023-11-03 22:01:47\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 100, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('13', '100')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:03:30 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:03:30 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:03:30\', \'2023-11-03 22:03:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:03:30\', \'2023-11-03 22:03:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:03:30\', \'2023-11-03 22:03:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:04:33 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:04:33 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:04:33\', \'2023-11-03 22:04:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:04:33\', \'2023-11-03 22:04:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:04:33\', \'2023-11-03 22:04:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:05:08 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:05:08 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:05:08\', \'2023-11-03 22:05:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:05:08\', \'2023-11-03 22:05:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e22a8aa8\', \'mar\', NULL, \'2023-11-03 22:05:08\', \'2023-11-03 22:05:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e22a8aa8', '180.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:05:24 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:05:24 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:24\', \'2023-11-03 22:05:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:24\', \'2023-11-03 22:05:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:24\', \'2023-11-03 22:05:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:05:57 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:05:57 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:57\', \'2023-11-03 22:05:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:57\', \'2023-11-03 22:05:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:05:57\', \'2023-11-03 22:05:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:14:40 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:14:40 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:14:40\', \'2023-11-03 22:14:40\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:14:40\', \'2023-11-03 22:14:40\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'65456e9bccdac\', \'mar\', NULL, \'2023-11-03 22:14:40\', \'2023-11-03 22:14:40\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('65456e9bccdac', '312.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:15:03 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654570de5f3f8', '56000.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:15:03 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:15:03\', \'2023-11-03 22:15:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:15:03\', \'2023-11-03 22:15:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:15:03\', \'2023-11-03 22:15:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654570de5f3f8', '56000.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:17:59 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654570de5f3f8', '56000.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:17:59 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'56000.00\', \'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:17:59\', \'2023-11-03 22:17:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'56000.00\', \'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:17:59\', \'2023-11-03 22:17:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'56000.00\', \'654570de5f3f8\', \'mar\', NULL, \'2023-11-03 22:17:59\', \'2023-11-03 22:17:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654570de5f3f8', '56000.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:18:20 --> mysqli_sql_exception: Column 'id_Producto' cannot be null in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545719e8f43f', '40000.00', NULL, 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:18:20 --> Column 'id_Producto' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', NULL, \'2023-11-03 22:18:20\', \'2023-11-03 22:18:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', NULL, \'2023-11-03 22:18:20\', \'2023-11-03 22:18:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', NULL, \'2023-11-03 22:18:20\', \'2023-11-03 22:18:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `id_Producto`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :id_Producto:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545719e8f43f', '40000.00', null, 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:19:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545719e8f43f', '40000.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:19:09 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', \'2023-11-03 22:19:09\', \'2023-11-03 22:19:09\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', \'2023-11-03 22:19:09\', \'2023-11-03 22:19:09\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'40000.00\', \'6545719e8f43f\', \'mar\', \'2023-11-03 22:19:09\', \'2023-11-03 22:19:09\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('6545719e8f43f', '40000.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:19:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`)) in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp2\htdocs\dismat\app\Models\ComprasModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654571eb5cc5f', '58220.00', 'mar')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:19:31 --> Cannot add or update a child row: a foreign key constraint fails (`dismat4`.`compras`, CONSTRAINT `fk_compras_productos` FOREIGN KEY (`id_Producto`) REFERENCES `productos` (`id_Producto`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'58220.00\', \'654571eb5cc5f\', \'mar\', \'2023-11-03 22:19:31\', \'2023-11-03 22:19:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'58220.00\', \'654571eb5cc5f\', \'mar\', \'2023-11-03 22:19:31\', \'2023-11-03 22:19:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (\'58220.00\', \'654571eb5cc5f\', \'mar\', \'2023-11-03 22:19:31\', \'2023-11-03 22:19:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`nota`, `totalPago`, `id`, `fechaRegistro`, `fechaActualizacion`) VALUES (:nota:, :totalPago:, :id:, :fechaRegistro:, :fechaActualizacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(43): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(56): App\Models\ComprasModel->insertaCompra('654571eb5cc5f', '58220.00', 'mar')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:20:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 14555, `fechaActualizacion` = '2023-11-03 22:20:00'
+WHERE `id` = '13'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('13', '14555')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:20:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 14555, `fechaActualizacion` = '2023-11-03 22:20:00'
+WHERE `id` = '13'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 14555, `fechaActualizacion` = \'2023-11-03 22:20:00\'
+WHERE `id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 14555, `fechaActualizacion` = \'2023-11-03 22:20:00\'
+WHERE `id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 14555, `fechaActualizacion` = \'2023-11-03 22:20:00\'
+WHERE `id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 14555, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('13', '14555')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:20:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 1, `fechaActualizacion` = '2023-11-03 22:20:36'
+WHERE `id` = '12'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('12', '1')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:20:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 1, `fechaActualizacion` = '2023-11-03 22:20:36'
+WHERE `id` = '12'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 1, `fechaActualizacion` = \'2023-11-03 22:20:36\'
+WHERE `id` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 1, `fechaActualizacion` = \'2023-11-03 22:20:36\'
+WHERE `id` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 1, `fechaActualizacion` = \'2023-11-03 22:20:36\'
+WHERE `id` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 1, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('12', '1')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-03 22:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-03 22:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-03 22:21:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 78, `fechaActualizacion` = '2023-11-03 22:21:28'
+WHERE `id` = '12'' at line 1 in C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\dismat\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp2\htdocs\dismat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp2\htdocs\dismat\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp2\htdocs\dismat\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\dismat\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp2\htdocs\dismat\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp2\htdocs\dismat\app\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+#8 C:\xampp2\htdocs\dismat\app\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('12', '78')
+#9 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+#10 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp2\htdocs\dismat\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\dismat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-03 22:21:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' + 78, `fechaActualizacion` = '2023-11-03 22:21:28'
+WHERE `id` = '12'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `stock` = stock\' + 78, `fechaActualizacion` = \'2023-11-03 22:21:28\'
+WHERE `id` = \'12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `stock` = stock\' + 78, `fechaActualizacion` = \'2023-11-03 22:21:28\'
+WHERE `id` = \'12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `stock` = stock\' + 78, `fechaActualizacion` = \'2023-11-03 22:21:28\'
+WHERE `id` = \'12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `stock` = stock\' + 78, `fechaActualizacion` = :fechaActualizacion:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\ProductosModel.php(46): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Compras.php(71): App\Models\ProductosModel->actualizaStock('12', '78')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

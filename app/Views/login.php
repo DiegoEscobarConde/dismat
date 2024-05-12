@@ -1,49 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<title>dismat</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="css/fonts.googleapis1/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/font-awesome1.min.css">
-<link rel="stylesheet" href="css/style1.css">
-<script nonce="bd10e230-44e7-41fb-8101-ccc0f70b6ba9">(function(w,d){!function(j,k,l,m){j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const w of Object.entries(Object.entries(dataLayer).reduce(((x,y)=>({...x[1],...y[1]})),{})))zaraz.set(w[0],w[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const z=j.zaraz.q.shift();j[l].q.push(z)}r.defer=!0;for(const A of[localStorage,sessionStorage])Object.keys(A||{}).filter((C=>C.startsWith("_zaraz_"))).forEach((B=>{try{j[l]["z_"+B.slice(7)]=JSON.parse(A.getItem(B))}catch{j[l]["z_"+B.slice(7)]=A.getItem(B)}}));r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
-<body class="img js-fullheight" style="background-image: url(img/logoLogin.jpg);">
-<section class="ftco-section">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-6 text-center mb-5">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DISMAT</title>
+        <link href="<?php echo base_url() ;?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="<?php echo base_url() ;?>/css/fonts.googleapis.css"
+        rel="stylesheet">
+        <link
+        href="<?php echo base_url() ;?>vendor/fontawesome-free/css/all.min.css"
+        rel="stylesheet">
+      <link  href="<?php echo base_url() ;?>/css/font-awesome.min.css"
+        rel="stylesheet">
+        <link href="<?php echo base_url() ;?>/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="col-md-6 col-lg-4">
-<div class="login-wrap p-0">
-<h3 class="mb-4 text-center"> <i class="fas fa-fw fa-cog"></i>BIENVENIDO</h3>
-<form action="POST" action="<?php echo base_url(); ?>/" class="signin-form">
-<div class="form-group">
-<input id="nombreUsuario" name="nombreUsuario" type="text" class="form-control" placeholder="usuario" required>
-</div>
-<div class="form-group">
-<input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
-<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-</div>
-<div class="form-group">
-<button type="submit" class="form-control btn btn-primary submit px-3">INICIAR</button>
-</div>
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url() ;?>/css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="<?php echo base_url() ;?>/js/sb-admin-2.min.js"></script>
+  
+   
 
-</form>
+    <!-- Custom styles for this page -->
+    <link href="<?php echo base_url() ;?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    
+    <!-- <script src="<?php echo base_url() ;?>/js/jquery-3.7.1.min.js"></script>-->
+    <script src="<?php echo base_url() ;?>/js/jquery.min.js"></script>
+    <script src="<?php echo base_url() ;?>/js/all.min.js"></script>
+    <script src="<?php echo base_url() ;?>/js/all.min1.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/jquery-ui.min.js"></script>
+    
+        <link href="<?php echo base_url() ;?>/css/stylecss.css" rel="stylesheet" />
+        <script src="<?php echo base_url() ;?>/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="login" style="background-color: #015882;">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4"><img src="<?php echo base_url() ;?>/img/icono.jpg" width="60" height="60"> Bienvenidos</h3></div>
+                                    <div class="card-body">
+                                        <form method="POST" action="<?php echo base_url();?>/usuarios/valida">
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" name="usuario" id="usuario" type="text" placeholder="usuario" />
+                                                <label>usuarios</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="password" name="password" type="password" placeholder="Password" />
+                                                <label >Password</label>
+                                            </div>
+                                          
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                               
+                                                <button class="btn btn-primary" type ="submit">Login</button>
+                                            </div>
+                                            <?php if (isset($validation)) { ?>
+     <div class="alert alert-danger">
+     <?php echo $validation->listErrors();?>
+     </div>
+ <?php }?>
+ <?php if (isset($error)) { ?>
+     <div class="alert alert-danger">
+     <?php echo $error;?>
+     </div>
+ <?php }?>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+     
+            </div>
+           
+                 
+        <script src="<?php echo base_url() ;?>/js/bootstrap.bundle.min.js;" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url() ;?>js/scripts.js"></script>
+        <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ;?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Core plugin JavaScript-->
+    <script src="<?php echo base_url() ;?>/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</div>
-</div>
-</div>
-</div>
-</section>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script defer src="js/beacon1.min.js"></script>
-</body>
+    <!-- Custom scripts for all pages-->
+    <script src="<?php echo base_url() ;?>/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="<?php echo base_url() ;?>/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?php echo base_url() ;?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url() ;?>/js/demo/datatables-demo.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url() ;?>js/jquery-ui/jquery-ui.min.js"></script>
+    </body>
 </html>

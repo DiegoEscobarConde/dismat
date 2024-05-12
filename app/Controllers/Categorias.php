@@ -5,10 +5,20 @@ use App\Models\CategoriaModel;
 class Categorias extends BaseController
 {
     protected $categorias;
+    protected $reglas;
 
     public function __construct()
     {
         $this->categorias = new CategoriaModel();
+        helper(['form']);
+        $this->reglas =[
+            'nombre'=>[
+                'rules'=>'required',
+                 'errors'=>[
+                    'required'=>'el campo{field} es obligatorio.'
+                           ]
+                      ] 
+                      ];
     }
 
      public function index($estado = 1)
@@ -34,7 +44,7 @@ class Categorias extends BaseController
     }
     public function insertar()
     {
-        if($this->request->getMethod() =="post" && $this->validate(['nombre'=>'required']))
+        if($this->request->getMethod() =="post" && $this->validate($this->reglas))
         {
           
             $this->categorias->save(['nombre' => $this->request->getPost('nombre')]);
@@ -52,11 +62,16 @@ class Categorias extends BaseController
     }
   
 
-    public function editar($id)
+    public function editar($id,$valid=null)
     {
         $categoria = $this->categorias->where('id_categoria',$id)->first();
+        if($valid !=null){
+            $dato = ['titulo' => 'Editar Categoria','datos'=> $categoria,'validation'=>$valid];
+        } else{
+            $dato = ['titulo' => 'Editar Categoria','datos'=> $categoria];
+        }
    
-      $dato = ['titulo' => 'Editar Categoria','datos'=> $categoria];
+      
 
        echo view('encabezado');
        echo view('categorias/editar',$dato);
@@ -65,10 +80,13 @@ class Categorias extends BaseController
     }
     public function actualizar()
     {
-   
+        if($this->request->getMethod() =="post" && $this->validate($this->reglas)){
         $this->categorias->update($this->request->getPost('id_categoria'),
         ['nombre' => $this->request->getPost('nombre')]);
         return redirect()->to(base_url().'/categorias');
+       }else{
+        return $this-> editar($this->request->getPost('id_categoria'),$this->validator);
+       }
     }
     public function eliminar($id)
     {

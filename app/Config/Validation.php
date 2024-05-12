@@ -37,10 +37,7 @@ class Validation extends BaseConfig
         'list'   => 'CodeIgniter\Validation\Views\list',
         'single' => 'CodeIgniter\Validation\Views\single',
     ];
-    public array $categori = [
-        'nombre'   => 'required|min_length[2]|max_length[60]',
-        //'single' => 'CodeIgniter\Validation\Views\single',
-    ];
+  
 
     // --------------------------------------------------------------------
     // Rules

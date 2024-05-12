@@ -10,7 +10,8 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "laminas/laminas-escaper": "^2.9",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "phpmailer/phpmailer": "^6.5"
     },
     "require-dev": {
         "kint-php/kint": "^5.0.4",
@@ -21,6 +22,7 @@
         "nexusphp/cs-config": "^3.6",
         "phpunit/phpunit": "^9.1",
         "predis/predis": "^1.1 || ^2.0"
+     
     },
     "suggest": {
         "ext-curl": "If you use CURLRequest class",
@@ -63,4 +65,7 @@
         "source": "https://github.com/codeigniter4/CodeIgniter4",
         "slack": "https://codeigniterchat.slack.com"
     }
+    
+       
+    
 }
